@@ -13,5 +13,9 @@ uploads/
 .env
 .env.local
 .env.*.local
-.env*
 !.env.example
+
+# Non-code artifacts & generated documents
+*.pdf
+generate_master_dossier.py
+agents talking.md
