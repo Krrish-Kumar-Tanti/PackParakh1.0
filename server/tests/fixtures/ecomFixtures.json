@@ -1,7 +1,7 @@
 {
   "metadata": {
     "schemaVersion": "1.0.0",
-    "generatedFor": "PackParakh (पैक-परख) SIH 26034 - E-Commerce Scraper Offline Fixtures",
+    "generatedFor": "PackParakh (पैक-परख) DoCA 2011 - E-Commerce Scraper Offline Fixtures",
     "description": "Pre-parsed e-commerce product pages for offline deterministic testing (no live Puppeteer required). Validates Rule 6(1)(g) Country of Origin, Rule 6(11) USP, and Feb/Apr 2026 COO filter mandate (GSR 418(E) 2026 / Mondaq Jun 2026).",
     "platforms": ["Blinkit", "Amazon India", "Zepto"],
     "legalReferences": [
@@ -13,9 +13,9 @@
       "Legal Metrology Act 2009 Section 36(1) - Penalties ₹25k/₹50k/₹1L"
     ],
     "totalListings": 6,
-    "scraperEngine": "Cheerio + pre-saved HTML snapshot (offline-safe). Live Puppeteer intentionally NOT used for SIH demo stability.",
+    "scraperEngine": "Cheerio + pre-saved HTML snapshot (offline-safe). Live Puppeteer intentionally NOT used for offline demo stability.",
     "createdOn": "2026-08-15",
-    "maintainer": "Team Parity - Krrish Kumar Tanti (Lead)"
+    "maintainer": "Krrish Kumar Tanti (Lead)"
   },
   "listings": [
     {

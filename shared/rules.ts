@@ -2,7 +2,7 @@
 // PackParakh (पैक-परख) — Deterministic Statutory Rule Engine (24 Rules)
 // Legal Metrology (Packaged Commodities) Rules, 2011 - PCR 2011
 // GSR 202(E) as amended by GSR 226(E) 2022, GSR 577(E) 2022, GSR 418(E) 2026
-// Ministry of Consumer Affairs, Food & Public Distribution | SIH 26034
+// Ministry of Consumer Affairs, Food & Public Distribution | Legal Metrology PCR 2011
 //
 // GOLDEN PRINCIPLE: Gemini Vision NEVER makes legal decisions. This file is
 // the deterministic judge. All verdicts are 100% reproducible TypeScript.

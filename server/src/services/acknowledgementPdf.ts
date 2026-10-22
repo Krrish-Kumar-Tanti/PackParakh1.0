@@ -1,6 +1,6 @@
 // ============================================================================
 // PackParakh (पैक-परख) — 1-Page e-District Acknowledgement Slip PDF Generator
-// Ministry of Consumer Affairs, Food & Public Distribution | SIH 26034
+// Ministry of Consumer Affairs, Food & Public Distribution | Legal Metrology PCR 2011
 // Author: Gitansh (Backend Lead)
 // ============================================================================
 

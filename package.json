@@ -1,7 +1,7 @@
 {
   "name": "packparakh-26034",
   "version": "1.0.0",
-  "description": "PackParakh (पैक-परख) SIH 2026 - Legal Metrology Compliance Scanner",
+  "description": "PackParakh 1.0 (पैक-परख) - Sovereign Legal Metrology Compliance Scanner",
   "type": "module",
   "private": true,
   "scripts": {

@@ -8,7 +8,7 @@ export const translations = {
       engine: "PCR 2011 Engine v2.1: ACTIVE",
       vision: "Vision Pipeline: ONLINE",
       evidence: "Evidence Chain: BSA 2023 SECURED",
-      sih: "SIH2026 Problem ID: 26034",
+      doca: "DoCA Legal Metrology",
     },
     top: {
       status: {
@@ -28,7 +28,7 @@ export const translations = {
     nav: {
       title: "PackParakh",
       titleHindi: "(पैक-परख)",
-      badge: "SIH 26034",
+      badge: "DoCA Engine",
       subtitle: "Department of Consumer Affairs (DoCA) • Ministry of Consumer Affairs, Food & Public Distribution",
       home: "Home",
       act: "Act & Rules",
@@ -195,7 +195,7 @@ export const translations = {
     // Footer
     footer: {
       name: "PackParakh (पैक-परख)",
-      team: "• Team Parity • SIH 2026 (Problem Statement 26034)",
+      team: "• Developed by Krrish Kumar Tanti",
       doca: "Department of Consumer Affairs (DoCA)",
       act: "• Legal Metrology Act, 2009",
       pcr: "• PCR 2011 Codified",
@@ -363,7 +363,7 @@ export const translations = {
       engine: "PCR 2011 इंजन v2.1: सक्रिय",
       vision: "विज़न पाइपलाइन: ऑनलाइन",
       evidence: "साक्ष्य श्रृंखला: BSA 2023 सुरक्षित",
-      sih: "SIH2026 समस्या आईडी: 26034",
+      doca: "DoCA विधिक माप-विज्ञान",
     },
     top: {
       status: {
@@ -383,7 +383,7 @@ export const translations = {
     nav: {
       title: "पैक-परख",
       titleHindi: "(PackParakh)",
-      badge: "SIH 26034",
+      badge: "DoCA इंजन",
       subtitle: "उपभोक्ता मामले विभाग (DoCA) • उपभोक्ता मामले, खाद्य एवं सार्वजनिक वितरण मंत्रालय",
       home: "मुख्य पृष्ठ",
       act: "अधिनियम और नियम",
@@ -550,7 +550,7 @@ export const translations = {
     // Footer
     footer: {
       name: "पैक-परख (PackParakh)",
-      team: "• टीम पैरिटी • SIH 2026 (समस्या वक्तव्य 26034)",
+      team: "• निर्माता: क्रिश कुमार तांती",
       doca: "उपभोक्ता मामले विभाग (DoCA)",
       act: "• विधिक माप-विज्ञान अधिनियम, 2009",
       pcr: "• PCR 2011 संहिताबद्ध",
@@ -744,8 +744,8 @@ export const translations = {
   },
   bn: {
     top: { status: { active: "সক্রিয়", online: "অনলাইন", secured: "সুরক্ষিত", text: "লিগ্যাল মেট্রোলজি |", vision: "| ভিশন পাইপলাইন:", evidence: "| প্রমাণ চেইন:" } },
-    statusBar: { directorate: "লিগ্যাল মেট্রোলজি ডিরেক্টরেট", engine: "PCR 2011 ইঞ্জিন v2.1: সক্রিয়", vision: "ভিশন পাইপলাইন: অনলাইন", evidence: "প্রমাণ চেইন: সুরক্ষিত (SHA-256)", sih: "SIH2026 সমস্যা ID: 26034" },
-    nav: { title: "প্যাক-পরখ", titleHindi: "(PackParakh)", badge: "SIH 26034", subtitle: "ভোক্তা বিষয়ক বিভাগ (DoCA)", home: "হোম", act: "আইন ও নিয়ম", guidelines: "নির্দেশিকা", helpdesk: "হেল্পডেস্ক", contact: "যোগাযোগ", brand: "ই-মাপন", subBrand: "লিগ্যাল মেট্রোলজি", login: "সাইন ইন" },
+    statusBar: { directorate: "লিগ্যাল মেট্রোলজি ডিরেক্টরেট", engine: "PCR 2011 ইঞ্জিন v2.1: সক্রিয়", vision: "ভিশন পাইপলাইন: অনলাইন", evidence: "প্রমাণ চেইন: সুরক্ষিত (SHA-256)", doca: "DoCA লিগ্যাল মেট্রোলজি" },
+    nav: { title: "প্যাক-পরখ", titleHindi: "(PackParakh)", badge: "DoCA ইঞ্জিন", subtitle: "ভোক্তা বিষয়ক বিভাগ (DoCA)", home: "হোম", act: "আইন ও নিয়ম", guidelines: "নির্দেশিকা", helpdesk: "হেল্পডেস্ক", contact: "যোগাযোগ", brand: "ই-মাপন", subBrand: "লিগ্যাল মেট্রোলজি", login: "সাইন ইন" },
     layout: { back: "ফিরে যান" },
     hero: { pill: "ভোক্তা বিষয়ক মন্ত্রণালয় • লিগ্যাল মেট্রোলজি বিভাগ (DoCA)", heading1: "স্বায়ত্তশাসিত লিগ্যাল", heading2: "মেট্রোলজি", subtext: "তাত্ক্ষণিক ভিজ্যুয়াল অডিট এবং 3-স্তরের অপটিক্যাল ফন্ট ক্যালিব্রেশন সহ 15 মিনিটের ম্যানুয়াল পরিদর্শন প্রতিস্থাপন।" },
     metrics: { speed: { value: "15মি ➔ সেকেন্ডে", label: "অডিট গতি" }, cost: { value: "₹0.12", label: "খরচ / SKU" }, rules: { value: "24 নিয়ম", label: "PCR 2011" }, hash: { value: "SHA-256", label: "প্রমাণ চেইন" } },
@@ -757,7 +757,7 @@ export const translations = {
     scanner: { title: "লাইভ অপটিক্যাল ভিউ", verified: "যাচাইকৃত পাস", fpsTag: "FPS: 60", productName: "রয়্যাল চা 500g", foodCat: "খাদ্য", sha: "SHA-256", shaAuthenticated: "প্রমাণিত", shaHash: "e89b4f2c...", bsa: "ধারা 63 BSA", startScan: "স্ক্যান শুরু", rules: { mrp: "নিয়ম 6(1)(e): MRP পাস", mrpText: "MRP ₹ 240", mrpSub: "(সব কর সহ)", usp: "নিয়ম 6(11): USP পাস", uspText: "ইউনিট মূল্য: ₹ 0.48 / g", uspSub: "(গণিত: 240 ÷ 500)", font: "নিয়ম 7: ফন্ট পাস", fontText: "ফন্ট: 4.2 মিমি", fontSub: "(ন্যূনতম: 4.0 মিমি)" } },
     pipeline: { heading: "3-ইন-1 পাইপলাইন", subheading: "ফিল্ড রেইড, অনলাইন এবং প্রি-প্রিন্টের জন্য", modes: { field: { badge: "অফলাইন প্রস্তুত", title: "মোড A: অফলাইন ফিল্ড স্ক্যান", desc: "ইন্টারনেট ছাড়াই স্মার্টফোন ক্যামেরা ক্যাপচার।", cta: "ফিল্ড মোড খুলুন" }, ecom: { badge: "হেডলেস স্ক্র্যাপার", title: "মোড B: অনলাইন ই-কমার্স", desc: "Amazon, Blinkit লিস্টিং অডিট করুন।", cta: "ই-কম খুলুন" }, preprint: { badge: "0% বিকৃতি", title: "মোড C: প্রি-প্রিন্ট ভেক্টর", desc: "ভেক্টর PDF যাচাই করুন।", cta: "ভেক্টর স্টুডিও খুলুন" } } },
     testimonials: { pill: "প্রশংসাপত্র", heading: "অফিসারদের আস্থা", subheading: "প্যাকেজিং সম্মতি রূপান্তর", items: [] },
-    footer: { name: "প্যাক-পরখ (PackParakh)", team: "• টিম প্যারিটি • SIH 2026", doca: "ভোক্তা বিষয়ক বিভাগ (DoCA)", act: "• লিগ্যাল মেট্রোলজি আইন, 2009", pcr: "• PCR 2011" },
+    footer: { name: "প্যাক-পরখ (PackParakh)", team: "• বিকাশকারী: কৃষ কুমার তাঁতি", doca: "ভোক্তা বিষয়ক বিভাগ (DoCA)", act: "• লিগ্যাল মেট্রোলজি আইন, 2009", pcr: "• PCR 2011" },
     login: { ministry: "ভোক্তা বিষয়ক মন্ত্রণালয়", department: "লিগ্যাল মেট্রোলজি (DoCA)", hero: { title1: "স্বায়ত্তশাসিত লিগ্যাল", title2: "মেট্রোলজি", titleHighlight: "কমপ্লায়েন্স ইঞ্জিন", subtitle: "তাত্ক্ষণিক ভিজ্যুয়াল অডিট..." }, stat: { speed: { label: "অডিট গতি", value: "15m → In Seconds" }, cost: { label: "খরচ", value: "₹0.12 / SKU" }, rules: { label: "নিয়ম", value: "24 PCR 2011" }, chain: { label: "প্রমাণ", value: "SHA-256" } }, gateway: { title: "অপারেশনাল অ্যাক্সেস", badge: "SSO প্রস্তুত" }, tab: { lmo: "LMO অফিসার", msme: "MSME ব্র্যান্ড", citizen: "নাগরিক স্ক্যান" }, lmo: { desc: "LMO মোড: মার্কেট রেইড পরিচালনা করুন...", stateLabel: "রাজ্য", badgeLabel: "অফিসার ব্যাজ নম্বর", badgePlaceholder: "e.g. DL-LMO-2026", passLabel: "পাসওয়ার্ড", passPlaceholder: "••••••••", submit: "প্রবেশ করুন" }, msme: { desc: "MSME মোড: ভেক্টর আর্টওয়ার্ক পরীক্ষা করুন।", gstinLabel: "GSTIN / কোম্পানি ID", gstinPlaceholder: "e.g. 29GGGGG...", submit: "সিমুলেটর চালু করুন" }, citizen: { desc: "পাবলিক সিটিজেন স্ক্যান: তাত্ক্ষণিকভাবে যাচাই করুন।", submit: "সিটিজেন স্ক্যান" } },
     audit: { title: "অডিট মডালিটি নির্বাচন করুন", subtitle: "আপনার লক্ষ্য কর্ম পরিবেশের উপর ভিত্তি করে উপযুক্ত পরিদর্শন পাইপলাইন চয়ন করুন।", mode: { physical: { title: "অফলাইন ফিল্ড মোড", desc: "স্মার্টফোন ক্যামেরা স্ক্যান। ইন্টারনেট ছাড়াই কাজ করে।", badge: "অফলাইন প্রস্তুত" }, ecom: { title: "ই-কমার্স", desc: "URL-ভিত্তিক চিত্র অডিট।", badge: "ইনস্ট্যান্ট হেডলেস" }, pdf: { title: "পিডিএফ সিমুলেটর", desc: "ভেক্টর আর্টওয়ার্ক বিশ্লেষণ করুন।", badge: "0% অপটিক্যাল বিকৃতি" } }, simulate: { title: "সক্রিয় কমপ্লায়েন্স টুলিং", desc: "প্যাকেজিং মাত্রা যাচাই করুন।", btn: "সিমুলেটর চালু করুন" } },
     scan: { camera: { unsupported: "ক্যামেরা সমর্থিত নয়।", denied: "ক্যামেরার অনুমতি অস্বীকার করা হয়েছে।", notfound: "ক্যামেরা পাওয়া যায়নি।", failed: "ক্যামেরা ব্যর্থ।", requesting: "ক্যামেরার অনুরোধ করা হচ্ছে..." }, fallback: { btn: "ফাইল আপলোড করুন" }, guide: { align: "এখানে PDP সারিবদ্ধ করুন" }, ecom: { title: "ই-কম অডিট", placeholder: "https://amazon...", sample1: "নমুনা 1", sample2: "নমুনা 2" }, pdf: { drag: "পিডিএফ ড্র্যাগ করুন", support: "উচ্চ-মানের ফন্ট নিষ্কাশন সমর্থন করে" }, btn: { capture: "ক্যাপচার এবং বিশ্লেষণ", processing: "প্রসেসিং..." }, config: { title: "কনফিগারেশন", cat: { title: "বিভাগ", food: "খাদ্য", cosmetic: "প্রসাধন", electronics: "ইলেকট্রনিক্স", general: "সাধারণ", desc: "নিয়ম সমন্বয় করে।" }, calib: { title: "ক্যালিব্রেশন", opt1: "মার্কার / আইডি", opt1desc: "স্বয়ংক্রিয়", opt2: "ম্যানুয়াল মাত্রা", opt2desc: "ম্যানুয়াল", opt3: "AI অনুমান", opt3desc: "AI", width: "প্রস্থ:", mm: "মিমি" } }, demo: { title: "ডেমো টেস্ট", pass: "100% সঠিক", review: "পর্যালোচনা", fail: "ভুল", badge: { pass: "পাস", review: "রিভিউ", fail: "ফেইল" } } },
@@ -766,8 +766,8 @@ export const translations = {
   },
   ta: {
     top: { status: { active: "செயலில்", online: "ஆன்லைன்", secured: "பாதுகாக்கப்பட்டது", text: "சட்ட அளவியல் |", vision: "| பார்வை குழாய்:", evidence: "| சான்று சங்கிலி:" } },
-    statusBar: { directorate: "சட்ட அளவியல் இயக்குனரகம்", engine: "PCR 2011 இயந்திரம் v2.1: செயலில்", vision: "பார்வை பைப்லைன்: ஆன்லைன்", evidence: "சான்று சங்கிலி: பாதுகாக்கப்பட்டது (SHA-256)", sih: "SIH2026 சிக்கல் ID: 26034" },
-    nav: { title: "பேக்-பராக்", titleHindi: "(PackParakh)", badge: "SIH 26034", subtitle: "நுகர்வோர் விவகாரத் துறை (DoCA)", home: "முகப்பு", act: "சட்டம் & விதிகள்", guidelines: "வழிகாட்டுதல்கள்", helpdesk: "உதவி மையம்", contact: "தொடர்பு", brand: "இ-மாபன்", subBrand: "சட்ட அளவியல்", login: "சைன் இன்" },
+    statusBar: { directorate: "சட்ட அளவியல் இயக்குனரகம்", engine: "PCR 2011 இயந்திரம் v2.1: செயலில்", vision: "பார்வை பைப்லைன்: ஆன்லைன்", evidence: "சான்று சங்கிலி: பாதுகாக்கப்பட்டது (SHA-256)", doca: "DoCA சட்ட அளவியல்" },
+    nav: { title: "பேக்-பராக்", titleHindi: "(PackParakh)", badge: "DoCA இயந்திரம்", subtitle: "நுகர்வோர் விவகாரத் துறை (DoCA)", home: "முகப்பு", act: "சட்டம் & விதிகள்", guidelines: "வழிகாட்டுதல்கள்", helpdesk: "உதவி மையம்", contact: "தொடர்பு", brand: "இ-மாபன்", subBrand: "சட்ட அளவியல்", login: "சைன் இன்" },
     layout: { back: "திரும்பிச் செல்" },
     hero: { pill: "நுகர்வோர் விவகார அமைச்சகம் • சட்ட அளவியல் பிரிவு (DoCA)", heading1: "தன்னாட்சி சட்ட", heading2: "அளவியல்", subtext: "15 நிமிட கையேடு ஆய்வை உடனடி காட்சி தணிக்கையுடன் மாற்றுதல்।" },
     metrics: { speed: { value: "15நி ➔ நொடிகளில்", label: "தணிக்கை வேகம்" }, cost: { value: "₹0.12", label: "செலவு / SKU" }, rules: { value: "24 விதிகள்", label: "PCR 2011" }, hash: { value: "SHA-256", label: "சான்று சங்கிலி" } },
@@ -779,7 +779,7 @@ export const translations = {
     scanner: { title: "நேரடி ஒளியியல் பார்வை", verified: "சரிபார்க்கப்பட்டது", fpsTag: "FPS: 60", productName: "ராயல் தேநீர் 500g", foodCat: "உணவு", sha: "SHA-256", shaAuthenticated: "அங்கீகரிக்கப்பட்டது", shaHash: "e89b...", bsa: "பிரிவு 63 BSA", startScan: "ஸ்கேன் தொடங்கு", rules: { mrp: "விதி 6(1)(e): MRP தேர்ச்சி", mrpText: "MRP ₹ 240", mrpSub: "(வரி உட்பட)", usp: "விதி 6(11): USP தேர்ச்சி", uspText: "அலகு விலை: ₹ 0.48 / g", uspSub: "(கணிதம்: 240 ÷ 500)", font: "விதி 7: எழுத்துரு தேர்ச்சி", fontText: "எழுத்துரு: 4.2 மிமீ", fontSub: "(குறைந்தபட்சம்: 4.0 மிமீ)" } },
     pipeline: { heading: "3-இன்-1 பைப்லைன்", subheading: "கள சோதனை, ஆன்லைன் மற்றும் முன் அச்சுக்காக", modes: { field: { badge: "ஆஃப்லைன் தயார்", title: "முறை A: ஆஃப்லைன் கள ஸ்கேன்", desc: "இணையம் இல்லாமல் ஸ்மார்ட்போன் கேமரா।", cta: "கள பயன்முறையைத் திறக்கவும்" }, ecom: { badge: "ஹெட்லெஸ் ஸ்க்ராப்பர்", title: "முறை B: ஆன்லைன் இ-காமர்ஸ்", desc: "Amazon, Blinkit பட்டியல்களை தணிக்கை செய்யுங்கள்।", cta: "இ-காம் திறக்கவும்" }, preprint: { badge: "0% சிதைவு", title: "முறை C: முன் அச்சு வெக்டார்", desc: "வெக்டார் PDF ஐ சரிபார்க்கவும்।", cta: "வெக்டார் ஸ்டுடியோவைத் திறக்கவும்" } } },
     testimonials: { pill: "சான்றுகள்", heading: "அதிகாரிகளின் நம்பிக்கை", subheading: "பேக்கேஜிங் இணக்கத்தை மாற்றுதல்", items: [] },
-    footer: { name: "பேக்-பராக் (PackParakh)", team: "• குழு பாரிட்டி • SIH 2026", doca: "நுகர்வோர் விவகாரத் துறை (DoCA)", act: "• சட்ட அளவியல் சட்டம், 2009", pcr: "• PCR 2011" },
+    footer: { name: "பேக்-பராக் (PackParakh)", team: "• உருவாக்கியவர்: கிரிஷ் குமார் தாந்தி", doca: "நுகர்வோர் விவகாரத் துறை (DoCA)", act: "• சட்ட அளவியல் சட்டம், 2009", pcr: "• PCR 2011" },
     login: { ministry: "நுகர்வோர் விவகார அமைச்சகம்", department: "சட்ட அளவியல் (DoCA)", hero: { title1: "தன்னாட்சி சட்ட", title2: "அளவியல்", titleHighlight: "இணக்க இயந்திரம்", subtitle: "உடனடி காட்சி தணிக்கைகள்..." }, stat: { speed: { label: "வேகம்", value: "15m → In Seconds" }, cost: { label: "செலவு", value: "₹0.12 / SKU" }, rules: { label: "விதிகள்", value: "24 PCR 2011" }, chain: { label: "சான்று", value: "SHA-256" } }, gateway: { title: "அணுகல்", badge: "SSO தயார்" }, tab: { lmo: "LMO அதிகாரி", msme: "MSME பிராண்ட்", citizen: "குடிமகன் ஸ்கேன்" }, lmo: { desc: "LMO பயன்முறை: சந்தை சோதனைகளை நடத்துங்கள்...", stateLabel: "மாநிலம்", badgeLabel: "அதிகாரி எண்", badgePlaceholder: "e.g. DL-LMO-2026", passLabel: "கடவுச்சொல்", passPlaceholder: "••••••••", submit: "உள்நுழைக" }, msme: { desc: "MSME பயன்முறை: வெக்டார் கலையை சரிபார்க்கவும்.", gstinLabel: "GSTIN / நிறுவனம் ID", gstinPlaceholder: "e.g. 29GGGGG...", submit: "தொடங்கு" }, citizen: { desc: "பொது ஸ்கேன்: உடனடியாக சரிபார்க்கவும்.", submit: "ஸ்கேன்" } },
     audit: { title: "தணிக்கை முறையைத் தேர்ந்தெடுக்கவும்", subtitle: "தகுந்த ஆய்வு பைப்லைனைத் தேர்ந்தெடுக்கவும்.", mode: { physical: { title: "ஆஃப்லைன் கள முறை", desc: "ஸ்மார்ட்போன் கேமரா ஸ்கேன். இணையம் இல்லாமல் வேலை செய்கிறது.", badge: "ஆஃப்லைன் தயார்" }, ecom: { title: "ஆன்லைன் இ-காமர்ஸ்", desc: "URL அடிப்படையிலான பட தணிக்கை.", badge: "உடனடி ஹெட்லெஸ்" }, pdf: { title: "PDF சிமுலேட்டர்", desc: "வெக்டார் கலையை பகுப்பாய்வு செய்யவும்.", badge: "0% ஆப்டிகல் சிதைவு" } }, simulate: { title: "செயல்திறன் இணக்கக் கருவி", desc: "பேக்கேஜிங் பரிமாணங்களை சரிபார்க்கவும்.", btn: "சிமுலேட்டரைத் தொடங்கு" } },
     scan: { camera: { unsupported: "கேமரா ஆதரிக்கப்படவில்லை.", denied: "அனுமதி மறுக்கப்பட்டது.", notfound: "கேமரா கிடைக்கவில்லை.", failed: "கேமரா தோல்வி.", requesting: "கோருகிறது..." }, fallback: { btn: "கோப்பை பதிவேற்றவும்" }, guide: { align: "இங்கே PDP சீரமைக்க" }, ecom: { title: "இ-காம் தணிக்கை", placeholder: "https://amazon...", sample1: "மாதிரி 1", sample2: "மாதிரி 2" }, pdf: { drag: "PDF ஐ இழுக்கவும்", support: "எழுத்துரு பிரித்தெடுத்தலை ஆதரிக்கிறது" }, btn: { capture: "பிடிப்பு & பகுப்பாய்வு", processing: "செயலாக்குகிறது..." }, config: { title: "கட்டமைப்பு", cat: { title: "வகை", food: "உணவு", cosmetic: "அழகுசாதன", electronics: "மின்னணு", general: "பொது", desc: "விதிகளை சரிசெய்கிறது." }, calib: { title: "அளவுத்திருத்தம்", opt1: "மார்க்கர் / ஐடி", opt1desc: "தானியங்கி", opt2: "கையேடு பரிமாணங்கள்", opt2desc: "கையேடு", opt3: "AI கணிப்பு", opt3desc: "AI", width: "அகலம்:", mm: "மிமீ" } }, demo: { title: "சோதனை", pass: "100% இணக்கம்", review: "மதிப்பாய்வு", fail: "தோல்வி", badge: { pass: "தேர்ச்சி", review: "மதிப்பாய்வு", fail: "தோல்வி" } } },
@@ -788,8 +788,8 @@ export const translations = {
   },
   te: {
     top: { status: { active: "సక్రియం", online: "ఆన్‌లైన్", secured: "సురక్షితం", text: "లీగల్ మెట్రాలజీ |", vision: "| విజన్ పైప్‌లైన్:", evidence: "| ఆధారాల చైన్:" } },
-    statusBar: { directorate: "లీగల్ మెట్రాలజీ డైరెక్టరేట్", engine: "PCR 2011 ఇంజిన్ v2.1: సక్రియం", vision: "విజన్ పైప్‌లైన్: ఆన్‌లైన్", evidence: "సాక్ష్య గొలుసు: భద్రపరచబడింది (SHA-256)", sih: "SIH2026 సమస్య ID: 26034" },
-    nav: { title: "ప్యాక్-పరఖ్", titleHindi: "(PackParakh)", badge: "SIH 26034", subtitle: "వినియోగదారుల వ్యవహారాల విభాగం (DoCA)", home: "హోమ్", act: "చట్టం & నియమాలు", guidelines: "మార్గదర్శకాలు", helpdesk: "హెల్ప్‌డెస్క్", contact: "సంప్రదించండి", brand: "ఇ-మాపన్", subBrand: "లీగల్ మెట్రాలజీ", login: "సైన్ ఇన్" },
+    statusBar: { directorate: "లీగల్ మెట్రాలజీ డైరెక్టరేట్", engine: "PCR 2011 ఇంజిన్ v2.1: సక్రియం", vision: "విజన్ పైప్‌లైన్: ఆన్‌లైన్", evidence: "సాక్ష్య గొలుసు: భద్రపరచబడింది (SHA-256)", doca: "DoCA లీగల్ మెట్రాలజీ" },
+    nav: { title: "ప్యాక్-పరఖ్", titleHindi: "(PackParakh)", badge: "DoCA ఇంజిన్", subtitle: "వినియోగదారుల వ్యవహారాల విభాగం (DoCA)", home: "హోమ్", act: "చట్టం & నియమాలు", guidelines: "మార్గదర్శకాలు", helpdesk: "హెల్ప్‌డెస్క్", contact: "సంప్రదించండి", brand: "ఇ-మాపన్", subBrand: "లీగల్ మెట్రాలజీ", login: "సైన్ ఇన్" },
     layout: { back: "వెనుకకు" },
     hero: { pill: "వినియోగదారుల వ్యవహారాల మంత్రిత్వ శాఖ • లీగల్ మెట్రాలజీ విభాగం (DoCA)", heading1: "స్వయంప్రతిపత్త న్యాయ", heading2: "మెట్రాలజీ", subtext: "15 నిమిషాల మాన్యువల్ తనిఖీని తక్షణ దృశ్య ఆడిట్‌తో భర్తీ చేయడం।" },
     metrics: { speed: { value: "15ని ➔ సెకన్లలో", label: "ఆడిట్ వేగం" }, cost: { value: "₹0.12", label: "ఖర్చు / SKU" }, rules: { value: "24 నియమాలు", label: "PCR 2011" }, hash: { value: "SHA-256", label: "సాక్ష్య గొలుసు" } },
@@ -801,7 +801,7 @@ export const translations = {
     scanner: { title: "ప్రత్యక్ష ఆప్టికల్ వీక్షణ", verified: "ధృవీకరించబడింది", fpsTag: "FPS: 60", productName: "రాయల్ టీ 500g", foodCat: "ఆహారం", sha: "SHA-256", shaAuthenticated: "ప్రమాణీకరించబడింది", shaHash: "e89b...", bsa: "సెక్షన్ 63 BSA", startScan: "స్కాన్ ప్రారంభించండి", rules: { mrp: "నియమం 6(1)(e): MRP పాస్", mrpText: "MRP ₹ 240", mrpSub: "(అన్ని పన్నులతో సహా)", usp: "నియమం 6(11): USP పాస్", uspText: "యూనిట్ ధర: ₹ 0.48 / g", uspSub: "(గణితం: 240 ÷ 500)", font: "నియమం 7: ఫాంట్ పాస్", fontText: "ఫాంట్: 4.2 మిమీ", fontSub: "(కనీస: 4.0 మిమీ)" } },
     pipeline: { heading: "3-ఇన్-1 పైప్‌లైన్", subheading: "ఫీల్డ్ తనిఖీ, ఆన్‌లైన్ మరియు ప్రీ-ప్రింట్ కోసం", modes: { field: { badge: "ఆఫ్‌లైన్ సిద్ధం", title: "మోడ్ A: ఆఫ్‌లైన్ ఫీల్డ్ స్కాన్", desc: "ఇంటర్నెట్ లేకుండా స్మార్ట్‌ఫోన్ కెమెరా।", cta: "ఫీల్డ్ మోడ్ తెరవండి" }, ecom: { badge: "హెడ్‌లెస్ స్క్రాపర్", title: "మోడ్ B: ఆన్‌లైన్ ఇ-కామర్స్", desc: "Amazon, Blinkit జాబితాలను ఆడిట్ చేయండి।", cta: "ఇ-కామ్ తెరవండి" }, preprint: { badge: "0% వక్రీకరణ", title: "మోడ్ C: ప్రీ-ప్రింట్ వెక్టర్", desc: "వెక్టర్ PDF ను ధృవీకరించండి।", cta: "వెక్టర్ స్టూడియో తెరవండి" } } },
     testimonials: { pill: "టెస్టిమోనియల్స్", heading: "అధికారుల నమ్మకం", subheading: "ప్యాకేజింగ్ సమ్మతిని మార్చడం", items: [] },
-    footer: { name: "ప్యాక్-పరఖ్ (PackParakh)", team: "• టీమ్ పారిటీ • SIH 2026", doca: "వినియోగదారుల వ్యవహారాల విభాగం (DoCA)", act: "• లీగల్ మెట్రాలజీ చట్టం, 2009", pcr: "• PCR 2011" },
+    footer: { name: "ప్యాక్-పరఖ్ (PackParakh)", team: "• రూపకర్త: క్రిష్ కుమార్ తాంతి", doca: "వినియోగదారుల వ్యవహారాల విభాగం (DoCA)", act: "• లీగల్ మెట్రాలజీ చట్టం, 2009", pcr: "• PCR 2011" },
     login: { ministry: "వినియోగదారుల వ్యవహారాల మంత్రిత్వ శాఖ", department: "లీగల్ మెట్రాలజీ (DoCA)", hero: { title1: "స్వయంప్రతిపత్త న్యాయ", title2: "మెట్రాలజీ", titleHighlight: "కంప్లయన్స్ ఇంజిన్", subtitle: "తక్షణ దృశ్య ఆడిట్‌లు..." }, stat: { speed: { label: "వేగం", value: "15m → In Seconds" }, cost: { label: "ఖర్చు", value: "₹0.12 / SKU" }, rules: { label: "నియమాలు", value: "24 PCR 2011" }, chain: { label: "ఆధారం", value: "SHA-256" } }, gateway: { title: "యాక్సెస్", badge: "SSO సిద్ధం" }, tab: { lmo: "LMO అధికారి", msme: "MSME బ్రాండ్", citizen: "పౌర స్కాన్" }, lmo: { desc: "LMO మోడ్: తనిఖీలు నిర్వహించండి...", stateLabel: "రాష్ట్రం", badgeLabel: "అధికారి నంబర్", badgePlaceholder: "e.g. DL-LMO-2026", passLabel: "పాస్‌వర్డ్", passPlaceholder: "••••••••", submit: "లాగిన్" }, msme: { desc: "MSME మోడ్: వెక్టర్ ఆర్ట్‌వర్క్ తనిఖీ చేయండి.", gstinLabel: "GSTIN / కంపెనీ ID", gstinPlaceholder: "e.g. 29GGGGG...", submit: "ప్రారంభించండి" }, citizen: { desc: "పబ్లిక్ స్కాన్: తక్షణమే ధృవీకరించండి.", submit: "స్కాన్ చేయండి" } },
     audit: { title: "ఆడిట్ విధానాన్ని ఎంచుకోండి", subtitle: "తగిన తనిఖీ పైప్‌లైన్‌ను ఎంచుకోండి.", mode: { physical: { title: "ఆఫ్‌లైన్ ఫీల్డ్ మోడ్", desc: "స్మార్ట్‌ఫోన్ కెమెరా స్కాన్. ఇంటర్నెట్ లేకుండా పనిచేస్తుంది.", badge: "ఆఫ్‌లైన్ సిద్ధం" }, ecom: { title: "ఆన్‌లైన్ ఈ-కామర్స్", desc: "URL ఆధారిత ఆడిట్.", badge: "ఇన్‌స్టంట్ హెడ్‌లెస్" }, pdf: { title: "PDF సిమ్యులేటర్", desc: "వెక్టర్ ఆర్ట్‌వర్క్ విశ్లేషించండి.", badge: "0% ఆప్టికల్ వక్రీకరణ" } }, simulate: { title: "చురుకైన కంప్లయన్స్ టూలింగ్", desc: "ప్యాకేజింగ్ కొలతలు ధృవీకరించండి.", btn: "సిమ్యులేటర్‌ను ప్రారంభించండి" } },
     scan: { camera: { unsupported: "కెమెరా మద్దతు లేదు.", denied: "అనుమతి నిరాకరించబడింది.", notfound: "కెమెరా కనుగొనబడలేదు.", failed: "కెమెరా విఫలమైంది.", requesting: "అభ్యర్థిస్తోంది..." }, fallback: { btn: "ఫైల్‌ను అప్‌లోడ్ చేయండి" }, guide: { align: "ఇక్కడ PDP ని సమలేఖనం చేయండి" }, ecom: { title: "ఈ-కామ్ ఆడిట్", placeholder: "https://amazon...", sample1: "నమూనా 1", sample2: "నమూనా 2" }, pdf: { drag: "PDF లాగండి", support: "ఫాంట్ వెలికితీతకు మద్దతు ఇస్తుంది" }, btn: { capture: "క్యాప్చర్ & విశ్లేషణ", processing: "ప్రాసెస్ చేస్తోంది..." }, config: { title: "ఆకృతీకరణ", cat: { title: "వర్గం", food: "ఆహారం", cosmetic: "సౌందర్య", electronics: "ఎలక్ట్రానిక్స్", general: "సాధారణ", desc: "నియమాలను సర్దుబాటు చేస్తుంది." }, calib: { title: "కాలిబ్రేషన్", opt1: "మార్కర్ / ID", opt1desc: "ఆటోమేటిక్", opt2: "మాన్యువల్ కొలతలు", opt2desc: "మాన్యువల్", opt3: "AI అంచనా", opt3desc: "AI", width: "వెడల్పు:", mm: "మిమీ" } }, demo: { title: "పరీక్ష", pass: "100% కంప్లయంట్", review: "సమీక్ష", fail: "విఫలమైంది", badge: { pass: "పాస్", review: "సమీక్ష", fail: "ఫెయిల్" } } },

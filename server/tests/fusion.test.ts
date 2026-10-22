@@ -1,7 +1,7 @@
 // ============================================================================
 // PackParakh (पैक-परख) — Multi-Photo Fusion Unit Tests
 // MCE 2026 Problem Statement 26034 | Legal Metrology (Packaged Commodities)
-// Rules 2011 | SIH 2026
+// Rules 2011 | Legal Metrology PCR 2011
 //
 // Scope: Verifies mergeExtracts() fuses multiple label-panel OCR extracts:
 //   - MRP present only on photo B is honored (panel variance)

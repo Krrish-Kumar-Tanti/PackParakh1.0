@@ -1,7 +1,7 @@
 // ============================================================================
 // PackParakh (पैक-परख) — Cryptographic Evidence Vault Service
 // Section 63 Bharatiya Sakshya Adhiniyam, 2023 (BSA 2023) / Sec 65B Evidence Act
-// Ministry of Consumer Affairs, Food & Public Distribution | SIH 26034
+// Ministry of Consumer Affairs, Food & Public Distribution | Legal Metrology PCR 2011
 // ============================================================================
 
 import crypto from 'crypto';

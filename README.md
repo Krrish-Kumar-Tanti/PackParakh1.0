@@ -1,9 +1,8 @@
 # 🛡️ PackParakh 1.0 (पैक-परख) — Sovereign Legal Metrology Engine
 
-> **Smart India Hackathon (SIH) 2026** | **Problem Statement:** 26034  
-> **Ministry:** Ministry of Consumer Affairs, Food and Public Distribution (Department of Consumer Affairs - DoCA)  
-> **Project Lead:** **Krrish Kumar Tanti**  
-> **Core Team:** Gitansh, Swetakshi, Unnati, Ankit Negi, Ankita  
+> **Domain:** Legal Metrology & Consumer Protection  
+> **Target Authority:** Department of Consumer Affairs (DoCA), Ministry of Consumer Affairs, Food & Public Distribution  
+> **Author & Lead:** **Krrish Kumar Tanti**  
 
 <p align="center">
   <a href="https://packparakh.vercel.app" target="_blank">
@@ -284,6 +283,6 @@ PackParakh is architected strictly in accordance with statutory guidelines publi
 ---
 
 <div align="center">
-  <sub>Developed with pride for the <strong>Smart India Hackathon 2026</strong> by <strong>Team Parity</strong>.</sub><br/>
-  <sub>Lead: <strong>Krrish Kumar Tanti</strong> | Ministry of Consumer Affairs, Food & Public Distribution</sub>
+  <sub><strong>PackParakh 1.0 (पैक-परख)</strong> — Sovereign Legal Metrology Compliance Engine.</sub><br/>
+  <sub>Developed & Maintained by <strong>Krrish Kumar Tanti</strong> | Department of Consumer Affairs (DoCA)</sub>
 </div>

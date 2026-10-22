@@ -1,6 +1,6 @@
 // ============================================================================
 // PackParakh (पैक-परख) — Free Multi-Channel Email Service
-// Ministry of Consumer Affairs, Food & Public Distribution | SIH 26034
+// Ministry of Consumer Affairs, Food & Public Distribution | Legal Metrology PCR 2011
 // Author: Gitansh (Backend Lead)
 // ============================================================================
 
@@ -117,7 +117,7 @@ export async function sendAcknowledgementEmail(
           </div>
 
           <div style="background-color: #f1f5f9; padding: 14px; text-align: center; font-size: 11px; color: #64748b; border-top: 1px solid #e2e8f0;">
-            PackParakh (पैक-परख) • Ministry of Consumer Affairs, Food & Public Distribution • SIH 2026
+            PackParakh (पैक-परख) • Ministry of Consumer Affairs, Food & Public Distribution
           </div>
         </div>
       `,

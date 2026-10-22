@@ -1,7 +1,7 @@
 // ============================================================================
 // PackParakh (पैक-परख) — Core Application & Statutory Constants
 // Legal Metrology (Packaged Commodities) Rules, 2011 & Amendments
-// Ministry of Consumer Affairs, Food & Public Distribution | SIH 26034
+// Ministry of Consumer Affairs, Food & Public Distribution | Legal Metrology PCR 2011
 // ============================================================================
 
 export const APP_CONSTANTS = {

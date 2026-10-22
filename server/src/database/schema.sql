@@ -1,6 +1,6 @@
 -- ============================================================================
 -- PackParakh (पैक-परख) — Core Database Schema (9 Tables)
--- Ministry of Consumer Affairs, Food & Public Distribution | SIH 26034
+-- Ministry of Consumer Affairs, Food & Public Distribution | Legal Metrology PCR 2011
 -- Engine: SQLite with WAL (Write-Ahead Logging) Mode
 -- ============================================================================
 

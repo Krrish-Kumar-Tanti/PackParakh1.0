@@ -1,7 +1,7 @@
 {
   "name": "packparakh-server",
   "version": "1.0.0",
-  "description": "PackParakh Backend API & Engine (SIH 2026 Problem Statement 26034)",
+  "description": "PackParakh 1.0 Backend API & Engine (Legal Metrology Compliance)",
   "main": "dist/index.js",
   "scripts": {
     "dev": "tsx watch src/index.ts",
@@ -14,11 +14,11 @@
     "packparakh",
     "legal-metrology",
     "doca",
-    "sih2026",
+    "pcr2011",
     "express",
     "sqlite"
   ],
-  "author": "Gitansh & Team PackParakh",
+  "author": "Krrish Kumar Tanti",
   "license": "ISC",
   "dependencies": {
     "@google/generative-ai": "^0.24.1",

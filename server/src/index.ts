@@ -77,7 +77,8 @@ app.get('/health', (_req: Request, res: Response) => {
 app.get('/', (_req: Request, res: Response) => {
   res.json({
     name: APP_CONSTANTS.APP_NAME,
-    problemStatement: 'SIH 26034',
+    specification: 'Legal Metrology PCR 2011',
+    department: 'Department of Consumer Affairs (DoCA)',
     ministry: 'Ministry of Consumer Affairs, Food & Public Distribution',
     version: '1.0.0',
     documentation: '/api/system/status',

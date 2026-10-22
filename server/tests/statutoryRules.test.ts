@@ -1,6 +1,6 @@
 // ============================================================================
 // PackParakh (पैक-परख) — Statutory Rule Engine Test Suite (24 Rules Verification)
-// Ministry of Consumer Affairs, Food & Public Distribution | SIH 26034
+// Ministry of Consumer Affairs, Food & Public Distribution | Legal Metrology PCR 2011
 // ============================================================================
 
 import { evaluateAllRules, simulatePackagingRequirements } from '../../shared/rules.ts';

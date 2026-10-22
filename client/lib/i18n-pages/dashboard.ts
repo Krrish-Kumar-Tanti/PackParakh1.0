@@ -43,7 +43,7 @@ export const dashboardDict: Dicts = {
       issueNotice: "Issue Notice",
     },
     footer1: "PackParakh (पैक-परख) • Department of Consumer Affairs (DoCA) • Legal Metrology Act, 2009",
-    footer2: "National Governance Dashboard · Automated Telemetry Node · SIH 26034",
+    footer2: "National Governance Dashboard · Automated Telemetry Node · Legal Metrology Node",
     loading: "Loading DoCA Dashboard...",
   },
   hi: {
@@ -86,7 +86,7 @@ export const dashboardDict: Dicts = {
     },
     footer1:
       "PackParakh (पैक-परख) • उपभोक्ता कार्य विभाग (DoCA) • विधिक माप-विज्ञान अधिनियम, 2009",
-    footer2: "राष्ट्रीय शासन डैशबोर्ड · स्वचालित टेलीमेट्री नोड · SIH 26034",
+    footer2: "राष्ट्रीय शासन डैशबोर्ड · स्वचालित टेलीमेट्री नोड · Legal Metrology Node",
     loading: "DoCA डैशबोर्ड लोड हो रहा है...",
   },
   bn: {
@@ -129,7 +129,7 @@ export const dashboardDict: Dicts = {
     },
     footer1:
       "PackParakh (पैक-परख) • ভোক্তা বিষয়ক বিভাগ (DoCA) • আইনি মেট্রোলজি আইন, 2009",
-    footer2: "জাতীয় শাসন ড্যাশবোর্ড · স্বয়ংক্রিয় টেলিমেট্রি নোড · SIH 26034",
+    footer2: "জাতীয় শাসন ড্যাশবোর্ড · স্বয়ংক্রিয় টেলিমেট্রি নোড · Legal Metrology Node",
     loading: "DoCA ড্যাশবোর্ড লোড হচ্ছে...",
   },
   ta: {
@@ -172,7 +172,7 @@ export const dashboardDict: Dicts = {
     },
     footer1:
       "PackParakh (पैक-परख) • நுகர்வோர் விவகாரத் துறை (DoCA) • சட்ட அளவியல் சட்டம், 2009",
-    footer2: "தேசிய ஆளுகை டாஷ்போர்டு · தானியங்கி டெலிமெட்ரி முனை · SIH 26034",
+    footer2: "தேசிய ஆளுகை டாஷ்போர்டு · தானியங்கி டெலிமெட்ரி முனை · Legal Metrology Node",
     loading: "DoCA டாஷ்போர்டு ஏற்றப்படுகிறது...",
   },
   te: {
@@ -215,7 +215,7 @@ export const dashboardDict: Dicts = {
     },
     footer1:
       "PackParakh (पैक-परख) • వినియోగదారుల వ్యవహారాల విభాగం (DoCA) • లీగల్ మెట్రాలజీ చట్టం, 2009",
-    footer2: "జాతీయ పాలన డాష్‌బోర్డు · స్వయంచాలక టెలిమెట్రీ నోడ్ · SIH 26034",
+    footer2: "జాతీయ పాలన డాష్‌బోర్డు · స్వయంచాలక టెలిమెట్రీ నోడ్ · Legal Metrology Node",
     loading: "DoCA డాష్‌బోర్డ్ లోడ్ అవుతోంది...",
   },
 };

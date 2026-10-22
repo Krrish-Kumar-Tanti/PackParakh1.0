@@ -1,6 +1,6 @@
 // ============================================================================
 // PackParakh (पैक-परख) — Rule Engine Verification Unit Tests
-// SIH 2026 Problem Statement 26034 | Legal Metrology (Packaged Commodities) Rules 2011
+// Legal Metrology PCR 2011 Problem Statement 26034 | Legal Metrology (Packaged Commodities) Rules 2011
 //
 // Scope: Verifies deterministic statutory engine per
 //   - Rule 6(1)(e) MRP tax clause

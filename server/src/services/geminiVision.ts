@@ -1,6 +1,6 @@
 // ============================================================================
 // PackParakh (पैक-परख) — Optical Packaging AI Extraction Service
-// Ministry of Consumer Affairs, Food & Public Distribution | SIH 26034
+// Ministry of Consumer Affairs, Food & Public Distribution | Legal Metrology PCR 2011
 // Model: Gemini 3.8 Flash / Gemini Multimodal Vision
 // ============================================================================
 

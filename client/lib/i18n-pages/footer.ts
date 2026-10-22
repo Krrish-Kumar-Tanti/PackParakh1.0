@@ -9,7 +9,7 @@ export const footerDict: Record<
     },
     status: {
       badge: "PCR 2011 / GSR 418(E) ACTIVE",
-      sipId: "SIH ID: 26034",
+      sipId: "DoCA Sovereign Engine",
     },
     brand: {
       tagline: "Automated Legal Metrology Compliance Engine",
@@ -63,7 +63,7 @@ export const footerDict: Record<
     },
     status: {
       badge: "मानक: पीसीआर 2011 / जीएसआर 418(ई)",
-      sipId: "SIH ID: 26034",
+      sipId: "DoCA Sovereign Engine",
     },
     brand: {
       tagline: "स्वचालित विधिक मापविज्ञान अनुपालन इंजन",
@@ -117,7 +117,7 @@ export const footerDict: Record<
     },
     status: {
       badge: "মান: পিসিআর ২০১১ / জিএসআর ৪১৮(ই) সক্রিয়",
-      sipId: "SIH ID: 26034",
+      sipId: "DoCA Sovereign Engine",
     },
     brand: {
       tagline: "স্বয়ংক্রিয় আইনগত মেট্রোলজি সম্মতি ইঞ্জিন",
@@ -171,7 +171,7 @@ export const footerDict: Record<
     },
     status: {
       badge: "தரம்: பிசிஆர் 2011 / ஜிஎஸ்ஆர் 418(இ) செயல்பாடு",
-      sipId: "SIH ID: 26034",
+      sipId: "DoCA Sovereign Engine",
     },
     brand: {
       tagline: "தானியங்கி சட்ட மெட்ராலஜி இணக்க இயந்திரம்",
@@ -225,7 +225,7 @@ export const footerDict: Record<
     },
     status: {
       badge: "ప్రమాణం: PCR 2011 / GSR 418(E) యాక్టివ్",
-      sipId: "SIH ID: 26034",
+      sipId: "DoCA Sovereign Engine",
     },
     brand: {
       tagline: "స్వయంచాలక లీగల్ మెట్రాలజీ సమ్మతి ఇంజన్",

@@ -1,6 +1,6 @@
 // ============================================================================
 // PackParakh (पैक-परख) — Shared Contracts & Types
-// Ministry of Consumer Affairs, Food & Public Distribution | SIH 26034
+// Ministry of Consumer Affairs, Food & Public Distribution | Legal Metrology PCR 2011
 // Legal Metrology (Packaged Commodities) Rules, 2011 & GSR 418(E) 2026
 // ============================================================================
 
