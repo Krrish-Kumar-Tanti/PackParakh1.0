@@ -70,6 +70,20 @@ export default function LandingPage() {
     const root = revealRootRef.current;
     if (!root || typeof IntersectionObserver === "undefined") return;
 
+    // Reveal every heading and paragraph in the below-the-fold sections,
+    // not just the section intros.
+    root
+      .querySelectorAll<HTMLElement>(
+        "#trust-strip, #how-it-works, #eligibility, #faq"
+      )
+      .forEach((section) => {
+        section.querySelectorAll<HTMLElement>("h2, h3, p").forEach((element) => {
+          if (!element.hasAttribute("data-reveal")) {
+            element.setAttribute("data-reveal", "text");
+          }
+        });
+      });
+
     const targets = Array.from(
       root.querySelectorAll<HTMLElement>("[data-reveal]")
     );
@@ -89,22 +103,38 @@ export default function LandingPage() {
       );
     });
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) return;
-          entry.target.classList.add("scroll-reveal-visible");
-          observer.unobserve(entry.target);
-        });
-      },
-      { threshold: 0.12, rootMargin: "0px 0px -10% 0px" }
-    );
+    const createObserver = (threshold: number, rootMargin: string) => {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add("scroll-reveal-visible");
+            observer.unobserve(entry.target);
+          });
+        },
+        { threshold, rootMargin }
+      );
+      return observer;
+    };
 
-    targets.forEach((target) => observer.observe(target));
+    // Text waits until it is clearly inside the viewport so the reveal is
+    // visible while scrolling; boxes start as soon as they edge into view.
+    const textObserver = createObserver(0.45, "0px 0px -18% 0px");
+    const boxObserver = createObserver(0.12, "0px 0px -10% 0px");
+
+    targets.forEach((target) => {
+      const observer =
+        target.getAttribute("data-reveal") === "box"
+          ? boxObserver
+          : textObserver;
+      observer.observe(target);
+    });
+
     root.classList.add("scroll-reveal-ready");
 
     return () => {
-      observer.disconnect();
+      textObserver.disconnect();
+      boxObserver.disconnect();
       root.classList.remove("scroll-reveal-ready");
     };
   }, []);
