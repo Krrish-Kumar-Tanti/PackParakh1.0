@@ -36,6 +36,7 @@ import {
 import TopStatusBar from "@/components/TopStatusBar";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import HeroIntroOverlay from "@/components/HeroIntroOverlay";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import { useLanguage } from "@/lib/LanguageContext";
 import { useAuth } from "@/lib/auth";
@@ -177,6 +178,9 @@ export default function LandingPage() {
   return (
     <div className="relative min-h-screen font-sans text-[#2B231B] selection:bg-amber-200 selection:text-amber-950 flex flex-col justify-between overflow-x-hidden bg-transparent">
       
+      {/* 0. CINEMATIC HERO INTRO VIDEO OVERLAY (Plays once per session, silent, with Skip button) */}
+      <HeroIntroOverlay />
+
       {/* 1. FIXED BACKGROUND PHOTO (Subtle 2.5px blur for depth-of-field while keeping metrology elements crisp & recognizable) */}
       <div 
         className="fixed -inset-2 -z-30 bg-cover bg-center bg-no-repeat bg-fixed pointer-events-none opacity-100 filter blur-[2.5px]"
