@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
@@ -31,7 +31,8 @@ import {
   Shield,
   FileCode,
   FileSpreadsheet,
-  Star
+  Star,
+  Play
 } from "lucide-react";
 import TopStatusBar from "@/components/TopStatusBar";
 import Navbar from "@/components/Navbar";
@@ -46,6 +47,7 @@ export default function LandingPage() {
   const { language } = useLanguage();
   const isHi = language !== "en"; // Enables translated state for Hindi, Bengali, Tamil, Telugu
   const user = useAuth();
+  const [showHeroIntro, setShowHeroIntro] = useState(true);
 
   const tr = (en: string, hi: string, bn?: string, ta?: string, te?: string) => {
     if (language === "hi") return hi;
@@ -61,6 +63,51 @@ export default function LandingPage() {
   const toggleFaq = (index: number) => {
     setOpenFaqIndex(openFaqIndex === index ? null : index);
   };
+
+  const revealRootRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const root = revealRootRef.current;
+    if (!root || typeof IntersectionObserver === "undefined") return;
+
+    const targets = Array.from(
+      root.querySelectorAll<HTMLElement>("[data-reveal]")
+    );
+    if (targets.length === 0) return;
+
+    // Stagger items that share a parent (headings, card grids, FAQ list).
+    targets.forEach((target) => {
+      const parent = target.parentElement;
+      if (!parent) return;
+      const siblings = Array.from(
+        parent.querySelectorAll<HTMLElement>(":scope > [data-reveal]")
+      );
+      const index = siblings.indexOf(target);
+      target.style.setProperty(
+        "--scroll-reveal-delay",
+        `${Math.min(Math.max(index, 0), 5) * 60}ms`
+      );
+    });
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("scroll-reveal-visible");
+          observer.unobserve(entry.target);
+        });
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -10% 0px" }
+    );
+
+    targets.forEach((target) => observer.observe(target));
+    root.classList.add("scroll-reveal-ready");
+
+    return () => {
+      observer.disconnect();
+      root.classList.remove("scroll-reveal-ready");
+    };
+  }, []);
 
   // FAQ Content Grounded in Legal Metrology Domain
   const faqs = [
@@ -176,10 +223,16 @@ export default function LandingPage() {
   ];
 
   return (
-    <div className="relative min-h-screen font-sans text-[#2B231B] selection:bg-amber-200 selection:text-amber-950 flex flex-col justify-between overflow-x-hidden bg-transparent">
+    <div
+      ref={revealRootRef}
+      className="relative min-h-screen font-sans text-[#2B231B] selection:bg-amber-200 selection:text-amber-950 flex flex-col justify-between overflow-x-hidden bg-transparent"
+    >
       
-      {/* 0. CINEMATIC HERO INTRO VIDEO OVERLAY (Plays once per session, silent, with Skip button) */}
-      <HeroIntroOverlay />
+      {/* 0. CINEMATIC HERO INTRO VIDEO OVERLAY (Plays once per visit or whenever requested) */}
+      <HeroIntroOverlay 
+        isOpen={showHeroIntro} 
+        onClose={() => setShowHeroIntro(false)} 
+      />
 
       {/* 1. FIXED BACKGROUND PHOTO (Subtle 2.5px blur for depth-of-field while keeping metrology elements crisp & recognizable) */}
       <div 
@@ -311,6 +364,18 @@ export default function LandingPage() {
                     <Sparkles className="w-5 h-5 text-[#0F172A]" />
                     <span>{tr("Pre-Print Simulator", "एमएसएमई प्री-प्रिंट स्टूडियो", "প্রি-প্রিন্ট সিমুলেটর", "முன் அச்சு சிமுலேட்டர்", "ప్రీ-ప్రింట్ సిమ్యులేటర్")}</span>
                   </Link>
+                </motion.div>
+
+                {/* 3D Intro Video CTA */}
+                <motion.div whileHover={{ scale: 1.04, y: -3 }} whileTap={{ scale: 0.97 }} transition={{ type: "spring", stiffness: 450, damping: 20 }}>
+                  <button
+                    onClick={() => setShowHeroIntro(true)}
+                    type="button"
+                    className="w-full sm:w-auto bg-[#FAF7F0]/40 hover:bg-[#FAF7F0]/70 text-[#0F172A] font-black text-sm sm:text-base px-6 py-4 rounded-2xl border border-[#D5C7A3] hover:border-amber-500/60 shadow-[0_8px_25px_rgba(0,0,0,0.06)] backdrop-blur-xl flex items-center justify-center gap-2.5 transition-all duration-200 cursor-pointer"
+                  >
+                    <Play className="w-4 h-4 fill-amber-500 text-amber-500" />
+                    <span>{tr("Watch 3D Intro", "3D इंट्रो देखें", "3D ইন্ট্রো দেখুন", "3D அறிமுகத்தைப் பார்க்கவும்", "3D పరిచయాన్ని చూడండి")}</span>
+                  </button>
                 </motion.div>
               </motion.div>
 
@@ -914,6 +979,21 @@ export default function LandingPage() {
           </div>
         </section>
 
+      </div>
+
+      {/* Floating Replay 3D Intro Launcher */}
+      <div className="fixed bottom-6 right-6 z-40">
+        <motion.button
+          onClick={() => setShowHeroIntro(true)}
+          whileHover={{ scale: 1.08 }}
+          whileTap={{ scale: 0.94 }}
+          type="button"
+          title="Play 3D Intro Video"
+          className="group flex items-center gap-2 px-3.5 py-2 rounded-full bg-slate-950/85 hover:bg-slate-950 text-amber-400 hover:text-amber-300 text-xs font-bold shadow-2xl backdrop-blur-md border border-amber-500/40 hover:border-amber-400 transition-all cursor-pointer"
+        >
+          <Play className="w-3.5 h-3.5 fill-current" />
+          <span>3D Video</span>
+        </motion.button>
       </div>
 
       <Footer />
