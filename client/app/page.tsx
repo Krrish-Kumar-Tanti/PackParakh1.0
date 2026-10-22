@@ -411,7 +411,7 @@ export default function LandingPage() {
         <section id="trust-strip" className="py-14 bg-transparent border-b border-[#E8DFC8]/60 scroll-mt-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-8">
-              <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#5C4E3D] bg-[#FAF7F0]/80 px-4 py-1 rounded-full border border-[#E8DFC8]/80 backdrop-blur-md inline-block">
+              <span data-reveal className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#5C4E3D] bg-[#FAF7F0]/80 px-4 py-1 rounded-full border border-[#E8DFC8]/80 backdrop-blur-md inline-block">
                 {isHi ? "भारत सरकार के विधिक मापविज्ञान ढांचे द्वारा अधिकृत" : "Anchored to the Sovereign Legal Metrology Framework"}
               </span>
             </div>
@@ -489,17 +489,17 @@ export default function LandingPage() {
         <section id="how-it-works" className="py-20 bg-transparent border-b border-[#E8DFC8]/60">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-3xl mx-auto mb-16">
-              <span className="text-xs font-bold uppercase tracking-[0.2em] mb-3 px-4 py-1.5 rounded-full inline-block heading-pill">
+              <span data-reveal className="text-xs font-bold uppercase tracking-[0.2em] mb-3 px-4 py-1.5 rounded-full inline-block heading-pill">
                 {isHi ? "चरणबद्ध कार्यप्रणाली" : "Deterministic Workflow"}
               </span>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight mb-4 heading-section">
+              <h2 data-reveal className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight mb-4 heading-section">
                 {isHi ? (
                   <>पैक-परख <span className="heading-hero-accent">कैसे कार्य करता है</span></>
                 ) : (
                   <>How It Works: <span className="heading-hero-accent">6-Step Audit Pipeline</span></>
                 )}
               </h2>
-              <p className="text-lg sm:text-xl max-w-3xl mx-auto leading-relaxed heading-section-sub">
+              <p data-reveal className="text-lg sm:text-xl max-w-3xl mx-auto leading-relaxed heading-section-sub">
                 {isHi ? (
                   <>
                     छवि अभिग्रहण से लेकर{" "}
@@ -612,17 +612,17 @@ export default function LandingPage() {
         <section id="eligibility" className="py-20 bg-transparent border-b border-[#E8DFC8]/60">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-3xl mx-auto mb-16">
-              <span className="text-xs font-bold uppercase tracking-[0.2em] mb-3 px-4 py-1.5 rounded-full inline-block heading-pill">
+              <span data-reveal className="text-xs font-bold uppercase tracking-[0.2em] mb-3 px-4 py-1.5 rounded-full inline-block heading-pill">
                 {isHi ? "हितधारक एवं क्रेडेंशियल आवश्यकताएं" : "Stakeholder Access & Prerequisites"}
               </span>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight mb-4 heading-section">
+              <h2 data-reveal className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight mb-4 heading-section">
                 {isHi ? (
                   <>प्लेटफ़ॉर्म <span className="heading-hero-accent">पात्रता एवं भूमिकाएं</span></>
                 ) : (
                   <>Clearance & <span className="heading-hero-accent">Eligibility Requirements</span></>
                 )}
               </h2>
-              <p className="text-lg sm:text-xl max-w-3xl mx-auto leading-relaxed heading-section-sub">
+              <p data-reveal className="text-lg sm:text-xl max-w-3xl mx-auto leading-relaxed heading-section-sub">
                 {isHi ? (
                   <>
                     विधिक मापविज्ञान प्रणाली में{" "}
@@ -831,17 +831,17 @@ export default function LandingPage() {
         <section id="faq" className="py-20 bg-transparent border-b border-[#E8DFC8]/60">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-14">
-              <span className="text-xs font-bold uppercase tracking-[0.2em] mb-3 px-4 py-1.5 rounded-full inline-block heading-pill">
+              <span data-reveal className="text-xs font-bold uppercase tracking-[0.2em] mb-3 px-4 py-1.5 rounded-full inline-block heading-pill">
                 {isHi ? "सामान्य प्रश्न एवं उत्तर" : "Statutory Knowledge Base"}
               </span>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight mb-4 heading-section">
+              <h2 data-reveal className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight mb-4 heading-section">
                 {isHi ? (
                   <>अक्सर पूछे जाने वाले <span className="heading-hero-accent">महत्वपूर्ण प्रश्न</span></>
                 ) : (
                   <>Frequently Asked <span className="heading-hero-accent">Questions</span></>
                 )}
               </h2>
-              <p className="text-lg sm:text-xl max-w-3xl mx-auto leading-relaxed heading-section-sub">
+              <p data-reveal className="text-lg sm:text-xl max-w-3xl mx-auto leading-relaxed heading-section-sub">
                 {isHi ? (
                   <>
                     <span className="text-amber-300 font-bold">विधिक मापविज्ञान अधिनियम</span>,{" "}
@@ -866,6 +866,7 @@ export default function LandingPage() {
                 return (
                   <div
                     key={idx}
+                    data-reveal="box"
                     className="border border-[#FAF7F0]/60 rounded-2xl overflow-hidden bg-[#FAF7F0]/40 backdrop-blur-md shadow-xs transition-all duration-150 ease-out hover:border-amber-400 hover:bg-[#FAF7F0]/65 hover:shadow-xl hover:-translate-y-1 active:scale-[0.99] cursor-pointer"
                   >
                     <button
@@ -911,6 +912,7 @@ export default function LandingPage() {
 
             {/* Helpline Box */}
             <div 
+              data-reveal="box"
               className="mt-10 bg-[#FAF7F0]/35 backdrop-blur-md border border-[#FAF7F0]/50 rounded-2xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left shadow-xs hover:shadow-md transition-all duration-150"
             >
               <div>
@@ -939,17 +941,17 @@ export default function LandingPage() {
         <section id="testimonials" className="py-20 bg-transparent border-b border-[#E8DFC8]/60 overflow-hidden">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
             <div className="text-center max-w-3xl mx-auto">
-              <span className="text-xs font-bold uppercase tracking-[0.2em] mb-3 px-4 py-1.5 rounded-full inline-block heading-pill">
+              <span data-reveal className="text-xs font-bold uppercase tracking-[0.2em] mb-3 px-4 py-1.5 rounded-full inline-block heading-pill">
                 {isHi ? "प्रशंसापत्र एवं व्यावहारिक प्रभाव" : "Real-World Statutory Impact"}
               </span>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight mb-4 heading-section">
+              <h2 data-reveal className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight mb-4 heading-section">
                 {isHi ? (
                   <>प्रवर्तन अधिकारियों एवं उद्योग जगत द्वारा <span className="heading-hero-accent">विश्वसनीय</span></>
                 ) : (
                   <>Trusted by Metrology Officers & <span className="heading-hero-accent">Packaging Leaders</span></>
                 )}
               </h2>
-              <p className="text-lg sm:text-xl max-w-3xl mx-auto leading-relaxed heading-section-sub">
+              <p data-reveal className="text-lg sm:text-xl max-w-3xl mx-auto leading-relaxed heading-section-sub">
                 {isHi ? (
                   <>
                     <span className="text-amber-300 font-bold">राज्य प्रवर्तन शाखाओं</span>,{" "}
@@ -968,7 +970,7 @@ export default function LandingPage() {
             </div>
           </div>
 
-          <div className="w-full">
+          <div data-reveal="box" className="w-full">
             <InfiniteMovingCards
               items={testimonials}
               speed="normal"
