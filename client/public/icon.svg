@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="orangeBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+  </defs>
+
+  <!-- Golden Orange Rounded Badge -->
+  <rect width="64" height="64" rx="15" fill="url(#orangeBg)" />
+
+  <!-- Clean White Metrology Scales of Justice -->
+  <!-- Center Vertical Post -->
+  <path d="M32 17V46" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+  
+  <!-- Base Pedestal -->
+  <path d="M25 46H39" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+
+  <!-- Top Finial Peak -->
+  <path d="M32 14.5L34 17H30L32 14.5Z" fill="#FFFFFF" />
+
+  <!-- Horizontal Beam -->
+  <path d="M19 23H45" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+
+  <!-- Left Scale Chains -->
+  <path d="M20 23L16 33.5" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" />
+  <path d="M24 23L28 33.5" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" />
+  <!-- Left Pan -->
+  <path d="M14 33.5C14 37 30 37 30 33.5H14Z" fill="#FFFFFF" />
+
+  <!-- Right Scale Chains -->
+  <path d="M40 23L36 33.5" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" />
+  <path d="M44 23L48 33.5" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" />
+  <!-- Right Pan -->
+  <path d="M34 33.5C34 37 50 37 50 33.5H34Z" fill="#FFFFFF" />
+</svg>

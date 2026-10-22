@@ -1,0 +1,261 @@
+export const evidenceDict: Record<"en" | "hi" | "bn" | "ta" | "te", Record<string, unknown>> = {
+  en: {
+    loading: "Loading Evidence Vault...",
+    breadcrumb: {
+      home: "Home",
+      verdict: "Verdict",
+      evidenceVault: "Evidence Vault",
+    },
+    certificate: {
+      title: "Section 63 BSA 2023 Digital Integrity Certificate",
+      subtitle: "Supersedes Section 65B Indian Evidence Act · Court-Admissible Electronic Record",
+      sealed: "SEALED",
+    },
+    hashPanel: {
+      title: "CANONICAL SHA-256 EVIDENCE HASH",
+      copied: "COPIED",
+      copy: "COPY HASH",
+    },
+    metadata: {
+      geotag: "EXIF GPS Geotag",
+      location: "Okhla Mandi, Delhi",
+      timestamp: "Timestamp (IST)",
+      custody: "Officer Custody",
+      dept: "Legal Metrology Dept",
+    },
+    memo: {
+      generating: "Generating Form-V Memo...",
+      download: "Download Official Form-V Seizure Memo",
+    },
+    ack: {
+      screen: "Screen 5B · e-District Token",
+      activeCase: "ACTIVE CASE",
+      title: "Official e-District Acknowledgement Slip",
+      subtitle: "Universal statutory reference token generated under Jan Vishwas Act 2023.",
+      refLabel: "Case Reference ID",
+      copied: "Copied",
+      copy: "Copy",
+      timeline: "7-Day Statutory Notice Timeline",
+      timelineDesc: "The respondent brand or merchant must visit the designated LMO/SDM office within 7 calendar days with this slip and physical packaging specimen.",
+      emailQueued: "Email Queued!",
+      sendEmail: "Send Email",
+      whatsapp: "WhatsApp",
+      exporting: "Exporting PDF...",
+      export: "Export Acknowledgement Slip (PDF)",
+    },
+    tracker: {
+      verify: "View Public Verification Tracker (Screen 7)",
+      dashboard: "National Governance Dashboard (Screen 6)",
+    },
+    whatsappText:
+      "🏛️ PackParakh Legal Metrology Inspection Notice\nReference ID: {referenceId}\nProduct: {productName}\nScore: {score}/100\nEvidence Hash: {hash}\nVerify: {verifyUrl}",
+  },
+  hi: {
+    loading: "साक्ष्य वॉल्ट लोड हो रहा है...",
+    breadcrumb: {
+      home: "होम",
+      verdict: "निर्णय",
+      evidenceVault: "साक्ष्य वॉल्ट",
+    },
+    certificate: {
+      title: "धारा 63 BSA 2023 डिजिटल अखंडता प्रमाणपत्र",
+      subtitle: "Section 65B Indian Evidence Act का स्थान लेता है · न्यायालय-स्वीकार्य इलेक्ट्रॉनिक रिकॉर्ड",
+      sealed: "सीलबंद",
+    },
+    hashPanel: {
+      title: "विधिपूर्ण SHA-256 साक्ष्य हैश",
+      copied: "कॉपी हो गया",
+      copy: "हैश कॉपी करें",
+    },
+    metadata: {
+      geotag: "EXIF GPS जियोटैग",
+      location: "ओखला मंडी, दिल्ली",
+      timestamp: "टाइमस्टैम्प (IST)",
+      custody: "अधिकारी अभिरक्षा",
+      dept: "विधिक माप विज्ञान विभाग",
+    },
+    memo: {
+      generating: "फॉर्म-V मेमो तैयार हो रहा है...",
+      download: "आधिकारिक फॉर्म-V जब्ती मेमो डाउनलोड करें",
+    },
+    ack: {
+      screen: "स्क्रीन 5B · e-District टोकन",
+      activeCase: "सक्रिय मामला",
+      title: "आधिकारिक e-District पावती पर्ची",
+      subtitle: "Jan Vishwas Act 2023 के अंतर्गत उत्पन्न सार्वभौमिक वैधानिक संदर्भ टोकन।",
+      refLabel: "मामला संदर्भ आईडी",
+      copied: "कॉपी हो गया",
+      copy: "कॉपी करें",
+      timeline: "7-दिवसीय वैधानिक नोटिस समयरेखा",
+      timelineDesc:
+        "प्रतिवादी ब्रांड या व्यापारी को यह पर्ची और भौतिक पैकेजिंग नमूना लेकर 7 कैलेंडर दिनों के भीतर निर्धारित LMO/SDM कार्यालय में उपस्थित होना अनिवार्य है।",
+      emailQueued: "ईमेल कतार में है!",
+      sendEmail: "ईमेल भेजें",
+      whatsapp: "WhatsApp",
+      exporting: "पीडीएफ निर्यात हो रहा है...",
+      export: "पावती पर्ची निर्यात करें (PDF)",
+    },
+    tracker: {
+      verify: "सार्वजनिक सत्यापन ट्रैकर देखें (स्क्रीन 7)",
+      dashboard: "राष्ट्रीय शासन डैशबोर्ड (स्क्रीन 6)",
+    },
+    whatsappText:
+      "🏛️ PackParakh विधिक माप-विज्ञान निरीक्षण सूचना\nसंदर्भ आईडी: {referenceId}\nउत्पाद: {productName}\nस्कोर: {score}/100\nसाक्ष्य हैश: {hash}\nसत्यापित करें: {verifyUrl}",
+  },
+  bn: {
+    loading: "এভিডেন্স ভল্ট লোড হচ্ছে...",
+    breadcrumb: {
+      home: "হোম",
+      verdict: "রায়",
+      evidenceVault: "এভিডেন্স ভল্ট",
+    },
+    certificate: {
+      title: "ধারা 63 BSA 2023 ডিজিটাল অখণ্ডতা সার্টিফিকেট",
+      subtitle: "Section 65B Indian Evidence Act-এর পরিবর্তে প্রযোজ্য · আদালত-গ্রহণযোগ্য ইলেকট্রনিক রেকর্ড",
+      sealed: "সিলবদ্ধ",
+    },
+    hashPanel: {
+      title: "ক্যাননিক্যাল SHA-256 এভিডেন্স হ্যাশ",
+      copied: "কপি হয়েছে",
+      copy: "হ্যাশ কপি করুন",
+    },
+    metadata: {
+      geotag: "EXIF GPS জিওট্যাগ",
+      location: "ওখলা মণ্ডি, দিল্লি",
+      timestamp: "টাইমস্ট্যাম্প (IST)",
+      custody: "অফিসার হেফাজত",
+      dept: "লিগ্যাল মেট্রোলজি বিভাগ",
+    },
+    memo: {
+      generating: "ফর্ম-V মেমো তৈরি হচ্ছে...",
+      download: "অফিসিয়াল ফর্ম-V জব্দ মেমো ডাউনলোড করুন",
+    },
+    ack: {
+      screen: "স্ক্রিন 5B · e-District টোকেন",
+      activeCase: "সক্রিয় মামলা",
+      title: "অফিসিয়াল e-District স্বীকৃতি স্লিপ",
+      subtitle: "Jan Vishwas Act 2023-এর অধীনে উৎপন্ন সার্বজনীন আইনগত রেফারেন্স টোকেন।",
+      refLabel: "মামলা রেফারেন্স আইডি",
+      copied: "কপি হয়েছে",
+      copy: "কপি করুন",
+      timeline: "৭-দিনের আইনগত নোটিশ টাইমলাইন",
+      timelineDesc:
+        "প্রতিবাদী ব্র্যান্ড বা ব্যবসায়ীকে নির্ধারিত LMO/SDM অফিসে এই স্লিপ এবং শারীরিক প্যাকেজিং নমুনা সহ 7 ক্যালেন্ডার দিনের মধ্যে উপস্থিত হতে হবে।",
+      emailQueued: "ইমেইল পাঠানো হয়েছে!",
+      sendEmail: "ইমেইল পাঠান",
+      whatsapp: "WhatsApp",
+      exporting: "PDF রপ্তানি হচ্ছে...",
+      export: "স্বীকৃতি স্লিপ রপ্তানি করুন (PDF)",
+    },
+    tracker: {
+      verify: "পাবলিক ভেরিফিকেশন ট্র্যাকার দেখুন (স্ক্রিন 7)",
+      dashboard: "জাতীয় শাসন ড্যাশবোর্ড (স্ক্রিন 6)",
+    },
+    whatsappText:
+      "🏛️ PackParakh লিগ্যাল মেট্রোলজি পরিদর্শন নোটিশ\nরেফারেন্স আইডি: {referenceId}\nপণ্য: {productName}\nস্কোর: {score}/100\nএভিডেন্স হ্যাশ: {hash}\nযাচাই করুন: {verifyUrl}",
+  },
+  ta: {
+    loading: "சான்று பெட்டகம் ஏற்றப்படுகிறது...",
+    breadcrumb: {
+      home: "முகப்பு",
+      verdict: "தீர்ப்பு",
+      evidenceVault: "சான்று பெட்டகம்",
+    },
+    certificate: {
+      title: "பிரிவு 63 BSA 2023 டிஜிட்டல் ஒருமைப்பாடு சான்றிதழ்",
+      subtitle: "Section 65B Indian Evidence Act-ஐ மேலிடும் · நீதிமன்றம் ஏற்கக்கூடிய மின்னணு பதிவு",
+      sealed: "முத்திரையிடப்பட்டது",
+    },
+    hashPanel: {
+      title: "பிரதிநிதித்துவ SHA-256 சான்று ஹாஷ்",
+      copied: "நகல் எடுக்கப்பட்டது",
+      copy: "ஹாஷை நகலெடு",
+    },
+    metadata: {
+      geotag: "EXIF GPS ஜியோடேக்",
+      location: "ஓக்லா மண்டி, டெல்லி",
+      timestamp: "நேரமுத்திரை (IST)",
+      custody: "அதிகாரி பொறுப்பில்",
+      dept: "லீகல் மெட்ராலஜி துறை",
+    },
+    memo: {
+      generating: "Form-V மெமோ உருவாக்கப்படுகிறது...",
+      download: "அதிகாரப்பூர்வ Form-V கைப்பற்றல் மெமோவை பதிவிறக்கவும்",
+    },
+    ack: {
+      screen: "திரை 5B · e-District டோக்கன்",
+      activeCase: "செயலில் உள்ள வழக்கு",
+      title: "அதிகாரப்பூர்வ e-District ஒப்புதல் ஸ்லிப்",
+      subtitle: "Jan Vishwas Act 2023-இன் கீழ் உருவாக்கப்பட்ட உலகளாவிய சட்டப்பூர்வ குறிப்பு டோக்கன்.",
+      refLabel: "வழக்கு குறிப்பு ஐடி",
+      copied: "நகல் எடுக்கப்பட்டது",
+      copy: "நகலெடு",
+      timeline: "7 நாள் சட்டப்பூர்வ அறிவிப்பு காலவரிசை",
+      timelineDesc:
+        "பதிலளிப்பு பிராண்ட் அல்லது வணிகர் இந்த ஸ்லிப்பை மற்றும் இயற்பியல் பேக்கேஜிங் மாதிரியை எடுத்துக்கொண்டு 7 காலண்டர் நாட்களுக்குள் நியமிக்கப்பட்ட LMO/SDM அலுவலகத்திற்கு வர வேண்டும்.",
+      emailQueued: "மின்னஞ்சல் அனுப்பப்பட்டது!",
+      sendEmail: "மின்னஞ்சல் அனுப்பு",
+      whatsapp: "WhatsApp",
+      exporting: "PDF ஏற்றுமதி செய்யப்படுகிறது...",
+      export: "ஒப்புதல் ஸ்லிப்பை ஏற்றுமதி செய்யவும் (PDF)",
+    },
+    tracker: {
+      verify: "பொது சரிபார்ப்பு டிராக்கரைக் காண்க (திரை 7)",
+      dashboard: "தேசிய ஆட்சி டாஷ்போர்டு (திரை 6)",
+    },
+    whatsappText:
+      "🏛️ PackParakh சட்டப்பூர்வ மெட்ராலஜி ஆய்வு அறிவிப்பு\nகுறிப்பு ஐடி: {referenceId}\nதயாரிப்பு: {productName}\nமதிப்பெண்: {score}/100\nசான்று ஹாஷ்: {hash}\nசரிபார்க்கவும்: {verifyUrl}",
+  },
+  te: {
+    loading: "ఎవిడెన్స్ వాల్ట్ లోడ్ అవుతోంది...",
+    breadcrumb: {
+      home: "హోమ్",
+      verdict: "తీర్పు",
+      evidenceVault: "ఎవిడెన్స్ వాల్ట్",
+    },
+    certificate: {
+      title: "Section 63 BSA 2023 డిజిటల్ సమగ్రత ధృవీకరణ పత్రం",
+      subtitle: "Section 65B Indian Evidence Actని భర్తీ చేస్తుంది · న్యాయస్థానం ఆమోదయోగ్యమైన ఎలక్ట్రానిక్ రికార్డు",
+      sealed: "ముద్రించబడింది",
+    },
+    hashPanel: {
+      title: "ప్రామాణిక SHA-256 ఎవిడెన్స్ హాష్",
+      copied: "కాపీ చేయబడింది",
+      copy: "హాష్ కాపీ చేయండి",
+    },
+    metadata: {
+      geotag: "EXIF GPS జియోట్యాగ్",
+      location: "ఓఖ్లా మండి, ఢిల్లీ",
+      timestamp: "టైమ్స్టాంప్ (IST)",
+      custody: "అధికారి అధీనం",
+      dept: "లీగల్ మెట్రాలజీ శాఖ",
+    },
+    memo: {
+      generating: "Form-V మెమో తయారవుతోంది...",
+      download: "అధికారిక Form-V జప్తు మెమోను డౌన్లోడ్ చేయండి",
+    },
+    ack: {
+      screen: "స్క్రీన్ 5B · e-District టోకెన్",
+      activeCase: "యాక్టివ్ కేసు",
+      title: "అధికారిక e-District అంగీకార స్లిప్",
+      subtitle: "Jan Vishwas Act 2023 క్రింద రూపొందించబడిన సార్వత్రిక చట్టబద్ధ రిఫరెన్స్ టోకెన్.",
+      refLabel: "కేసు రిఫరెన్స్ ఐడి",
+      copied: "కాపీ చేయబడింది",
+      copy: "కాపీ చేయండి",
+      timeline: "7-రోజుల చట్టబద్ధ నోటీసు కాలక్రమం",
+      timelineDesc:
+        "ప్రతివాది బ్రాండ్ లేదా వ్యాపారి ఈ స్లిప్ మరియు భౌతిక ప్యాకేజింగ్ నమూనాతో 7 క్యాలెండర్ రోజులలోపు నిర్దేశించిన LMO/SDM కార్యాలయాన్ని సందర్శించాలి.",
+      emailQueued: "ఇమెయిల్ పంపబడింది!",
+      sendEmail: "ఇమెయిల్ పంపండి",
+      whatsapp: "WhatsApp",
+      exporting: "PDF ఎగుమతి అవుతోంది...",
+      export: "అంగీకార స్లిప్ ఎగుమతి చేయండి (PDF)",
+    },
+    tracker: {
+      verify: "ప్రజా ధృవీకరణ ట్రాకర్ చూడండి (స్క్రీన్ 7)",
+      dashboard: "జాతీయ పరిపాలన డాష్బోర్డ్ (స్క్రీన్ 6)",
+    },
+    whatsappText:
+      "🏛️ PackParakh లీగల్ మెట్రాలజీ తనిఖీ నోటీసు\nరిఫరెన్స్ ఐడి: {referenceId}\nఉత్పత్తి: {productName}\nస్కోర్: {score}/100\nఎవిడెన్స్ హాష్: {hash}\nధృవీకరించండి: {verifyUrl}",
+  },
+};

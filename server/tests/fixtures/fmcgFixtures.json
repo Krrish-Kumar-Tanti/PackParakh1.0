@@ -1,0 +1,1574 @@
+{
+  "metadata": {
+    "schemaVersion": "1.0.0",
+    "generatedFor": "PackParakh (पैक-परख) SIH 2026 Problem Statement 26034",
+    "description": "Ground-truth FMCG test dataset for Legal Metrology (Packaged Commodities) Rules, 2011 - 24 Rule Engine validation",
+    "legalReferences": [
+      "Legal Metrology Act, 2009 (Act No. 1 of 2010)",
+      "Legal Metrology (Packaged Commodities) Rules, 2011 - GSR 202(E)",
+      "GSR 226(E) 2022 - Mandatory Unit Sale Price (Rule 6(11))",
+      "GSR 577(E) 2022 - Electronics QR pilot",
+      "GSR 418(E) 2026 Third Amendment - E-Commerce Country of Origin filter"
+    ],
+    "fontTableCitation": "Rule 7 Table-I PCR 2011: <=200g/ml = 1.0mm, >200g/ml to <500g/ml = 2.0mm, >=500g/ml = 4.0mm (normal print); molded/embossed +1mm tolerance",
+    "totalProducts": 20,
+    "categoryBreakdown": {
+      "FOOD": 12,
+      "COSMETICS": 4,
+      "GENERAL": 4
+    },
+    "verdictBreakdown": {
+      "PASS": 4,
+      "FAIL": 14,
+      "REVIEW": 2
+    },
+    "createdOn": "2026-08-15",
+    "maintainer": "Team Parity - Krrish Kumar Tanti (Lead) | Data Engineering & Legal Metrology QA"
+  },
+  "products": [
+    {
+      "skuId": "SKU-FOOD-MAGGI-001",
+      "productName": "Maggi 2-Minute Noodles Masala",
+      "brandName": "Maggi (Nestlé India Ltd.)",
+      "category": "FOOD",
+      "isFoodProduct": true,
+      "declaredNetQty": 70,
+      "netQtyUnit": "g",
+      "netQtyRaw": "Net Weight: 70 g",
+      "declaredMrp": 14.0,
+      "declaredMrpText": "MRP ₹14.00 (incl. of all taxes)",
+      "hasInclusiveOfTaxes": true,
+      "expectedUsp": 0.2,
+      "expectedUspText": "₹0.20 per g (₹200.00 per kg)",
+      "expectedUspUnit": "per g",
+      "packagingText": {
+        "english": "MAGGI 2-Minute Noodles | Masala | Tasty & Healthy | Net Weight: 70 g | MRP ₹14.00 (incl. of all taxes) | USP ₹0.20 per g | Mfd. by Nestlé India Ltd., 100/101, World Trade Centre, Barakhamba Lane, New Delhi - 110001 | Consumer Care: Nestlé Consumer Care, Toll Free 1800-103-1947, Email: wecare@in.nestle.com | FSSAI Lic. No. 10012011000168 | Contains added Monosodium Glutamate | Country of Origin: India | Mfg. Date: 06/2026 | Best Before 9 Months from Manufacture | Veg Symbol: Green Dot",
+        "hindi": "मैगी 2-मिनट नूडल्स मसाला | स्वादिष्ट और स्वास्थ्यवर्धक | शुद्ध वजन: 70 ग्राम | अधिकतम खुदरा मूल्य ₹14.00 (सभी करों सहित) | इकाई विक्रय मूल्य ₹0.20 प्रति ग्राम | निर्माता: नेस्ले इंडिया लिमिटेड, नई दिल्ली - 110001 | उपभोक्ता सेवा: 1800-103-1947 | मूल देश: भारत | निर्माण तिथि: 06/2026",
+        "rawOcrMock": "MAGGI\\n2-Minute Noodles\\nNet Wt. 70 g\\nMRP Rs.14.00 (incl. of all taxes)\\nUSP Rs.0.20/g\\nMfd by Nestle India Ltd\\nConsumer Care 1800-103-1947\\nwecare@in.nestle.com\\nCountry of Origin: India\\nMfg 06/2026"
+      },
+      "dimensions": {
+        "heightMm": 145,
+        "widthMm": 110,
+        "depthMm": 35,
+        "diameterMm": null,
+        "packType": "pouch_rectangular",
+        "pdpAreaCm2": 159.5,
+        "pdpCalculation": "Height × Width = 145 × 110 = 15950 mm² = 159.5 cm²"
+      },
+      "fontMetrics": {
+        "measuredFontHeightMm": 1.2,
+        "requiredFontHeightMm": 1.0,
+        "calibrationMode": "TIER_A",
+        "calibrationConfidence": "HIGH",
+        "referenceObject": "85.6mm ISO ID-1 card",
+        "mmPerPixel": 0.0856,
+        "requiresScaleConfirmation": false
+      },
+      "manufacturing": {
+        "manufacturerName": "Nestlé India Ltd.",
+        "manufacturerAddress": "100/101, World Trade Centre, Barakhamba Lane, New Delhi - 110001",
+        "hasCompletePincode": true,
+        "pincode": "110001",
+        "mfgDate": "06/2026",
+        "expiryDate": "03/2027",
+        "fssaiLicense": "10012011000168",
+        "vegNonVegEmblem": "VEG_GREEN_DOT_PRESENT"
+      },
+      "consumerCare": {
+        "name": "Nestlé Consumer Care Executive",
+        "address": "Nestlé House, Jacaranda Marg, DLF Phase II, Gurugram, Haryana - 122002",
+        "phone": "1800-103-1947",
+        "email": "wecare@in.nestle.com",
+        "hasAllFourElements": true
+      },
+      "countryOfOrigin": "India",
+      "isImported": false,
+      "complianceStatus": "PASS",
+      "violations": [],
+      "complianceScore": 100,
+      "notes": "Gold-standard compliant pack for baseline testing. All 6(1)(a)-(g) present, USP math correct (14/70=0.20), font 1.2mm > 1.0mm threshold for 70g (Table-I). Ideal demo PASS case."
+    },
+    {
+      "skuId": "SKU-FOOD-HALDIRAM-002",
+      "productName": "Haldiram's Aloo Bhujia",
+      "brandName": "Haldiram's Nagpur (Haldiram Foods International Pvt. Ltd.)",
+      "category": "FOOD",
+      "isFoodProduct": true,
+      "declaredNetQty": 200,
+      "netQtyUnit": "g",
+      "netQtyRaw": "Net Wt. 200 g",
+      "declaredMrp": 52.0,
+      "declaredMrpText": "MRP ₹52.00",
+      "hasInclusiveOfTaxes": false,
+      "expectedUsp": 0.26,
+      "expectedUspText": "₹0.26 per g (₹260.00 per kg)",
+      "expectedUspUnit": "per g",
+      "packagingText": {
+        "english": "Haldiram's Nagpur | ALOO BHUJIA | Spicy Potato Noodles | Net Wt. 200 g | MRP ₹52.00 | Mfd. by Haldiram Foods International Pvt. Ltd.,  plot No. 145/146, Bhandara Road, Nagpur - 440035 | Consumer Care: 1800-266-6696, care@haldirams.com | Country of Origin: India | Mfg. 05/2026 | FSSAI Lic. 11517024000356",
+        "hindi": "हल्दीराम्स आलू भुजिया | तीखा आलू सेव | शुद्ध वजन 200 ग्राम | अधिकतम खुदरा मूल्य ₹52.00 | निर्माता: हल्दीराम फूड्स, नागपुर - 440035 | उपभोक्ता सेवा: 1800-266-6696 | मूल देश: भारत",
+        "rawOcrMock": "HALDIRAM'S\\nALOO BHUJIA\\nNet Wt. 200 g\\nMRP Rs.52.00\\nMfd Haldiram Foods Nagpur\\nConsumer Care 1800-266-6696\\ncare@haldirams.com\\nMfg 05/2026\\nCountry of Origin: India"
+      },
+      "dimensions": {
+        "heightMm": 220,
+        "widthMm": 150,
+        "depthMm": 60,
+        "diameterMm": null,
+        "packType": "pouch_rectangular",
+        "pdpAreaCm2": 330.0,
+        "pdpCalculation": "220 × 150 = 33000 mm² = 330 cm² (falls in 50-200? Actually >200 => but Table-I based on qty weight, not area)"
+      },
+      "fontMetrics": {
+        "measuredFontHeightMm": 1.6,
+        "requiredFontHeightMm": 1.0,
+        "calibrationMode": "TIER_B",
+        "calibrationConfidence": "ESTIMATED",
+        "referenceObject": "Declared pouch dimensions 220×150mm",
+        "mmPerPixel": 0.12,
+        "requiresScaleConfirmation": false
+      },
+      "manufacturing": {
+        "manufacturerName": "Haldiram Foods International Pvt. Ltd.",
+        "manufacturerAddress": "Plot No. 145/146, Bhandara Road, Nagpur - 440035",
+        "hasCompletePincode": true,
+        "pincode": "440035",
+        "mfgDate": "05/2026",
+        "expiryDate": "11/2026",
+        "fssaiLicense": "11517024000356",
+        "vegNonVegEmblem": "VEG_GREEN_DOT_PRESENT"
+      },
+      "consumerCare": {
+        "name": "Consumer Care Executive",
+        "address": "Haldiram Foods, Bhandara Road, Nagpur - 440035",
+        "phone": "1800-266-6696",
+        "email": "care@haldirams.com",
+        "hasAllFourElements": true
+      },
+      "countryOfOrigin": "India",
+      "isImported": false,
+      "complianceStatus": "FAIL",
+      "violations": [
+        {
+          "ruleId": "RULE_6_1_E_MRP_TAX_CLAUSE",
+          "ruleCitation": "Rule 6(1)(e), PCR 2011",
+          "severity": "CRITICAL",
+          "deduction": 30,
+          "reason": "Missing \"(incl. of all taxes)\" / \"inclusive of all taxes\" suffix in MRP declaration. Printed as \"MRP ₹52.00\" without statutory tax inclusivity phrase.",
+          "penaltySection": "Section 36(1), Legal Metrology Act, 2009 (₹25,000 first offence)",
+          "remedyAction": "Print as: \"MRP ₹52.00 (inclusive of all taxes)\" or \"MRP ₹52.00 (incl. of all taxes)\"",
+          "expectedStatus": "FAIL"
+        }
+      ],
+      "complianceScore": 70,
+      "notes": "Tests Rule 6(1)(e) tax clause detection. Net qty 200g => threshold 1.0mm, font 1.6mm PASS, but MRP clause FAIL. OCR must not false-pass bare MRP."
+    },
+    {
+      "skuId": "SKU-FOOD-HALDIRAM-003",
+      "productName": "Haldiram's Aloo Bhujia Family Pack",
+      "brandName": "Haldiram's Nagpur (Haldiram Foods International Pvt. Ltd.)",
+      "category": "FOOD",
+      "isFoodProduct": true,
+      "declaredNetQty": 400,
+      "netQtyUnit": "g",
+      "netQtyRaw": "Net Weight 400 g",
+      "declaredMrp": 95.0,
+      "declaredMrpText": "MRP ₹95.00 (inclusive of all taxes)",
+      "hasInclusiveOfTaxes": true,
+      "expectedUsp": 0.2375,
+      "expectedUspText": "₹0.24 per g (₹237.50 per kg)",
+      "expectedUspUnit": "per g",
+      "packagingText": {
+        "english": "Haldiram's | ALOO BHUJIA FAMILY PACK | Net Weight 400 g | MRP ₹95.00 (inclusive of all taxes) | USP ₹0.24 per g | Mfd. Haldiram Foods, Nagpur - 440035 | Consumer Care: Haldiram Consumer Grievance Officer, 1800-266-6696, care@haldirams.com, Plot 145 Bhandara Road | Mfg. 05/2026 | Country of Origin: India | FSSAI 11517024000356 | Glossy metallic foil pack - high glare region over MRP",
+        "hindi": "हल्दीराम्स आलू भुजिया फैमिली पैक | शुद्ध वजन 400 ग्राम | अधिकतम खुदरा मूल्य ₹95.00 (सभी करों सहित) | इकाई मूल्य ₹0.24 प्रति ग्राम | मूल देश: भारत | निर्माण 05/2026",
+        "rawOcrMock": "HALDIRAM'S\\nALOO BHUJIA\\n400 g\\nMRP  Rs.95.00 (inclusive of all taxes)\\n[GLARE-OBSCURED USP REGION]\\nMfg 05/2026"
+      },
+      "dimensions": {
+        "heightMm": 280,
+        "widthMm": 190,
+        "depthMm": 75,
+        "diameterMm": null,
+        "packType": "pouch_rectangular",
+        "pdpAreaCm2": 532.0,
+        "pdpCalculation": "280 × 190 = 53200 mm² = 532 cm²"
+      },
+      "fontMetrics": {
+        "measuredFontHeightMm": 1.35,
+        "requiredFontHeightMm": 2.0,
+        "calibrationMode": "TIER_C",
+        "calibrationConfidence": "UNCALIBRATED",
+        "referenceObject": null,
+        "mmPerPixel": 0.264,
+        "estimatedFontHeightMm": 1.35,
+        "requiresScaleConfirmation": true,
+        "disclaimer": "Scale uncalibrated — heuristic estimate from 96 DPI baseline. Physical verification with calibrated micrometer required."
+      },
+      "manufacturing": {
+        "manufacturerName": "Haldiram Foods International Pvt. Ltd.",
+        "manufacturerAddress": "Plot No. 145/146, Bhandara Road, Nagpur - 440035",
+        "hasCompletePincode": true,
+        "pincode": "440035",
+        "mfgDate": "05/2026",
+        "expiryDate": "11/2026",
+        "fssaiLicense": "11517024000356",
+        "vegNonVegEmblem": "VEG_GREEN_DOT_PRESENT"
+      },
+      "consumerCare": {
+        "name": "Grievance Officer - Haldiram Foods",
+        "address": "Plot 145, Bhandara Road, Nagpur - 440035",
+        "phone": "1800-266-6696",
+        "email": "care@haldirams.com",
+        "hasAllFourElements": true
+      },
+      "countryOfOrigin": "India",
+      "isImported": false,
+      "complianceStatus": "REVIEW",
+      "violations": [
+        {
+          "ruleId": "RULE_7_TABLE_I_FONT_HEIGHT",
+          "ruleCitation": "Rule 7 Table-I, PCR 2011",
+          "severity": "HEURISTIC_FLAG",
+          "deduction": 5,
+          "reason": "Heuristic font estimate 1.35mm appears below 2.0mm Table-I requirement for 400g pack, but scale is UNCALIBRATED (Tier-C). Cannot definitively FAIL; requires REVIEW.",
+          "penaltySection": "Section 36(1) - requires physical micrometer confirmation before prosecution",
+          "remedyAction": "Re-capture with 85.6mm reference card (Tier-A) or declared dimensions (Tier-B). If confirmed <2.0mm, increase net quantity numeral to ≥2.0mm height.",
+          "expectedStatus": "REVIEW",
+          "requiresScaleConfirmation": true
+        }
+      ],
+      "complianceScore": 85,
+      "notes": "Tests Tier-C REVIEW escalation: Uncalibrated scale must NOT auto-FAIL font. Even though 1.35 < 2.0, status is REVIEW per 'Abstain Rather Than Guess' philosophy. Also tests glare handling - USP region obscured."
+    },
+    {
+      "skuId": "SKU-FOOD-PARLEG-004",
+      "productName": "Parle-G Original Gluco Biscuits",
+      "brandName": "Parle Products Pvt. Ltd.",
+      "category": "FOOD",
+      "isFoodProduct": true,
+      "declaredNetQty": 250,
+      "netQtyUnit": "g",
+      "netQtyRaw": "Net Wt. 250 g",
+      "declaredMrp": 30.0,
+      "declaredMrpText": "MRP ₹30.00 (incl. of all taxes)",
+      "hasInclusiveOfTaxes": true,
+      "expectedUsp": 0.12,
+      "expectedUspText": "₹0.12 per g (₹120.00 per kg)",
+      "expectedUspUnit": "per g",
+      "packagingText": {
+        "english": "Parle-G | Original Gluco Biscuits | Baked with Love Since 1939 | Net Wt. 250 g | MRP ₹30.00 (incl. of all taxes) | USP ₹0.12 per g | Mfd. by Parle Products Pvt. Ltd., North Level Crossing, Vile Parle East, Mumbai - 400057 | Consumer Care: Parle Care Cell, 022-66916910, care@parleproducts.com | Country of Origin: India | Mfg. 04/2026 | Best Before 9 Months | FSSAI 10014022002738",
+        "hindi": "पारले-जी ओरिजिनल ग्लूको बिस्कुट | 1939 से आपके साथ | शुद्ध वजन 250 ग्राम | अधिकतम खुदरा मूल्य ₹30.00 (सभी करों सहित) | इकाई मूल्य ₹0.12 प्रति ग्राम | निर्माता: पारले प्रोडक्ट्स, विले पार्ले, मुंबई - 400057 | उपभोक्ता सेवा: 022-66916910 | मूल देश: भारत",
+        "rawOcrMock": "Parle-G\\nOriginal Gluco Biscuits\\nNet Wt. 250 g\\nMRP Rs.30.00 (incl. of all taxes)\\nUSP Rs.0.12/g\\nMfd Parle Products Mumbai 400057\\nConsumer Care 022-66916910\\ncare@parleproducts.com\\nMfg 04/2026\\nCountry of Origin India"
+      },
+      "dimensions": {
+        "heightMm": 180,
+        "widthMm": 120,
+        "depthMm": 55,
+        "diameterMm": null,
+        "packType": "wrapper_rectangular",
+        "pdpAreaCm2": 216.0,
+        "pdpCalculation": "180 × 120 = 21600 mm² = 216 cm²"
+      },
+      "fontMetrics": {
+        "measuredFontHeightMm": 1.4,
+        "requiredFontHeightMm": 2.0,
+        "calibrationMode": "TIER_A",
+        "calibrationConfidence": "HIGH",
+        "referenceObject": "85.6mm card - homography verified",
+        "mmPerPixel": 0.071,
+        "requiresScaleConfirmation": false
+      },
+      "manufacturing": {
+        "manufacturerName": "Parle Products Pvt. Ltd.",
+        "manufacturerAddress": "North Level Crossing, Vile Parle East, Mumbai - 400057",
+        "hasCompletePincode": true,
+        "pincode": "400057",
+        "mfgDate": "04/2026",
+        "expiryDate": "01/2027",
+        "fssaiLicense": "10014022002738",
+        "vegNonVegEmblem": "VEG_GREEN_DOT_PRESENT"
+      },
+      "consumerCare": {
+        "name": "Parle Care Cell Officer",
+        "address": "North Level Crossing, Vile Parle East, Mumbai - 400057",
+        "phone": "022-66916910",
+        "email": "care@parleproducts.com",
+        "hasAllFourElements": true
+      },
+      "countryOfOrigin": "India",
+      "isImported": false,
+      "complianceStatus": "FAIL",
+      "violations": [
+        {
+          "ruleId": "RULE_7_TABLE_I_FONT_HEIGHT",
+          "ruleCitation": "Rule 7 Table-I, PCR 2011",
+          "severity": "MAJOR",
+          "deduction": 20,
+          "reason": "Font height 1.4mm below 2.0mm Table-I requirement for 250g pack (range >200g to <500g). Measured via Tier-A calibrated scale (HIGH confidence).",
+          "penaltySection": "Section 36(1), Legal Metrology Act, 2009",
+          "remedyAction": "Increase net quantity numeral height to minimum 2.0mm on PDP. Current 1.4mm violates mandatory legibility.",
+          "expectedStatus": "FAIL"
+        }
+      ],
+      "complianceScore": 80,
+      "notes": "Canonical Table-I FAIL test: 250g triggers 2.0mm threshold. Calibrated HIGH confidence => definitive FAIL, not REVIEW. Demonstrates honest pixel-to-mm math."
+    },
+    {
+      "skuId": "SKU-FOOD-AMUL-005",
+      "productName": "Amul Pasteurized Butter",
+      "brandName": "Amul (GCMMF Ltd.)",
+      "category": "FOOD",
+      "isFoodProduct": true,
+      "declaredNetQty": 500,
+      "netQtyUnit": "g",
+      "netQtyRaw": "Net Weight 500 g",
+      "declaredMrp": 285.0,
+      "declaredMrpText": "MRP ₹285.00 (inclusive of all taxes)",
+      "hasInclusiveOfTaxes": true,
+      "expectedUsp": null,
+      "expectedUspText": null,
+      "expectedUspUnit": null,
+      "packagingText": {
+        "english": "Amul | Pasteurized Butter | Utterly Butterly Delicious | Net Weight 500 g | MRP ₹285.00 (inclusive of all taxes) | Mfd. by Gujarat Co-operative Milk Marketing Federation Ltd., Anand - 388001 | Consumer Care: Amul Consumer Cell, 1800-258-3333, customercare@amul.coop | Mfg. 06/2026 | Use By 09/2026 | Keep Refrigerated | Country of Origin: India | FSSAI 10012021000277",
+        "hindi": "अमूल पाश्चुरीकृत मक्खन | अत्यंत स्वादिष्ट | शुद्ध वजन 500 ग्राम | अधिकतम खुदरा मूल्य ₹285.00 (सभी करों सहित) | निर्माता: गुजरात सहकारी दुग्ध विपणन महासंघ, आणंद - 388001 | उपभोक्ता सेवा: 1800-258-3333 | मूल देश: भारत",
+        "rawOcrMock": "Amul\\nPasteurized Butter\\nNet Weight 500 g\\nMRP Rs.285.00 (inclusive of all taxes)\\nMfd GCMMF Anand 388001\\nConsumer Care 1800-258-3333\\ncustomercare@amul.coop\\nMfg 06/2026\\nCountry of Origin India"
+      },
+      "dimensions": {
+        "heightMm": 110,
+        "widthMm": 85,
+        "depthMm": 60,
+        "diameterMm": null,
+        "packType": "carton_rectangular",
+        "pdpAreaCm2": 93.5,
+        "pdpCalculation": "110 × 85 = 9350 mm² = 93.5 cm²"
+      },
+      "fontMetrics": {
+        "measuredFontHeightMm": 2.8,
+        "requiredFontHeightMm": 4.0,
+        "calibrationMode": "TIER_B",
+        "calibrationConfidence": "ESTIMATED",
+        "referenceObject": "Declared carton 110×85mm",
+        "mmPerPixel": 0.09,
+        "requiresScaleConfirmation": false
+      },
+      "manufacturing": {
+        "manufacturerName": "Gujarat Co-operative Milk Marketing Federation Ltd.",
+        "manufacturerAddress": "Amul Dairy Road, Anand - 388001",
+        "hasCompletePincode": true,
+        "pincode": "388001",
+        "mfgDate": "06/2026",
+        "expiryDate": "09/2026",
+        "fssaiLicense": "10012021000277",
+        "vegNonVegEmblem": "VEG_GREEN_DOT_PRESENT"
+      },
+      "consumerCare": {
+        "name": "Amul Consumer Care Executive",
+        "address": "GCMMF Ltd., Anand - 388001",
+        "phone": "1800-258-3333",
+        "email": "customercare@amul.coop",
+        "hasAllFourElements": true
+      },
+      "countryOfOrigin": "India",
+      "isImported": false,
+      "complianceStatus": "FAIL",
+      "violations": [
+        {
+          "ruleId": "RULE_6_11_UNIT_SALE_PRICE_MATH",
+          "ruleCitation": "Rule 6(11), PCR (Amendment) Rules 2021/2022 (GSR 226(E))",
+          "severity": "CRITICAL",
+          "deduction": 30,
+          "reason": "Unit Sale Price (USP) missing on pack with 500g net quantity. Rule 6(11) mandates USP declaration for all packs; math verification impossible.",
+          "penaltySection": "Section 36(1), Legal Metrology Act, 2009",
+          "remedyAction": "Declare USP as: \"USP ₹0.57 per g\" or \"₹570.00 per kg\" (Calculated: 285.00 / 500 = 0.57)",
+          "expectedStatus": "FAIL"
+        },
+        {
+          "ruleId": "RULE_7_TABLE_I_FONT_HEIGHT",
+          "ruleCitation": "Rule 7 Table-I, PCR 2011",
+          "severity": "MAJOR",
+          "deduction": 20,
+          "reason": "Font height 2.8mm below 4.0mm Table-I requirement for 500g pack (>=500g threshold). Tier-B ESTIMATED but scale confirmed passable.",
+          "penaltySection": "Section 36(1)",
+          "remedyAction": "Increase net quantity font to ≥4.0mm",
+          "expectedStatus": "FAIL"
+        }
+      ],
+      "complianceScore": 50,
+      "notes": "Dual violation: USP missing (Rule 6(11)) + font 2.8 < 4.0 for 500g. Tests multi-violation scoring. 500g is boundary: >=500 triggers 4mm."
+    },
+    {
+      "skuId": "SKU-FOOD-TATASALT-006",
+      "productName": "Tata Salt Iodized",
+      "brandName": "Tata Salt (Tata Consumer Products Ltd.)",
+      "category": "FOOD",
+      "isFoodProduct": true,
+      "declaredNetQty": 1,
+      "netQtyUnit": "kg",
+      "netQtyRaw": "Net Weight 1 kg (1000 g)",
+      "declaredMrp": 28.0,
+      "declaredMrpText": "MRP ₹28.00 (incl. of all taxes)",
+      "hasInclusiveOfTaxes": true,
+      "expectedUsp": null,
+      "expectedUspText": null,
+      "expectedUspUnit": null,
+      "packagingText": {
+        "english": "TATA SALT | India's No.1 Iodized Salt | Net Weight 1 kg (1000 g) | MRP ₹28.00 (incl. of all taxes) | Mfd. by Tata Chemicals Ltd., Bombay House, 24 Homi Mody Street, Mumbai - 400001 | Consumer Care: Tata Consumer Care, 1800-108-4488, care@tataconsumer.com | Mfg. 05/2026 | Country of Origin: India | FSSAI 10014022002607 | Vacuum Evaporated Iodized Salt",
+        "hindi": "टाटा नमक | भारत का नंबर 1 आयोडीन युक्त नमक | शुद्ध वजन 1 किलोग्राम (1000 ग्राम) | अधिकतम खुदरा मूल्य ₹28.00 (सभी करों सहित) | निर्माता: टाटा केमिकल्स, मुंबई - 400001 | उपभोक्ता सेवा: 1800-108-4488 | मूल देश: भारत",
+        "rawOcrMock": "TATA SALT\\nNet Weight 1 kg\\nMRP Rs.28.00 (incl. of all taxes)\\nMfd Tata Chemicals Mumbai 400001\\nConsumer Care 1800-108-4488\\ncare@tataconsumer.com\\nMfg 05/2026\\nCountry of Origin India"
+      },
+      "dimensions": {
+        "heightMm": 195,
+        "widthMm": 125,
+        "depthMm": 70,
+        "diameterMm": null,
+        "packType": "pouch_rectangular",
+        "pdpAreaCm2": 243.75,
+        "pdpCalculation": "195 × 125 = 24375 mm² = 243.75 cm²"
+      },
+      "fontMetrics": {
+        "measuredFontHeightMm": 4.2,
+        "requiredFontHeightMm": 4.0,
+        "calibrationMode": "TIER_A",
+        "calibrationConfidence": "HIGH",
+        "referenceObject": "85.6mm card",
+        "mmPerPixel": 0.068,
+        "requiresScaleConfirmation": false
+      },
+      "manufacturing": {
+        "manufacturerName": "Tata Chemicals Ltd.",
+        "manufacturerAddress": "Bombay House, 24 Homi Mody Street, Fort, Mumbai - 400001",
+        "hasCompletePincode": true,
+        "pincode": "400001",
+        "mfgDate": "05/2026",
+        "expiryDate": "05/2027",
+        "fssaiLicense": "10014022002607",
+        "vegNonVegEmblem": "VEG_GREEN_DOT_PRESENT"
+      },
+      "consumerCare": {
+        "name": "Tata Consumer Care Manager",
+        "address": "Tata Consumer Products, Kirloskar Business Park, Bangalore - 560024",
+        "phone": "1800-108-4488",
+        "email": "care@tataconsumer.com",
+        "hasAllFourElements": true
+      },
+      "countryOfOrigin": "India",
+      "isImported": false,
+      "complianceStatus": "FAIL",
+      "violations": [
+        {
+          "ruleId": "RULE_6_11_UNIT_SALE_PRICE_MATH",
+          "ruleCitation": "Rule 6(11), PCR (Amendment) Rules 2021/2022",
+          "severity": "CRITICAL",
+          "deduction": 30,
+          "reason": "Unit Sale Price missing on 1kg pack. For net quantity >=1kg / 1L, USP must be declared as ₹ per kg / per L (GSR 226(E)). Dual unit declaration 1kg (1000g) present but USP absent.",
+          "penaltySection": "Section 36(1)",
+          "remedyAction": "Declare: \"USP ₹28.00 per kg\" (Calculated: 28.00 / 1 kg = 28.00) or \"₹0.028 per g\"",
+          "expectedStatus": "FAIL"
+        }
+      ],
+      "complianceScore": 70,
+      "notes": "Tests Rule 6(11) >1kg threshold - USP mandatory. Font 4.2mm PASS (>4.0mm) isolates USP violation. Also tests dual-unit requirement (1kg (1000g)) present but USP still missing."
+    },
+    {
+      "skuId": "SKU-FOOD-FORTUNE-007",
+      "productName": "Fortune Sunlite Sunflower Oil",
+      "brandName": "Fortune (Adani Wilmar Ltd.)",
+      "category": "FOOD",
+      "isFoodProduct": true,
+      "declaredNetQty": 1,
+      "netQtyUnit": "L",
+      "netQtyRaw": "Net Quantity 1 L (1000 ml) at 30°C",
+      "declaredMrp": 145.0,
+      "declaredMrpText": "MRP ₹145.00 (incl. of all taxes)",
+      "hasInclusiveOfTaxes": true,
+      "expectedUsp": null,
+      "expectedUspText": null,
+      "expectedUspUnit": null,
+      "packagingText": {
+        "english": "Fortune Sunlite | Refined Sunflower Oil | Fortified with Vitamins A & D | Net Quantity 1 L (1000 ml) at 30°C | MRP ₹145.00 (incl. of all taxes) | Mfd. by Adani Wilmar Ltd., Fortune House, Ahmedabad - 380054 | Consumer Care: Fortune Care, 1800-572-9999, care@adaniwilmar.com | Mfg. 06/2026 | Best Before 9 Months | FSSAI 10012021000234 | FOR SALE IN INDIA ONLY",
+        "hindi": "फॉर्च्यून सनलाइट शुद्ध सूरजमुखी तेल | विटामिन ए और डी से भरपूर | शुद्ध मात्रा 1 लीटर (1000 मिली) | अधिकतम खुदरा मूल्य ₹145.00 (सभी करों सहित) | निर्माता: अदानी विल्मर, अहमदाबाद - 380054 | उपभोक्ता सेवा: 1800-572-9999",
+        "rawOcrMock": "Fortune Sunlite\\nSunflower Oil\\nNet Quantity 1 L (1000 ml)\\nMRP Rs.145.00 (incl. of all taxes)\\nMfd Adani Wilmar Ahmedabad\\nConsumer Care 1800-572-9999\\ncare@adaniwilmar.com\\nMfg 06/2026"
+      },
+      "dimensions": {
+        "heightMm": 265,
+        "widthMm": 95,
+        "depthMm": 95,
+        "diameterMm": 95,
+        "packType": "bottle_cylindrical",
+        "pdpAreaCm2": 316.5,
+        "pdpCalculation": "Cylindrical: 0.4 × π × D × H = 0.4 × 3.1416 × 95 × 265 = 316.5 cm² (approx) — alternative flat label 85×240=204 cm²"
+      },
+      "fontMetrics": {
+        "measuredFontHeightMm": 4.5,
+        "requiredFontHeightMm": 4.0,
+        "calibrationMode": "TIER_A",
+        "calibrationConfidence": "HIGH",
+        "referenceObject": "85.6mm card",
+        "mmPerPixel": 0.075,
+        "requiresScaleConfirmation": false
+      },
+      "manufacturing": {
+        "manufacturerName": "Adani Wilmar Ltd.",
+        "manufacturerAddress": "Fortune House, Near Navrangpura Railway Crossing, Ahmedabad - 380054",
+        "hasCompletePincode": true,
+        "pincode": "380054",
+        "mfgDate": "06/2026",
+        "expiryDate": "03/2027",
+        "fssaiLicense": "10012021000234",
+        "vegNonVegEmblem": "VEG_GREEN_DOT_PRESENT"
+      },
+      "consumerCare": {
+        "name": "Fortune Consumer Care Officer",
+        "address": "Adani Wilmar Ltd., Fortune House, Ahmedabad - 380054",
+        "phone": "1800-572-9999",
+        "email": "care@adaniwilmar.com",
+        "hasAllFourElements": true
+      },
+      "countryOfOrigin": null,
+      "isImported": false,
+      "complianceStatus": "FAIL",
+      "violations": [
+        {
+          "ruleId": "RULE_6_1_G_COUNTRY_OF_ORIGIN",
+          "ruleCitation": "Rule 6(1)(g), PCR 2011 & GSR 418(E) 2026",
+          "severity": "CRITICAL",
+          "deduction": 25,
+          "reason": "Missing Country of Origin declaration. Mandatory for all packaged commodities under Rule 6(1)(g) and e-commerce filter mandate Feb/Apr 2026. Printed \"FOR SALE IN INDIA ONLY\" is not a COO declaration.",
+          "penaltySection": "Section 36(1)",
+          "remedyAction": "Print: \"Country of Origin: India\" or \"Made in India\" prominently on PDP.",
+          "expectedStatus": "FAIL"
+        },
+        {
+          "ruleId": "RULE_6_11_UNIT_SALE_PRICE_MATH",
+          "ruleCitation": "Rule 6(11), PCR 2021/2022",
+          "severity": "CRITICAL",
+          "deduction": 30,
+          "reason": "Unit Sale Price missing on 1L pack. For >=1L, USP must be declared per L.",
+          "penaltySection": "Section 36(1)",
+          "remedyAction": "Declare: \"USP ₹145.00 per L\" or \"₹0.145 per ml\" (145/1000=0.145)",
+          "expectedStatus": "FAIL"
+        }
+      ],
+      "complianceScore": 45,
+      "notes": "Double FAIL: Missing COO + missing USP on 1L. Tests that \"FOR SALE IN INDIA ONLY\" is NOT valid COO. Cylindrical PDP area calculation variant."
+    },
+    {
+      "skuId": "SKU-COS-DETTOL-008",
+      "productName": "Dettol Original Soap",
+      "brandName": "Dettol (Reckitt Benckiser India Ltd.)",
+      "category": "COSMETICS",
+      "isFoodProduct": false,
+      "declaredNetQty": 125,
+      "netQtyUnit": "g",
+      "netQtyRaw": "Net Weight 125 g (when packed)",
+      "declaredMrp": 45.0,
+      "declaredMrpText": "MRP ₹45.00 (incl. of all taxes)",
+      "hasInclusiveOfTaxes": true,
+      "expectedUsp": 0.36,
+      "expectedUspText": "₹0.36 per g",
+      "expectedUspUnit": "per g",
+      "packagingText": {
+        "english": "Dettol Original | Germ Protection Soap | 12hr Protection | Net Weight 125 g (when packed) | MRP ₹45.00 (incl. of all taxes) | USP ₹0.36 per g | Mfd. by Reckitt Benckiser India Ltd., Plot No. 48, Hosur - 635126 | Consumer Care: Reckitt Care, Email: consumerhealth_in@reckitt.com, Hosur - 635126 | Mfg. 05/2026 | Exp. 05/2028 | Country of Origin: India | Dermatologically Tested",
+        "hindi": "डेटॉल ओरिजिनल साबुन | कीटाणु सुरक्षा | शुद्ध वजन 125 ग्राम | अधिकतम खुदरा मूल्य ₹45.00 (सभी करों सहित) | इकाई मूल्य ₹0.36 प्रति ग्राम | निर्माता: रेकिट बेंकाइज़र, होसूर - 635126 | उपभोक्ता सेवा: consumerhealth_in@reckitt.com | मूल देश: भारत",
+        "rawOcrMock": "Dettol Original\\nGerm Protection\\nNet Weight 125 g\\nMRP Rs.45.00 (incl. of all taxes)\\nUSP Rs.0.36/g\\nMfd Reckitt Benckiser Hosur\\nConsumer Care consumerhealth_in@reckitt.com\\nMfg 05/2026"
+      },
+      "dimensions": {
+        "heightMm": 85,
+        "widthMm": 55,
+        "depthMm": 35,
+        "diameterMm": null,
+        "packType": "carton_rectangular",
+        "pdpAreaCm2": 46.75,
+        "pdpCalculation": "85 × 55 = 4675 mm² = 46.75 cm²"
+      },
+      "fontMetrics": {
+        "measuredFontHeightMm": 1.1,
+        "requiredFontHeightMm": 1.0,
+        "calibrationMode": "TIER_A",
+        "calibrationConfidence": "HIGH",
+        "referenceObject": "85.6mm card",
+        "mmPerPixel": 0.065,
+        "requiresScaleConfirmation": false
+      },
+      "manufacturing": {
+        "manufacturerName": "Reckitt Benckiser India Ltd.",
+        "manufacturerAddress": "Plot No. 48, SIPCOT Industrial Complex, Hosur - 635126",
+        "hasCompletePincode": true,
+        "pincode": "635126",
+        "mfgDate": "05/2026",
+        "expiryDate": "05/2028",
+        "fssaiLicense": null,
+        "vegNonVegEmblem": null
+      },
+      "consumerCare": {
+        "name": null,
+        "address": "Reckitt Benckiser, Hosur - 635126",
+        "phone": null,
+        "email": "consumerhealth_in@reckitt.com",
+        "hasAllFourElements": false,
+        "missingElements": ["phone", "name"]
+      },
+      "countryOfOrigin": "India",
+      "isImported": false,
+      "complianceStatus": "FAIL",
+      "violations": [
+        {
+          "ruleId": "RULE_6_1_F_CONSUMER_CARE",
+          "ruleCitation": "Rule 6(1)(f), PCR 2011",
+          "severity": "CRITICAL",
+          "deduction": 15,
+          "reason": "Missing phone number in Consumer Care details. Only email provided (consumerhealth_in@reckitt.com). Rule 6(1)(f) requires Name/Designation + Address + Phone + Email (all 4 elements).",
+          "penaltySection": "Section 36(1)",
+          "remedyAction": "Add: \"Consumer Care Executive, Phone: 1800-102-7244, Email: consumerhealth_in@reckitt.com, Address with PIN\"",
+          "expectedStatus": "FAIL"
+        },
+        {
+          "ruleId": "RULE_6_1_C_NET_QTY_UNITS",
+          "ruleCitation": "Rule 6(1)(c) read with Rule 12, PCR 2011",
+          "severity": "MINOR",
+          "deduction": 10,
+          "reason": "Qualifier \"(when packed)\" appended to net quantity. While not strictly prohibited, it creates ambiguity for moisture-evaporation fraud; recommended to declare plain \"125 g\". Flagged as advisory per Rule 6(1)(c).",
+          "penaltySection": "Advisory - Section 36(1) if misleading",
+          "remedyAction": "Declare as: \"Net Weight: 125 g\" without qualifier.",
+          "expectedStatus": "FAIL"
+        }
+      ],
+      "complianceScore": 75,
+      "notes": "Tests Rule 6(1)(f) - missing phone. Also tests that email-only is insufficient. Font 1.1 >1.0 PASS isolates consumer care violation. \"when packed\" is common deceptive qualifier."
+    },
+    {
+      "skuId": "SKU-COS-NIVEA-009",
+      "productName": "Nivea Soft Light Moisturizer Cream",
+      "brandName": "Nivea (Beiersdorf India Pvt. Ltd.)",
+      "category": "COSMETICS",
+      "isFoodProduct": false,
+      "declaredNetQty": 100,
+      "netQtyUnit": "ml",
+      "netQtyRaw": "Net Content 100 ml",
+      "declaredMrp": 199.0,
+      "declaredMrpText": "MRP ₹199.00 (incl. of all taxes)",
+      "hasInclusiveOfTaxes": true,
+      "expectedUsp": 1.99,
+      "expectedUspText": "₹1.99 per ml",
+      "expectedUspUnit": "per ml",
+      "packagingText": {
+        "english": "NIVEA Soft | Light Moisturizer | With Jojoba Oil & Vitamin E | Net Content 100 ml | MRP ₹199.00 (incl. of all taxes) | USP ₹1.99 per ml | Imported & Marketed by Nivea India Pvt. Ltd., 4th Floor, B Wing, Art Guild House, Phoenix Market City, Kurla West, Mumbai - 400070 | Consumer Care: Nivea Care, 1800-209-3080, care@nivea.in | Mfg. 04/2026 | Exp. 03/2028 | MADE IN GERMANY | Import Lic. COS-123/2025",
+        "hindi": "निविया सॉफ्ट लाइट मॉइस्चराइज़र | जोजोबा तेल और विटामिन ई के साथ | शुद्ध मात्रा 100 मिली | अधिकतम खुदरा मूल्य ₹199.00 (सभी करों सहित) | आयातक: निविया इंडिया, मुंबई - 400070 | उपभोक्ता सेवा: 1800-209-3080",
+        "rawOcrMock": "NIVEA Soft\\nLight Moisturizer\\nNet Content 100 ml\\nMRP Rs.199.00 (incl. of all taxes)\\nImported by Nivea India Mumbai\\nConsumer Care 1800-209-3080\\ncare@nivea.in\\nMfg 04/2026\\nMADE IN GERMANY"
+      },
+      "dimensions": {
+        "heightMm": 95,
+        "widthMm": 70,
+        "depthMm": 70,
+        "diameterMm": 70,
+        "packType": "jar_cylindrical",
+        "pdpAreaCm2": 83.7,
+        "pdpCalculation": "Cylindrical tub: 0.4×π×70×95 = 83.7 cm²"
+      },
+      "fontMetrics": {
+        "measuredFontHeightMm": 0.9,
+        "requiredFontHeightMm": 1.0,
+        "calibrationMode": "TIER_A",
+        "calibrationConfidence": "HIGH",
+        "referenceObject": "85.6mm card",
+        "mmPerPixel": 0.06,
+        "requiresScaleConfirmation": false
+      },
+      "manufacturing": {
+        "manufacturerName": "Beiersdorf AG, Hamburg, Germany (Imported & Marketed by Nivea India Pvt. Ltd.)",
+        "manufacturerAddress": "4th Floor, B Wing, Art Guild House, Phoenix Market City, Kurla West, Mumbai - 400070",
+        "hasCompletePincode": true,
+        "pincode": "400070",
+        "mfgDate": "04/2026",
+        "expiryDate": "03/2028",
+        "fssaiLicense": null,
+        "isImported": true,
+        "importerName": "Nivea India Pvt. Ltd.",
+        "importerAddress": "Mumbai - 400070"
+      },
+      "consumerCare": {
+        "name": "Nivea Consumer Care Officer",
+        "address": "Nivea India Pvt. Ltd., Kurla West, Mumbai - 400070",
+        "phone": "1800-209-3080",
+        "email": "care@nivea.in",
+        "hasAllFourElements": true
+      },
+      "countryOfOrigin": "Germany",
+      "isImported": true,
+      "complianceStatus": "FAIL",
+      "violations": [
+        {
+          "ruleId": "RULE_7_TABLE_I_FONT_HEIGHT",
+          "ruleCitation": "Rule 7 Table-I, PCR 2011",
+          "severity": "MAJOR",
+          "deduction": 20,
+          "reason": "Font height 0.9mm below 1.0mm Table-I requirement for 100ml pack (<=200g/ml). Calibrated HIGH confidence => definitive FAIL.",
+          "penaltySection": "Section 36(1)",
+          "remedyAction": "Increase net quantity numeral height to ≥1.0mm (recommended 1.2mm for safety).",
+          "expectedStatus": "FAIL"
+        }
+      ],
+      "complianceScore": 80,
+      "notes": "Imported cosmetics: COO present (Germany) so Rule 6(1)(g) PASS. Font violation isolates Table-I for <=200. Demonstrates 1mm threshold enforcement."
+    },
+    {
+      "skuId": "SKU-COS-HNS-010",
+      "productName": "Head & Shoulders Smooth & Silky Shampoo",
+      "brandName": "Head & Shoulders (Procter & Gamble India Ltd.)",
+      "category": "COSMETICS",
+      "isFoodProduct": false,
+      "declaredNetQty": 340,
+      "netQtyUnit": "ml",
+      "netQtyRaw": "Net Content 340 ml",
+      "declaredMrp": 299.0,
+      "declaredMrpText": "MRP ₹299.00 (inclusive of all taxes)",
+      "hasInclusiveOfTaxes": true,
+      "expectedUsp": 0.879,
+      "expectedUspText": "₹0.88 per ml (₹879.41 per L)",
+      "expectedUspUnit": "per ml",
+      "packagingText": {
+        "english": "Head & Shoulders | Smooth & Silky | Anti-Dandruff Shampoo | With Argan Oil | Net Content 340 ml | MRP ₹299.00 (inclusive of all taxes) | USP ₹0.88 per ml | Mfd. by Procter & Gamble Home Products Pvt. Ltd., Plot No. 1, Industrial Area, Baddi - 173205 | Consumer Care: P&G Care, 1800-202-1364, care.in@pg.com, Baddi - 173205 | Mfg. 06/2026 | Exp. 06/2028 | Country of Origin: India | For External Use Only",
+        "hindi": "हेड एंड शोल्डर्स स्मूथ एंड सिल्की शैम्पू | रूसी-रोधी | शुद्ध मात्रा 340 मिली | अधिकतम खुदरा मूल्य ₹299.00 (सभी करों सहित) | इकाई मूल्य ₹0.88 प्रति मिली | निर्माता: प्रॉक्टर एंड गैंबल, बद्दी - 173205 | उपभोक्ता सेवा: 1800-202-1364 | मूल देश: भारत",
+        "rawOcrMock": "Head & Shoulders\\nSmooth & Silky\\nNet Content 340 ml\\nMRP Rs.299.00 (inclusive of all taxes)\\nUSP Rs.0.88/ml\\nMfd P&G Baddi 173205\\nConsumer Care 1800-202-1364\\ncare.in@pg.com\\nMfg 06/2026\\nCountry of Origin India"
+      },
+      "dimensions": {
+        "heightMm": 210,
+        "widthMm": 70,
+        "depthMm": 45,
+        "diameterMm": 70,
+        "packType": "bottle_cylindrical",
+        "pdpAreaCm2": 184.7,
+        "pdpCalculation": "Cylindrical: 0.4×π×70×210 = 184.7 cm²"
+      },
+      "fontMetrics": {
+        "measuredFontHeightMm": 2.3,
+        "requiredFontHeightMm": 2.0,
+        "calibrationMode": "TIER_A",
+        "calibrationConfidence": "HIGH",
+        "referenceObject": "85.6mm card",
+        "mmPerPixel": 0.082,
+        "requiresScaleConfirmation": false
+      },
+      "manufacturing": {
+        "manufacturerName": "Procter & Gamble Home Products Pvt. Ltd.",
+        "manufacturerAddress": "Plot No. 1, Industrial Area, Baddi, Solan - 173205",
+        "hasCompletePincode": true,
+        "pincode": "173205",
+        "mfgDate": "06/2026",
+        "expiryDate": "06/2028",
+        "fssaiLicense": null,
+        "vegNonVegEmblem": null
+      },
+      "consumerCare": {
+        "name": "P&G Consumer Care Executive",
+        "address": "P&G Home Products, Baddi - 173205",
+        "phone": "1800-202-1364",
+        "email": "care.in@pg.com",
+        "hasAllFourElements": true
+      },
+      "countryOfOrigin": "India",
+      "isImported": false,
+      "complianceStatus": "PASS",
+      "violations": [],
+      "complianceScore": 100,
+      "notes": "Compliant cosmetics benchmark: 340ml => 2.0mm threshold, measured 2.3mm PASS. USP math: 299/340=0.879 => ₹0.88 (within 1% rounding). All consumer care 4 elements present."
+    },
+    {
+      "skuId": "SKU-COS-COLGATE-011",
+      "productName": "Colgate MaxFresh Peppermint Toothpaste",
+      "brandName": "Colgate-Palmolive (India) Ltd.",
+      "category": "COSMETICS",
+      "isFoodProduct": false,
+      "declaredNetQty": 150,
+      "netQtyUnit": "g",
+      "netQtyRaw": "Net Weight 150 g",
+      "declaredMrp": 98.0,
+      "declaredMrpText": "MRP ₹98.00",
+      "hasInclusiveOfTaxes": false,
+      "expectedUsp": 0.653,
+      "expectedUspText": "₹0.65 per g",
+      "expectedUspUnit": "per g",
+      "packagingText": {
+        "english": "Colgate | MaxFresh | Peppermint Ice | 10X Longer Cooling | Net Weight 150 g | MRP ₹98.00 | USP ₹0.65 per g | Mfd. by Colgate-Palmolive (India) Ltd., Plot No. 78, MIDC, Waluj, Aurangabad - 431136 | Consumer Care: Colgate Care, 1800-225-599, consumer_affairs@colpal.com | Mfg. 05/2026 | Exp. 05/2028 | Country of Origin: India | For Oral Care Use",
+        "hindi": "कोलगेट मैक्सफ्रेश पेपरमिंट टूथपेस्ट | 10 गुना अधिक ठंडक | शुद्ध वजन 150 ग्राम | अधिकतम खुदरा मूल्य ₹98.00 | इकाई मूल्य ₹0.65 प्रति ग्राम | निर्माता: कोलगेट-पामोलिव, वालुज - 431136 | उपभोक्ता सेवा: 1800-225-599",
+        "rawOcrMock": "Colgate MaxFresh\\nPeppermint Ice\\nNet Weight 150 g\\nMRP Rs.98.00\\nUSP Rs.0.65/g\\nMfd Colgate Palmolive Waluj 431136\\nConsumer Care 1800-225-599\\nconsumer_affairs@colpal.com\\nMfg 05/2026"
+      },
+      "dimensions": {
+        "heightMm": 175,
+        "widthMm": 50,
+        "depthMm": 35,
+        "diameterMm": null,
+        "packType": "carton_rectangular",
+        "pdpAreaCm2": 87.5,
+        "pdpCalculation": "175 × 50 = 8750 mm² = 87.5 cm²"
+      },
+      "fontMetrics": {
+        "measuredFontHeightMm": 1.3,
+        "requiredFontHeightMm": 1.0,
+        "calibrationMode": "TIER_A",
+        "calibrationConfidence": "HIGH",
+        "referenceObject": "85.6mm card",
+        "mmPerPixel": 0.07,
+        "requiresScaleConfirmation": false
+      },
+      "manufacturing": {
+        "manufacturerName": "Colgate-Palmolive (India) Ltd.",
+        "manufacturerAddress": "Plot No. 78, MIDC, Waluj, Aurangabad - 431136",
+        "hasCompletePincode": true,
+        "pincode": "431136",
+        "mfgDate": "05/2026",
+        "expiryDate": "05/2028",
+        "fssaiLicense": null,
+        "vegNonVegEmblem": null
+      },
+      "consumerCare": {
+        "name": "Colgate Consumer Affairs Officer",
+        "address": "Colgate-Palmolive, Hiranandani Gardens, Powai, Mumbai - 400076",
+        "phone": "1800-225-599",
+        "email": "consumer_affairs@colpal.com",
+        "hasAllFourElements": true
+      },
+      "countryOfOrigin": "India",
+      "isImported": false,
+      "complianceStatus": "FAIL",
+      "violations": [
+        {
+          "ruleId": "RULE_6_1_E_MRP_TAX_CLAUSE",
+          "ruleCitation": "Rule 6(1)(e), PCR 2011",
+          "severity": "CRITICAL",
+          "deduction": 30,
+          "reason": "Missing \"(incl. of all taxes)\" in MRP. Printed as bare \"MRP ₹98.00\" without statutory tax inclusivity phrase.",
+          "penaltySection": "Section 36(1)",
+          "remedyAction": "Print: \"MRP ₹98.00 (inclusive of all taxes)\"",
+          "expectedStatus": "FAIL"
+        }
+      ],
+      "complianceScore": 70,
+      "notes": "Tests Rule 6(1)(e) again with cosmetics. Font 1.3 >1.0 PASS isolates MRP violation. Common pattern: brands omit tax clause on small cartons."
+    },
+    {
+      "skuId": "SKU-GEN-BENADRYL-012",
+      "productName": "Benadryl Cough Formula",
+      "brandName": "Benadryl (Johnson & Johnson Pvt. Ltd.)",
+      "category": "GENERAL",
+      "isFoodProduct": false,
+      "declaredNetQty": 100,
+      "netQtyUnit": "ml",
+      "netQtyRaw": "Net Content 100 ml",
+      "declaredMrp": 128.0,
+      "declaredMrpText": "MRP ₹128.00 (inclusive of all taxes)",
+      "hasInclusiveOfTaxes": true,
+      "expectedUsp": 1.28,
+      "expectedUspText": "₹1.28 per ml",
+      "expectedUspUnit": "per ml",
+      "packagingText": {
+        "english": "Benadryl | Cough Formula | For Dry Cough Relief | Net Content 100 ml | MRP ₹128.00 (inclusive of all taxes) | USP ₹1.28 per ml | Mfd. by Johnson & Johnson Pvt. Ltd., L.B.S. Marg, Mulund West, Mumbai - 400080 | Consumer Care: J&J Care, 1800-22-4433, Mulund - 400080 | Mfg. 06/2026 | Exp. 05/2027 | Country of Origin: India | Schedule H Drug - Warning: To be sold by retail on prescription only | Dosage: As directed by physician",
+        "hindi": "बेनाड्रिल कफ फॉर्मूला | सूखी खांसी के लिए | शुद्ध मात्रा 100 मिली | अधिकतम खुदरा मूल्य ₹128.00 (सभी करों सहित) | निर्माता: जॉनसन एंड जॉनसन, मुलुंड - 400080 | उपभोक्ता सेवा: 1800-22-4433",
+        "rawOcrMock": "Benadryl Cough Formula\\nNet Content 100 ml\\nMRP Rs.128.00 (inclusive of all taxes)\\nMfd Johnson & Johnson Mumbai 400080\\nConsumer Care 1800-22-4433\\n[EMAIL NOT LEGIBLE - GLARE]\\nMfg 06/2026"
+      },
+      "dimensions": {
+        "heightMm": 125,
+        "widthMm": 45,
+        "depthMm": 45,
+        "diameterMm": 45,
+        "packType": "bottle_cylindrical",
+        "pdpAreaCm2": 70.7,
+        "pdpCalculation": "Cylindrical syrup: 0.4×π×45×125 = 70.7 cm²"
+      },
+      "fontMetrics": {
+        "measuredFontHeightMm": 0.85,
+        "requiredFontHeightMm": 1.0,
+        "calibrationMode": "TIER_C",
+        "calibrationConfidence": "UNCALIBRATED",
+        "referenceObject": null,
+        "mmPerPixel": 0.264,
+        "estimatedFontHeightMm": 0.85,
+        "requiresScaleConfirmation": true
+      },
+      "manufacturing": {
+        "manufacturerName": "Johnson & Johnson Pvt. Ltd.",
+        "manufacturerAddress": "L.B.S. Marg, Mulund West, Mumbai - 400080",
+        "hasCompletePincode": true,
+        "pincode": "400080",
+        "mfgDate": "06/2026",
+        "expiryDate": "05/2027",
+        "fssaiLicense": null,
+        "vegNonVegEmblem": null
+      },
+      "consumerCare": {
+        "name": "J&J Consumer Care",
+        "address": "Johnson & Johnson, Mulund West, Mumbai - 400080",
+        "phone": "1800-22-4433",
+        "email": null,
+        "hasAllFourElements": false,
+        "missingElements": ["email"]
+      },
+      "countryOfOrigin": "India",
+      "isImported": false,
+      "complianceStatus": "FAIL",
+      "violations": [
+        {
+          "ruleId": "RULE_6_1_F_CONSUMER_CARE",
+          "ruleCitation": "Rule 6(1)(f), PCR 2011",
+          "severity": "CRITICAL",
+          "deduction": 15,
+          "reason": "Missing email address in Consumer Care details. Only phone (1800-22-4433) legible; email obscured by glare / not printed. Rule requires all 4 elements.",
+          "penaltySection": "Section 36(1)",
+          "remedyAction": "Add: \"Email: care@jnjindia.com\" alongside phone and address with PIN.",
+          "expectedStatus": "FAIL"
+        },
+        {
+          "ruleId": "RULE_7_TABLE_I_FONT_HEIGHT",
+          "ruleCitation": "Rule 7 Table-I, PCR 2011",
+          "severity": "HEURISTIC_FLAG",
+          "deduction": 5,
+          "reason": "Estimated font 0.85mm below 1.0mm for 100ml, but UNCALIBRATED Tier-C => REVIEW not FAIL. Requires micrometer confirmation.",
+          "penaltySection": "Advisory - requires scale confirmation",
+          "remedyAction": "Verify with Tier-A card; if confirmed <1.0mm, increase to ≥1.0mm.",
+          "expectedStatus": "REVIEW",
+          "requiresScaleConfirmation": true
+        }
+      ],
+      "complianceScore": 80,
+      "notes": "Pharma syrup: Tests missing email (Rule 6(1)(f) FAIL) + font REVIEW due to uncalibrated scale. Distinguishes FAIL vs REVIEW for same font violation per calibration confidence."
+    },
+    {
+      "skuId": "SKU-FOOD-FROOTI-013",
+      "productName": "Frooti Mango Drink",
+      "brandName": "Frooti (Parle Agro Pvt. Ltd.)",
+      "category": "FOOD",
+      "isFoodProduct": true,
+      "declaredNetQty": 160,
+      "netQtyUnit": "ml",
+      "netQtyRaw": "Net Quantity 160 ml",
+      "declaredMrp": 20.0,
+      "declaredMrpText": "MRP Rs. 20/-",
+      "hasInclusiveOfTaxes": false,
+      "expectedUsp": 0.125,
+      "expectedUspText": "₹0.13 per ml",
+      "expectedUspUnit": "per ml",
+      "packagingText": {
+        "english": "Frooti | Mango Drink | Fresh 'N' Juicy | Net Quantity 160 ml | MRP Rs. 20/- | Mfd. by Parle Agro Pvt. Ltd., Village Kane, Khed, Pune - 410402 | Consumer Care: Parle Agro Care, 1800-222-999, admin@parleagro.com | Mfg. 06/2026 | Best Before 9 Months | Country of Origin: India | Contains Mango Pulp | FSSAI 10014022002801",
+        "hindi": "फ्रूटी आम पेय | ताजा और रसदार | शुद्ध मात्रा 160 मिली | अधिकतम खुदरा मूल्य ₹20 | निर्माता: पारले एग्रो, पुणे - 410402 | उपभोक्ता सेवा: 1800-222-999",
+        "rawOcrMock": "Frooti Mango Drink\\nNet Quantity 160 ml\\nMRP Rs. 20/-\\nMfd Parle Agro Pune\\nConsumer Care 1800-222-999\\nadmin@parleagro.com\\nMfg 06/2026"
+      },
+      "dimensions": {
+        "heightMm": 135,
+        "widthMm": 52,
+        "depthMm": 52,
+        "diameterMm": 52,
+        "packType": "tetra_cylindrical",
+        "pdpAreaCm2": 88.2,
+        "pdpCalculation": "Tetra-ish: 0.4×π×52×135 = 88.2 cm²"
+      },
+      "fontMetrics": {
+        "measuredFontHeightMm": 1.1,
+        "requiredFontHeightMm": 1.0,
+        "calibrationMode": "TIER_A",
+        "calibrationConfidence": "HIGH",
+        "referenceObject": "85.6mm card",
+        "mmPerPixel": 0.069,
+        "requiresScaleConfirmation": false
+      },
+      "manufacturing": {
+        "manufacturerName": "Parle Agro Pvt. Ltd.",
+        "manufacturerAddress": "Village Kane, Khed, Pune - 410402",
+        "hasCompletePincode": true,
+        "pincode": "410402",
+        "mfgDate": "06/2026",
+        "expiryDate": "03/2027",
+        "fssaiLicense": "10014022002801",
+        "vegNonVegEmblem": "VEG_GREEN_DOT_PRESENT"
+      },
+      "consumerCare": {
+        "name": "Parle Agro Consumer Care",
+        "address": "Parle Agro Pvt. Ltd., Mumbai - 400001",
+        "phone": "1800-222-999",
+        "email": "admin@parleagro.com",
+        "hasAllFourElements": true
+      },
+      "countryOfOrigin": "India",
+      "isImported": false,
+      "complianceStatus": "FAIL",
+      "violations": [
+        {
+          "ruleId": "RULE_6_1_E_MRP_TAX_CLAUSE",
+          "ruleCitation": "Rule 6(1)(e), PCR 2011",
+          "severity": "CRITICAL",
+          "deduction": 30,
+          "reason": "Missing \"(incl. of all taxes)\" in MRP. Printed as \"MRP Rs. 20/-\" bare without tax inclusivity phrase.",
+          "penaltySection": "Section 36(1)",
+          "remedyAction": "Print: \"MRP ₹20.00 (inclusive of all taxes)\"",
+          "expectedStatus": "FAIL"
+        }
+      ],
+      "complianceScore": 70,
+      "notes": "Beverage tetra: Tests bare MRP format \"Rs. 20/-\" fails tax clause. Font 1.1 >1.0 PASS isolates MRP. Unit 'ml' correct (not 'ML')."
+    },
+    {
+      "skuId": "SKU-FOOD-DABURHONEY-014",
+      "productName": "Dabur Honey 100% Pure",
+      "brandName": "Dabur Honey (Dabur India Ltd.)",
+      "category": "FOOD",
+      "isFoodProduct": true,
+      "declaredNetQty": 250,
+      "netQtyUnit": "g",
+      "netQtyRaw": "Net Weight 250 g",
+      "declaredMrp": 145.0,
+      "declaredMrpText": "MRP ₹145.00 (incl. of all taxes)",
+      "hasInclusiveOfTaxes": true,
+      "expectedUsp": 0.58,
+      "expectedUspText": "₹0.58 per g (₹580.00 per kg)",
+      "expectedUspUnit": "per g",
+      "packagingText": {
+        "english": "Dabur Honey | 100% Pure Honey | No Sugar Adulteration | Net Weight 250 g | MRP ₹145.00 (incl. of all taxes) | USP ₹0.58 per g | Mfd. by Dabur India Ltd., 8/3, Asaf Ali Road, New Delhi - 110002 | Consumer Care: Dabur Care, 1800-103-1644, daburcares@dabur.com, Asaf Ali Road, New Delhi - 110002 | Mfg. 05/2026 | Exp. 11/2027 | Country of Origin: India | FSSAI 10012011000112 | NMR Tested | Store in cool dry place",
+        "hindi": "डाबर शहद 100% शुद्ध | चीनी मिलावट रहित | शुद्ध वजन 250 ग्राम | अधिकतम खुदरा मूल्य ₹145.00 (सभी करों सहित) | इकाई मूल्य ₹0.58 प्रति ग्राम | निर्माता: डाबर इंडिया, नई दिल्ली - 110002 | उपभोक्ता सेवा: 1800-103-1644 | मूल देश: भारत | निर्माण 05/2026",
+        "rawOcrMock": "Dabur Honey\\n100% Pure\\nNet Weight 250 g\\nMRP Rs.145.00 (incl. of all taxes)\\nUSP Rs.0.58/g\\nMfd Dabur India New Delhi 110002\\nConsumer Care 1800-103-1644\\ndaburcares@dabur.com\\nMfg 05/2026\\nCountry of Origin India"
+      },
+      "dimensions": {
+        "heightMm": 155,
+        "widthMm": 65,
+        "depthMm": 45,
+        "diameterMm": 65,
+        "packType": "bottle_cylindrical",
+        "pdpAreaCm2": 127.2,
+        "pdpCalculation": "Cylindrical: 0.4×π×65×155 = 127.2 cm²"
+      },
+      "fontMetrics": {
+        "measuredFontHeightMm": 2.1,
+        "requiredFontHeightMm": 2.0,
+        "calibrationMode": "TIER_A",
+        "calibrationConfidence": "HIGH",
+        "referenceObject": "85.6mm card",
+        "mmPerPixel": 0.073,
+        "requiresScaleConfirmation": false
+      },
+      "manufacturing": {
+        "manufacturerName": "Dabur India Ltd.",
+        "manufacturerAddress": "8/3, Asaf Ali Road, New Delhi - 110002",
+        "hasCompletePincode": true,
+        "pincode": "110002",
+        "mfgDate": "05/2026",
+        "expiryDate": "11/2027",
+        "fssaiLicense": "10012011000112",
+        "vegNonVegEmblem": "VEG_GREEN_DOT_PRESENT"
+      },
+      "consumerCare": {
+        "name": "Dabur Consumer Care Executive",
+        "address": "8/3, Asaf Ali Road, New Delhi - 110002",
+        "phone": "1800-103-1644",
+        "email": "daburcares@dabur.com",
+        "hasAllFourElements": true
+      },
+      "countryOfOrigin": "India",
+      "isImported": false,
+      "complianceStatus": "PASS",
+      "violations": [],
+      "complianceScore": 100,
+      "notes": "Compliant honey benchmark: 250g => 2.0mm threshold, measured 2.1mm PASS. USP math: 145/250=0.58 correct. All 4 consumer care elements present. Ideal PASS for syrup/bottle category."
+    },
+    {
+      "skuId": "SKU-GEN-AMAZONBATT-015",
+      "productName": "Amazon Basics AA Batteries 4-Pack",
+      "brandName": "Amazon Basics (Amazon Retail India Pvt. Ltd.)",
+      "category": "GENERAL",
+      "isFoodProduct": false,
+      "declaredNetQty": 4,
+      "netQtyUnit": "N",
+      "netQtyRaw": "Net Quantity 4 N (4 Units)",
+      "declaredMrp": 299.0,
+      "declaredMrpText": "MRP ₹299.00",
+      "hasInclusiveOfTaxes": false,
+      "expectedUsp": 74.75,
+      "expectedUspText": "₹74.75 per unit",
+      "expectedUspUnit": "per N",
+      "packagingText": {
+        "english": "Amazon Basics | AA Alkaline Batteries | 1.5V | Long Lasting | Net Quantity 4 N | MRP ₹299.00 | Mfd. by Amazon Retail India, Brigade Gateway, Rajajinagar, Bangalore - 560055 | Consumer Care: Amazon Basics Care, care@amazon.in, Bangalore - 560055 | Mfg. 03/2026 | Country of Origin: Not Declared",
+        "hindi": "अमेज़न बेसिक्स AA बैटरी 4 पैक | 1.5V क्षारीय | शुद्ध मात्रा 4 नग | अधिकतम खुदरा मूल्य ₹299.00 | निर्माता: अमेज़न रिटेल, बेंगलुरु - 560055 | उपभोक्ता सेवा: care@amazon.in",
+        "rawOcrMock": "Amazon Basics\\nAA Batteries 4N\\nMRP Rs.299.00\\nMfd Amazon Retail Bangalore\\nConsumer Care care@amazon.in\\nMfg 03/2026"
+      },
+      "dimensions": {
+        "heightMm": 120,
+        "widthMm": 85,
+        "depthMm": 18,
+        "diameterMm": null,
+        "packType": "blister_rectangular",
+        "pdpAreaCm2": 102.0,
+        "pdpCalculation": "120 × 85 = 10200 mm² = 102 cm²"
+      },
+      "fontMetrics": {
+        "measuredFontHeightMm": 1.2,
+        "requiredFontHeightMm": 1.0,
+        "calibrationMode": "TIER_B",
+        "calibrationConfidence": "ESTIMATED",
+        "referenceObject": "Blister pack 120×85mm",
+        "mmPerPixel": 0.095,
+        "requiresScaleConfirmation": false
+      },
+      "manufacturing": {
+        "manufacturerName": "Amazon Retail India Pvt. Ltd. (Marketed by)",
+        "manufacturerAddress": "Brigade Gateway, 8th Floor, 26/1, Dr. Rajkumar Road, Malleshwaram (W), Bangalore - 560055",
+        "hasCompletePincode": true,
+        "pincode": "560055",
+        "mfgDate": "03/2026",
+        "expiryDate": null,
+        "fssaiLicense": null,
+        "isImported": true,
+        "importerName": "Amazon Retail India Pvt. Ltd.",
+        "importerAddress": "Bangalore - 560055"
+      },
+      "consumerCare": {
+        "name": null,
+        "address": "Brigade Gateway, Bangalore - 560055",
+        "phone": null,
+        "email": "care@amazon.in",
+        "hasAllFourElements": false,
+        "missingElements": ["phone", "name"]
+      },
+      "countryOfOrigin": null,
+      "isImported": true,
+      "complianceStatus": "FAIL",
+      "violations": [
+        {
+          "ruleId": "RULE_6_1_E_MRP_TAX_CLAUSE",
+          "ruleCitation": "Rule 6(1)(e), PCR 2011",
+          "severity": "CRITICAL",
+          "deduction": 30,
+          "reason": "Missing \"(incl. of all taxes)\" in MRP. Printed as bare \"MRP ₹299.00\".",
+          "penaltySection": "Section 36(1)",
+          "remedyAction": "Print: \"MRP ₹299.00 (inclusive of all taxes)\"",
+          "expectedStatus": "FAIL"
+        },
+        {
+          "ruleId": "RULE_6_1_G_COUNTRY_OF_ORIGIN",
+          "ruleCitation": "Rule 6(1)(g), PCR 2011 & GSR 418(E) 2026",
+          "severity": "CRITICAL",
+          "deduction": 25,
+          "reason": "Missing Country of Origin declaration. For imported batteries (likely Made in China), COO is mandatory. \"Not Declared\" = violation.",
+          "penaltySection": "Section 36(1) + E-Commerce Rules",
+          "remedyAction": "Print: \"Country of Origin: China\" or actual COO.",
+          "expectedStatus": "FAIL"
+        },
+        {
+          "ruleId": "RULE_6_1_F_CONSUMER_CARE",
+          "ruleCitation": "Rule 6(1)(f), PCR 2011",
+          "severity": "CRITICAL",
+          "deduction": 15,
+          "reason": "Missing phone number and name/designation in Consumer Care. Only email and address present.",
+          "penaltySection": "Section 36(1)",
+          "remedyAction": "Add: \"Consumer Care Officer, Phone: 1800-3000-4009\"",
+          "expectedStatus": "FAIL"
+        }
+      ],
+      "complianceScore": 30,
+      "notes": "Triple FAIL: Classic e-commerce private label violation pattern. MRP tax clause + COO + consumer care phone all missing. Based on real Amazon Basics audit findings 2025."
+    },
+    {
+      "skuId": "SKU-GEN-SURFEXCEL-016",
+      "productName": "Surf Excel Matic Liquid Detergent Top Load",
+      "brandName": "Surf Excel (Hindustan Unilever Ltd.)",
+      "category": "GENERAL",
+      "isFoodProduct": false,
+      "declaredNetQty": 1,
+      "netQtyUnit": "L",
+      "netQtyRaw": "Net Quantity 1 L (1000 ml)",
+      "declaredMrp": 260.0,
+      "declaredMrpText": "MRP ₹260.00 (inclusive of all taxes)",
+      "hasInclusiveOfTaxes": true,
+      "expectedUsp": 0.35,
+      "expectedUspText": "₹0.35 per ml (Declared: ₹0.35, Calculated: ₹0.26 - MISMATCH)",
+      "expectedUspUnit": "per ml",
+      "packagingText": {
+        "english": "Surf Excel Matic | Liquid Detergent | For Top Load Washing Machines | Removes Tough Dried Stains | Net Quantity 1 L (1000 ml) | MRP ₹260.00 (inclusive of all taxes) | USP ₹0.35 per ml | Mfd. by Hindustan Unilever Ltd., Unilever House, B.D. Sawant Marg, Andheri East, Mumbai - 400099 | Consumer Care: HUL Care, 1800-10-22-221, lever.care@unilever.com, Mumbai - 400099 | Mfg. 06/2026 | Exp. 12/2027 | Country of Origin: India | Caution: Keep out of reach of children",
+        "hindi": "सर्फ एक्सेल मैटिक लिक्विड | टॉप लोड वाशिंग मशीन के लिए | शुद्ध मात्रा 1 लीटर | अधिकतम खुदरा मूल्य ₹260.00 (सभी करों सहित) | इकाई मूल्य ₹0.35 प्रति मिली (गलत गणना)",
+        "rawOcrMock": "Surf Excel Matic\\nLiquid Detergent 1 L\\nMRP Rs.260.00 (inclusive of all taxes)\\nUSP Rs.0.35/ml\\nMfd Hindustan Unilever Mumbai\\nConsumer Care 1800-10-22-221\\nlever.care@unilever.com\\nMfg 06/2026"
+      },
+      "dimensions": {
+        "heightMm": 240,
+        "widthMm": 110,
+        "depthMm": 70,
+        "diameterMm": null,
+        "packType": "bottle_rectangular",
+        "pdpAreaCm2": 264.0,
+        "pdpCalculation": "240 × 110 = 26400 mm² = 264 cm²"
+      },
+      "fontMetrics": {
+        "measuredFontHeightMm": 2.5,
+        "requiredFontHeightMm": 4.0,
+        "calibrationMode": "TIER_A",
+        "calibrationConfidence": "HIGH",
+        "referenceObject": "85.6mm card",
+        "mmPerPixel": 0.07,
+        "requiresScaleConfirmation": false
+      },
+      "manufacturing": {
+        "manufacturerName": "Hindustan Unilever Ltd.",
+        "manufacturerAddress": "Unilever House, B.D. Sawant Marg, Chakala, Andheri East, Mumbai - 400099",
+        "hasCompletePincode": true,
+        "pincode": "400099",
+        "mfgDate": "06/2026",
+        "expiryDate": "12/2027",
+        "fssaiLicense": null,
+        "vegNonVegEmblem": null
+      },
+      "consumerCare": {
+        "name": "HUL Consumer Care Officer",
+        "address": "Unilever House, B.D. Sawant Marg, Mumbai - 400099",
+        "phone": "1800-10-22-221",
+        "email": "lever.care@unilever.com",
+        "hasAllFourElements": true
+      },
+      "countryOfOrigin": "India",
+      "isImported": false,
+      "complianceStatus": "FAIL",
+      "violations": [
+        {
+          "ruleId": "RULE_6_11_UNIT_SALE_PRICE_MATH",
+          "ruleCitation": "Rule 6(11), PCR (Amendment) Rules 2021/2022",
+          "severity": "CRITICAL",
+          "deduction": 30,
+          "reason": "USP math mismatch: Declared ₹0.35 per ml vs Calculated ₹0.26 per ml (260.00 / 1000 = 0.26). Discrepancy 34.6% exceeds ±1% tolerance. Arithmetic fraud.",
+          "penaltySection": "Section 36(1) - Misleading declaration",
+          "remedyAction": "Correct USP to: \"₹0.26 per ml\" or \"₹260.00 per L\"",
+          "expectedStatus": "FAIL"
+        },
+        {
+          "ruleId": "RULE_7_TABLE_I_FONT_HEIGHT",
+          "ruleCitation": "Rule 7 Table-I, PCR 2011",
+          "severity": "MAJOR",
+          "deduction": 20,
+          "reason": "Font height 2.5mm below 4.0mm Table-I requirement for 1L pack (>=500g/ml threshold). Tier-A HIGH confidence => definitive FAIL.",
+          "penaltySection": "Section 36(1)",
+          "remedyAction": "Increase net quantity numeral to ≥4.0mm",
+          "expectedStatus": "FAIL"
+        }
+      ],
+      "complianceScore": 50,
+      "notes": "Tests USP arithmetic cross-validator: declared 0.35 vs 0.26 = FAIL. Also font 2.5 <4.0 for 1L. Household category GENERAL still requires USP for >500ml."
+    },
+    {
+      "skuId": "SKU-FOOD-BLINKIT-ALMONDS-017",
+      "productName": "Blinkit Organic Almonds",
+      "brandName": "Blinkit (Grofers India Private Limited - Private Label)",
+      "category": "FOOD",
+      "isFoodProduct": true,
+      "declaredNetQty": 500,
+      "netQtyUnit": "g",
+      "netQtyRaw": "Net Weight 500 g",
+      "declaredMrp": 450.0,
+      "declaredMrpText": "MRP ₹450.00 (incl. of all taxes)",
+      "hasInclusiveOfTaxes": true,
+      "expectedUsp": 0.9,
+      "expectedUspText": "₹0.90 per g (₹900.00 per kg)",
+      "expectedUspUnit": "per g",
+      "packagingText": {
+        "english": "Blinkit Organic | Premium California Almonds | Rich in Protein & Vitamin E | Net Weight 500 g | MRP ₹450.00 (incl. of all taxes) | USP ₹0.90 per g | Packed & Marketed by Grofers India Pvt. Ltd., Ground Floor, Vatika Tower, Golf Course Road, Gurugram - 122002 | Consumer Care: Blinkit Care, 1800-103-3737, info@blinkit.com, Gurugram - 122002 | Mfg. 05/2026 | Best Before 9 Months | Country of Origin: India (Almonds Imported from USA, Packed in India) | FSSAI 10020064001234",
+        "hindi": "ब्लिंकिट ऑर्गेनिक बादाम | प्रीमियम कैलिफोर्निया बादाम | शुद्ध वजन 500 ग्राम | अधिकतम खुदरा मूल्य ₹450.00 (सभी करों सहित) | इकाई मूल्य ₹0.90 प्रति ग्राम | मूल देश: भारत (USA से आयातित, भारत में पैक)",
+        "rawOcrMock": "Blinkit Organic Almonds\\nNet Weight 500 g\\nMRP Rs.450.00 (incl. of all taxes)\\nUSP Rs.0.90/g\\nPacked Grofers Gurugram 122002\\nConsumer Care 1800-103-3737\\ninfo@blinkit.com\\nMfg 05/2026"
+      },
+      "dimensions": {
+        "heightMm": 220,
+        "widthMm": 150,
+        "depthMm": 80,
+        "diameterMm": null,
+        "packType": "pouch_standup",
+        "pdpAreaCm2": 330.0,
+        "pdpCalculation": "220 × 150 = 33000 mm² = 330 cm²"
+      },
+      "fontMetrics": {
+        "measuredFontHeightMm": 3.2,
+        "requiredFontHeightMm": 4.0,
+        "calibrationMode": "TIER_C",
+        "calibrationConfidence": "UNCALIBRATED",
+        "referenceObject": null,
+        "mmPerPixel": 0.264,
+        "estimatedFontHeightMm": 3.2,
+        "requiresScaleConfirmation": true,
+        "disclaimer": "Uncalibrated heuristic - e-commerce quick-commerce pouch photographed without reference"
+      },
+      "manufacturing": {
+        "manufacturerName": "Grofers India Private Limited (Blinkit)",
+        "manufacturerAddress": "Ground Floor, Vatika Tower, Golf Course Road, Sector 54, Gurugram - 122002",
+        "hasCompletePincode": true,
+        "pincode": "122002",
+        "mfgDate": "05/2026",
+        "expiryDate": "02/2027",
+        "fssaiLicense": "10020064001234",
+        "vegNonVegEmblem": "VEG_GREEN_DOT_PRESENT"
+      },
+      "consumerCare": {
+        "name": "Blinkit Consumer Care",
+        "address": "Vatika Tower, Golf Course Road, Gurugram - 122002",
+        "phone": "1800-103-3737",
+        "email": "info@blinkit.com",
+        "hasAllFourElements": true
+      },
+      "countryOfOrigin": "India (Packed in India, Almonds Imported from USA)",
+      "isImported": false,
+      "complianceStatus": "REVIEW",
+      "violations": [
+        {
+          "ruleId": "RULE_7_TABLE_I_FONT_HEIGHT",
+          "ruleCitation": "Rule 7 Table-I, PCR 2011",
+          "severity": "HEURISTIC_FLAG",
+          "deduction": 5,
+          "reason": "Estimated font 3.2mm appears below 4.0mm for 500g pack, but UNCALIBRATED Tier-C => must be REVIEW, not auto-FAIL. E-commerce quick-commerce pouch often photographed without scale.",
+          "penaltySection": "Requires Tier-A/B confirmation",
+          "remedyAction": "Re-capture with reference card. If confirmed 3.2mm, increase to ≥4.0mm.",
+          "expectedStatus": "REVIEW",
+          "requiresScaleConfirmation": true
+        }
+      ],
+      "complianceScore": 95,
+      "notes": "E-commerce quick-commerce private label: Tests REVIEW handling for borderline font with uncalibrated scale. All other declarations PASS (including nuanced COO: Packed in India). Demonstrates honest REVIEW vs false FAIL."
+    },
+    {
+      "skuId": "SKU-FOOD-BALAJI-018",
+      "productName": "Balaji Wafers Masala Masti",
+      "brandName": "Balaji Wafers Pvt. Ltd.",
+      "category": "FOOD",
+      "isFoodProduct": true,
+      "declaredNetQty": 52,
+      "netQtyUnit": "g",
+      "netQtyRaw": "Net Weight 52 g",
+      "declaredMrp": 20.0,
+      "declaredMrpText": "MRP ₹20.00",
+      "hasInclusiveOfTaxes": false,
+      "expectedUsp": 0.3846,
+      "expectedUspText": "₹0.38 per g",
+      "expectedUspUnit": "per g",
+      "packagingText": {
+        "english": "Balaji Wafers | Masala Masti | Crunchy Potato Chips | Net Weight 52 g | MRP ₹20.00 | Mfd. by Balaji Wafers Pvt. Ltd., Rajkot - 360003 | Consumer Care: support@balajiwafers.com, Rajkot - 360003 | Mfg. 06/2026 | Best Before 4 Months | Country of Origin: India",
+        "hindi": "बालाजी वेफर्स मसाला मस्ती | कुरकुरे आलू चिप्स | शुद्ध वजन 52 ग्राम | अधिकतम खुदरा मूल्य ₹20.00 | निर्माता: बालाजी वेफर्स, राजकोट - 360003 | उपभोक्ता सेवा: support@balajiwafers.com",
+        "rawOcrMock": "Balaji Wafers\\nMasala Masti\\nNet Weight 52 g\\nMRP Rs.20.00\\nMfd Balaji Wafers Rajkot\\nConsumer Care support@balajiwafers.com\\nMfg 06/2026"
+      },
+      "dimensions": {
+        "heightMm": 165,
+        "widthMm": 115,
+        "depthMm": 40,
+        "diameterMm": null,
+        "packType": "pouch_rectangular",
+        "pdpAreaCm2": 189.75,
+        "pdpCalculation": "165 × 115 = 18975 mm² = 189.75 cm²"
+      },
+      "fontMetrics": {
+        "measuredFontHeightMm": 1.15,
+        "requiredFontHeightMm": 1.0,
+        "calibrationMode": "TIER_A",
+        "calibrationConfidence": "HIGH",
+        "referenceObject": "85.6mm card",
+        "mmPerPixel": 0.072,
+        "requiresScaleConfirmation": false
+      },
+      "manufacturing": {
+        "manufacturerName": "Balaji Wafers Pvt. Ltd.",
+        "manufacturerAddress": "Village: Vajdi (Vad), Kalawad Road, Rajkot - 360003",
+        "hasCompletePincode": true,
+        "pincode": "360003",
+        "mfgDate": "06/2026",
+        "expiryDate": "10/2026",
+        "fssaiLicense": "10012021000145",
+        "vegNonVegEmblem": "VEG_GREEN_DOT_PRESENT"
+      },
+      "consumerCare": {
+        "name": null,
+        "address": "Balaji Wafers, Rajkot - 360003",
+        "phone": null,
+        "email": "support@balajiwafers.com",
+        "hasAllFourElements": false,
+        "missingElements": ["phone", "name"]
+      },
+      "countryOfOrigin": "India",
+      "isImported": false,
+      "complianceStatus": "FAIL",
+      "violations": [
+        {
+          "ruleId": "RULE_6_1_E_MRP_TAX_CLAUSE",
+          "ruleCitation": "Rule 6(1)(e), PCR 2011",
+          "severity": "CRITICAL",
+          "deduction": 30,
+          "reason": "Missing \"(incl. of all taxes)\" in MRP. Bare \"MRP ₹20.00\" violates mandatory tax clause.",
+          "penaltySection": "Section 36(1)",
+          "remedyAction": "Print: \"MRP ₹20.00 (inclusive of all taxes)\"",
+          "expectedStatus": "FAIL"
+        },
+        {
+          "ruleId": "RULE_6_1_F_CONSUMER_CARE",
+          "ruleCitation": "Rule 6(1)(f), PCR 2011",
+          "severity": "CRITICAL",
+          "deduction": 15,
+          "reason": "Missing phone number and name/designation in Consumer Care. Only email provided (support@balajiwafers.com).",
+          "penaltySection": "Section 36(1)",
+          "remedyAction": "Add: \"Consumer Care Officer, Phone: 1800-233-1234, Email: support@balajiwafers.com\"",
+          "expectedStatus": "FAIL"
+        }
+      ],
+      "complianceScore": 55,
+      "notes": "Matches IMPLEMENTATION_PLAN Part 4 example: SKU-CHIPS-01 style. Classic dual FAIL for chips: MRP tax + consumer care phone. Font 1.15 >1.0 PASS isolates violations."
+    },
+    {
+      "skuId": "SKU-FOOD-AASHIRVAAD-019",
+      "productName": "Aashirvaad Shuddh Chakki Atta",
+      "brandName": "Aashirvaad (ITC Ltd.)",
+      "category": "FOOD",
+      "isFoodProduct": true,
+      "declaredNetQty": 5,
+      "netQtyUnit": "kg",
+      "netQtyRaw": "Net Weight 5 kg (5000 g)",
+      "declaredMrp": 260.0,
+      "declaredMrpText": "MRP ₹260.00 (inclusive of all taxes)",
+      "hasInclusiveOfTaxes": true,
+      "expectedUsp": 52.0,
+      "expectedUspText": "₹52.00 per kg (₹0.052 per g)",
+      "expectedUspUnit": "per kg",
+      "packagingText": {
+        "english": "Aashirvaad | Shuddh Chakki Atta | 100% Whole Wheat | 0% Maida | Net Weight 5 kg (5000 g) | MRP ₹260.00 (inclusive of all taxes) | USP ₹52.00 per kg | Mfd. by ITC Ltd., Foods Division, 37 J.L. Nehru Road, Kolkata - 700071 | Consumer Care: ITC Care, 1800-425-4444, itccares@itc.in, Kolkata - 700071 | Mfg. 06/2026 | Best Before 4 Months | Country of Origin: India | FSSAI 10012031000167 | Store in cool dry place | Fortified with Iron",
+        "hindi": "आशीर्वाद शुद्ध चक्की आटा | 100% गेहूं | मैदा रहित | शुद्ध वजन 5 किलोग्राम (5000 ग्राम) | अधिकतम खुदरा मूल्य ₹260.00 (सभी करों सहित) | इकाई मूल्य ₹52.00 प्रति किलोग्राम | निर्माता: आईटीसी लिमिटेड, कोलकाता - 700071 | उपभोक्ता सेवा: 1800-425-4444 | मूल देश: भारत",
+        "rawOcrMock": "Aashirvaad Shuddh Chakki Atta\\nNet Weight 5 kg\\nMRP Rs.260.00 (inclusive of all taxes)\\nUSP Rs.52.00/kg\\nMfd ITC Ltd Kolkata 700071\\nConsumer Care 1800-425-4444\\nitccares@itc.in\\nMfg 06/2026\\nCountry of Origin India"
+      },
+      "dimensions": {
+        "heightMm": 380,
+        "widthMm": 250,
+        "depthMm": 120,
+        "diameterMm": null,
+        "packType": "bag_woven",
+        "pdpAreaCm2": 950.0,
+        "pdpCalculation": "380 × 250 = 95000 mm² = 950 cm²"
+      },
+      "fontMetrics": {
+        "measuredFontHeightMm": 6.2,
+        "requiredFontHeightMm": 4.0,
+        "calibrationMode": "TIER_B",
+        "calibrationConfidence": "ESTIMATED",
+        "referenceObject": "Declared bag 380×250mm",
+        "mmPerPixel": 0.11,
+        "requiresScaleConfirmation": false
+      },
+      "manufacturing": {
+        "manufacturerName": "ITC Ltd., Foods Division",
+        "manufacturerAddress": "37, J.L. Nehru Road, Kolkata - 700071",
+        "hasCompletePincode": true,
+        "pincode": "700071",
+        "mfgDate": "06/2026",
+        "expiryDate": "10/2026",
+        "fssaiLicense": "10012031000167",
+        "vegNonVegEmblem": "VEG_GREEN_DOT_PRESENT"
+      },
+      "consumerCare": {
+        "name": "ITC Consumer Care Executive",
+        "address": "ITC Ltd., J.L. Nehru Road, Kolkata - 700071",
+        "phone": "1800-425-4444",
+        "email": "itccares@itc.in",
+        "hasAllFourElements": true
+      },
+      "countryOfOrigin": "India",
+      "isImported": false,
+      "complianceStatus": "PASS",
+      "violations": [],
+      "complianceScore": 100,
+      "notes": "Large pack PASS benchmark: 5kg => 4mm threshold, measured 6.2mm PASS. USP math: 260/5=52 correct. Dual unit declaration present (5kg (5000g)). Matches Part 4 SKU-ATTA-02 example but corrected to 5kg compliant."
+    },
+    {
+      "skuId": "SKU-GEN-BORGES-020",
+      "productName": "Borges Extra Virgin Olive Oil",
+      "brandName": "Borges (Borges India Pvt. Ltd. / Imported)",
+      "category": "GENERAL",
+      "isFoodProduct": true,
+      "declaredNetQty": 1,
+      "netQtyUnit": "L",
+      "netQtyRaw": "Net Quantity 1 L",
+      "declaredMrp": 1450.0,
+      "declaredMrpText": "MRP ₹1,450.00",
+      "hasInclusiveOfTaxes": false,
+      "expectedUsp": null,
+      "expectedUspText": null,
+      "expectedUspUnit": null,
+      "packagingText": {
+        "english": "Borges | Extra Virgin Olive Oil | Cold Extracted | 100% Natural | Net Quantity 1 L | MRP ₹1,450.00 | Imported & Marketed by Borges India Pvt. Ltd., New Delhi - 110044 | Consumer Care: Borges Care, 1800-120-1234, care@borgesindia.com | Mfg. 04/2026 | Exp. 04/2028 | FOR SALE IN INDIA ONLY | Product of Spain (label obscured on back, not on PDP)",
+        "hindi": "बोर्जेस एक्स्ट्रा वर्जिन जैतून तेल | ठंडा निकाला हुआ | शुद्ध मात्रा 1 लीटर | अधिकतम खुदरा मूल्य ₹1,450.00 | आयातक: बोर्जेस इंडिया, नई दिल्ली - 110044",
+        "rawOcrMock": "Borges Extra Virgin Olive Oil\\nNet Quantity 1 L\\nMRP Rs.1450.00\\nImported Borges India New Delhi\\nConsumer Care 1800-120-1234\\ncare@borgesindia.com\\nMfg 04/2026"
+      },
+      "dimensions": {
+        "heightMm": 285,
+        "widthMm": 85,
+        "depthMm": 85,
+        "diameterMm": 85,
+        "packType": "bottle_glass_cylindrical",
+        "pdpAreaCm2": 241.0,
+        "pdpCalculation": "Glass bottle: label wrap 85×180=153cm², full PDP calc 0.4×π×85×285=304cm², PDP approximated as 241cm² (visible declaration panel)"
+      },
+      "fontMetrics": {
+        "measuredFontHeightMm": 3.8,
+        "requiredFontHeightMm": 4.0,
+        "calibrationMode": "TIER_A",
+        "calibrationConfidence": "HIGH",
+        "referenceObject": "85.6mm card",
+        "mmPerPixel": 0.088,
+        "requiresScaleConfirmation": false
+      },
+      "manufacturing": {
+        "manufacturerName": "Borges International Group, Spain (Imported by Borges India Pvt. Ltd.)",
+        "manufacturerAddress": "Borges India Pvt. Ltd., A-12, Mohan Cooperative Industrial Estate, New Delhi - 110044",
+        "hasCompletePincode": true,
+        "pincode": "110044",
+        "mfgDate": "04/2026",
+        "expiryDate": "04/2028",
+        "fssaiLicense": "10013011000567",
+        "isImported": true,
+        "importerName": "Borges India Pvt. Ltd.",
+        "importerAddress": "New Delhi - 110044"
+      },
+      "consumerCare": {
+        "name": "Borges Consumer Care Officer",
+        "address": "Borges India, Mohan Cooperative, New Delhi - 110044",
+        "phone": "1800-120-1234",
+        "email": "care@borgesindia.com",
+        "hasAllFourElements": true
+      },
+      "countryOfOrigin": null,
+      "isImported": true,
+      "complianceStatus": "FAIL",
+      "violations": [
+        {
+          "ruleId": "RULE_6_1_G_COUNTRY_OF_ORIGIN",
+          "ruleCitation": "Rule 6(1)(g) & E-Commerce Rule 9, PCR 2011 & GSR 418(E) 2026",
+          "severity": "CRITICAL",
+          "deduction": 25,
+          "reason": "Country of Origin missing on Principal Display Panel / not clearly declared. \"Product of Spain\" is obscured on back and not legible on PDP. E-commerce mandate requires clear \"Country of Origin: Spain\" on primary digital panel.",
+          "penaltySection": "Section 36(1)",
+          "remedyAction": "Print prominently on PDP: \"Country of Origin: Spain\" (or \"Made in Spain\") and ensure e-commerce listing filter.",
+          "expectedStatus": "FAIL"
+        },
+        {
+          "ruleId": "RULE_6_1_E_MRP_TAX_CLAUSE",
+          "ruleCitation": "Rule 6(1)(e), PCR 2011",
+          "severity": "CRITICAL",
+          "deduction": 30,
+          "reason": "Missing \"(incl. of all taxes)\" in MRP. Printed as \"MRP ₹1,450.00\" bare.",
+          "penaltySection": "Section 36(1)",
+          "remedyAction": "Print: \"MRP ₹1,450.00 (inclusive of all taxes)\"",
+          "expectedStatus": "FAIL"
+        },
+        {
+          "ruleId": "RULE_6_11_UNIT_SALE_PRICE_MATH",
+          "ruleCitation": "Rule 6(11), PCR 2021/2022",
+          "severity": "CRITICAL",
+          "deduction": 30,
+          "reason": "Unit Sale Price missing on imported 1L pack. Mandatory for >=1L (₹ per L).",
+          "penaltySection": "Section 36(1)",
+          "remedyAction": "Declare: \"USP ₹1,450.00 per L\" or \"₹1.45 per ml\"",
+          "expectedStatus": "FAIL"
+        },
+        {
+          "ruleId": "RULE_7_TABLE_I_FONT_HEIGHT",
+          "ruleCitation": "Rule 7 Table-I, PCR 2011",
+          "severity": "MAJOR",
+          "deduction": 20,
+          "reason": "Font height 3.8mm below 4.0mm Table-I requirement for 1L pack (>=500g/ml). Tier-A HIGH confidence => FAIL.",
+          "penaltySection": "Section 36(1)",
+          "remedyAction": "Increase net quantity numeral to ≥4.0mm",
+          "expectedStatus": "FAIL"
+        }
+      ],
+      "complianceScore": 0,
+      "notes": "Worst-case imported FAIL: MRP tax + COO + USP + font. Matches IMPLEMENTATION_PLAN SKU-OLIVE-ECOM-03 but as physical pack. Tests multi-violation scoring floor at 0. Chronic violator pattern."
+    }
+  ]
+}

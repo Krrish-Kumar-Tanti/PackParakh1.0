@@ -1,0 +1,53 @@
+{
+  "name": "packparakh-server",
+  "version": "1.0.0",
+  "description": "PackParakh Backend API & Engine (SIH 2026 Problem Statement 26034)",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "(mkdir -p ../node_modules && cp -r node_modules/zod ../node_modules/ 2>/dev/null || true) && tsc && (mkdir -p dist/database && cp src/database/schema.sql dist/database/schema.sql 2>/dev/null || true) && (mkdir -p dist/server/src/database && cp src/database/schema.sql dist/server/src/database/schema.sql 2>/dev/null || true)",
+    "start": "node dist/server/src/index.js || node dist/index.js",
+    "seed": "tsx src/database/seed.ts",
+    "test": "tsx --test tests/**/*.test.ts"
+  },
+  "keywords": [
+    "packparakh",
+    "legal-metrology",
+    "doca",
+    "sih2026",
+    "express",
+    "sqlite"
+  ],
+  "author": "Gitansh & Team PackParakh",
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "better-sqlite3": "12.11.1",
+    "cheerio": "^1.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "jimp": "^1.6.1",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.10.0",
+    "pdf-lib": "^1.17.1",
+    "qrcode": "^1.5.4",
+    "sharp": "^0.35.4",
+    "tesseract.js": "^7.0.0",
+    "zod": "^3.24.2",
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/multer": "^1.4.12",
+    "@types/node": "^22.13.5",
+    "@types/nodemailer": "^6.4.17",
+    "@types/qrcode": "^1.5.5",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3"
+  },
+  "devDependencies": {}
+}

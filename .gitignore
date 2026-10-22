@@ -1,0 +1,17 @@
+node_modules/
+.next/
+client/.next/
+dist/
+build/
+coverage/
+uploads/
+*.db
+*.db-wal
+*.db-shm
+.DS_Store
+*.log
+.env
+.env.local
+.env.*.local
+.env*
+!.env.example

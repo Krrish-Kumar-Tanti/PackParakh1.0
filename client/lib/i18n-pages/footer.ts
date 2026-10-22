@@ -1,0 +1,275 @@
+export const footerDict: Record<
+  "en" | "hi" | "bn" | "ta" | "te",
+  Record<string, unknown>
+> = {
+  en: {
+    ministry: {
+      title: "Department of Consumer Affairs • Legal Metrology Division",
+      subtitle: "Ministry of Consumer Affairs, Food & Public Distribution, Government of India",
+    },
+    status: {
+      badge: "PCR 2011 / GSR 418(E) ACTIVE",
+      sipId: "SIH ID: 26034",
+    },
+    brand: {
+      tagline: "Automated Legal Metrology Compliance Engine",
+      description:
+        "PackParakh is an autonomous statutory compliance engine developed under the Legal Metrology (Packaged Commodities) Rules, 2011 and Section 63 BSA 2023 to verify mandatory declarations, font calibration, and Unit Sale Price math across physical packaging and digital commerce.",
+    },
+    contact: {
+      helplineLabel: "National Consumer Helpline:",
+      helplineTollFree: "(Toll-Free)",
+      helplineSms: "or SMS {number}",
+      nodalLabel: "Nodal Support:",
+      address: "Krishi Bhawan, Dr. Rajendra Prasad Road, New Delhi - 110001",
+    },
+    services: {
+      title: "Inspection Services",
+      scanner: "Instant Package Scanner",
+      raidAudit: "LMO Field Raid Audit",
+      studio: "MSME Pre-Print Studio",
+      login: "Official Officer Login",
+      helpdesk: "File Packaging Grievance",
+    },
+    acts: {
+      title: "Acts & Citations",
+      lmAct: "Legal Metrology Act, 2009",
+      pcrRules: "PCR Rules, 2011 (Rule 6 & 7)",
+      uspMandate: "Rule 6(11) Unit Sale Price Mandate",
+      bsa: "Sec 63 BSA 2023 (Digital Evidence)",
+      janVishwas: "Jan Vishwas Act 2023 (Compounding)",
+    },
+    policies: {
+      title: "GovTech & Policies",
+      guidelines: "Technical Guidelines",
+      ticketSupport: "Helpdesk Ticket System",
+      controllers: "State Controllers Directory",
+      docaPortal: "DoCA Official Portal",
+      edaakhil: "e-Daakhil Consumer Court",
+    },
+    bottom: {
+      copyright: "© {year} Legal Metrology Directorate, DoCA, Govt of India. All Rights Reserved.",
+      privacy: "Privacy Policy",
+      terms: "Terms of Use",
+      accessibility: "Accessibility Statement (GIGW 3.0)",
+      hyperlink: "Hyperlink Policy",
+      compliance: "Certified compliant with Government of India Guidelines for Websites (GIGW).",
+    },
+  },
+  hi: {
+    ministry: {
+      title: "उपभोक्ता मामले विभाग • विधिक मापविज्ञान प्रभाग",
+      subtitle: "उपभोक्ता मामले, खाद्य और सार्वजनिक वितरण मंत्रालय, भारत सरकार",
+    },
+    status: {
+      badge: "मानक: पीसीआर 2011 / जीएसआर 418(ई)",
+      sipId: "SIH ID: 26034",
+    },
+    brand: {
+      tagline: "स्वचालित विधिक मापविज्ञान अनुपालन इंजन",
+      description:
+        "पैक-परख विधिक मापविज्ञान (पैकेज्ड कमोडिटीज) नियम 2011 और भारतीय साक्ष्य अधिनियम 2023 (धारा 63) के अंतर्गत विकसित एक स्वायत्त डिजिटल अनुपालन इंजन है, जो पैकेजिंग पर फोंट आकार, इकाई विक्रय मूल्य (यूएसपी) और वैधानिक घोषणाओं की सत्यता प्रमाणित करता है।",
+    },
+    contact: {
+      helplineLabel: "राष्ट्रीय उपभोक्ता हेल्पलाइन:",
+      helplineTollFree: "(टोल-फ्री)",
+      helplineSms: "या एसएमएस {number}",
+      nodalLabel: "नोडल सहायता:",
+      address: "कृषि भवन, डॉ. राजेंद्र प्रसाद रोड, नई दिल्ली - 110001",
+    },
+    services: {
+      title: "वैधानिक सेवाएं",
+      scanner: "त्वरित पैकेज निरीक्षण",
+      raidAudit: "एलएमओ फील्ड निरीक्षण",
+      studio: "एमएसएमई प्री-प्रिंट स्टूडियो",
+      login: "अधिकारी / ब्रांड लॉगिन",
+      helpdesk: "शिकायत दर्ज करें (फॉर्म-वी)",
+    },
+    acts: {
+      title: "अधिनियम व नियम",
+      lmAct: "विधिक मापविज्ञान अधिनियम, 2009",
+      pcrRules: "पीसीआर नियम, 2011 (नियम 6 व 7)",
+      uspMandate: "नियम 6(11) इकाई विक्रय मूल्य अनिवार्यता",
+      bsa: "धारा 63 बीएसए 2023 (डिजिटल साक्ष्य)",
+      janVishwas: "जन विश्वास अधिनियम 2023 (समाधान)",
+    },
+    policies: {
+      title: "सहायता एवं नीतियां",
+      guidelines: "तकनीकी दिशानिर्देश",
+      ticketSupport: "हेल्पडेस्क टिकट समर्थन",
+      controllers: "राज्य नियंत्रक निर्देशिका",
+      docaPortal: "डीओसीए आधिकारिक पोर्टल",
+      edaakhil: "ई-दाखिल उपभोक्ता अदालत",
+    },
+    bottom: {
+      copyright: "© {year} विधिक मापविज्ञान निदेशालय, डीओसीए, भारत सरकार। सर्वाधिकार सुरक्षित।",
+      privacy: "गोपनीयता नीति",
+      terms: "उपयोग की शर्तें",
+      accessibility: "अभिगम्यता वक्तव्य (गीग-डब्ल्यू 3.0)",
+      hyperlink: "हाइपरलिंक नीति",
+      compliance: "भारत सरकार के वेबसाइट दिशानिर्देशों (गीग-डब्ल्यू) के अनुरूप प्रमाणित।",
+    },
+  },
+  bn: {
+    ministry: {
+      title: "ভোক্তা বিষয়ক বিভাগ • আইনগত মেট্রোলজি বিভাগ",
+      subtitle: "ভোক্তা বিষয়ক, খাদ্য ও পাবলিক ডিস্ট্রিবিউশন মন্ত্রক, ভারত সরকার",
+    },
+    status: {
+      badge: "মান: পিসিআর ২০১১ / জিএসআর ৪১৮(ই) সক্রিয়",
+      sipId: "SIH ID: 26034",
+    },
+    brand: {
+      tagline: "স্বয়ংক্রিয় আইনগত মেট্রোলজি সম্মতি ইঞ্জিন",
+      description:
+        "প্যাক-পরখ আইনগত মেট্রোলজি (প্যাকেজড কমোডিটিজ) বিধি ২০১১ এবং ধারা ৬৩ বিএসএ ২০২৩ অনুযায়ী বিকশিত একটি স্বতন্ত্র আইনি সম্মতি ইঞ্জিন, যা শারীরিক প্যাকেজিং ও ডিজিটাল বাণিজ্যে বাধ্যতামূলক ঘোষণা, ফন্ট পরিমাপ এবং ইউনিট বিক্রয় মূল্য (ইউএসপি) যাচাই করে।",
+    },
+    contact: {
+      helplineLabel: "জাতীয় ভোক্তা হেল্পলাইন:",
+      helplineTollFree: "(টোল-ফ্রি)",
+      helplineSms: "বা এসএমএস {number}",
+      nodalLabel: "নোডাল সহায়তা:",
+      address: "কৃষি ভবন, ড. রাজেন্দ্র প্রসাদ রোড, নয়াদিল্লি - 110001",
+    },
+    services: {
+      title: "পরিদর্শন পরিষেবা",
+      scanner: "তাৎক্ষণিক প্যাকেজ স্ক্যানার",
+      raidAudit: "এলএমও ফিল্ড রেইড অডিট",
+      studio: "এমএসএমই প্রি-প্রিন্ট স্টুডিও",
+      login: "অফিসার / ব্র্যান্ড লগইন",
+      helpdesk: "প্যাকেজিং অভিযোগ দাখিল করুন",
+    },
+    acts: {
+      title: "আইন ও উদ্ধৃতি",
+      lmAct: "আইনগত মেট্রোলজি আইন, ২০০৯",
+      pcrRules: "পিসিআর বিধি, ২০১১ (বিধি ৬ ও ৭)",
+      uspMandate: "বিধি ৬(১১) ইউনিট বিক্রয় মূল্যের বাধ্যবাধকতা",
+      bsa: "ধারা ৬৩ বিএসএ ২০২৩ (ডিজিটাল প্রমাণ)",
+      janVishwas: "জান বিশ্বাস আইন ২০২৩ (সমঝোতা)",
+    },
+    policies: {
+      title: "গভ-টেক ও নীতিমালা",
+      guidelines: "প্রযুক্তিগত নির্দেশিকা",
+      ticketSupport: "হেল্পডেস্ক টিকিট সিস্টেম",
+      controllers: "রাজ্য নিয়ন্ত্রক নির্দেশিকা",
+      docaPortal: "ডিওসিএ অফিসিয়াল পোর্টাল",
+      edaakhil: "ই-দাখিল ভোক্তা আদালত",
+    },
+    bottom: {
+      copyright: "© {year} আইনগত মেট্রোলজি অধিদপ্তর, ডিওসিএ, ভারত সরকার। সর্বস্বত্ব সংরক্ষিত।",
+      privacy: "গোপনীয়তা নীতি",
+      terms: "ব্যবহারের শর্তাবলী",
+      accessibility: "অভিগম্যতা বিবৃতি (জিআইজিডব্লিউ ৩.০)",
+      hyperlink: "হাইপারলিংক নীতি",
+      compliance: "ভারত সরকারের ওয়েবসাইট নির্দেশিকা (জিআইজিডব্লিউ) অনুযায়ী প্রত্যয়িত।",
+    },
+  },
+  ta: {
+    ministry: {
+      title: "நுகர்வோர் விவகாரத் துறை • சட்ட மெட்ராலஜி பிரிவு",
+      subtitle: "நுகர்வோர் விவகாரங்கள், உணவு மற்றும் பொது விநியோக அமைச்சகம், இந்திய அரசு",
+    },
+    status: {
+      badge: "தரம்: பிசிஆர் 2011 / ஜிஎஸ்ஆர் 418(இ) செயல்பாடு",
+      sipId: "SIH ID: 26034",
+    },
+    brand: {
+      tagline: "தானியங்கி சட்ட மெட்ராலஜி இணக்க இயந்திரம்",
+      description:
+        "பேக்-பரக் என்பது Legal Metrology (Packaged Commodities) Rules, 2011 மற்றும் Section 63 BSA 2023-இன் கீழ் உருவாக்கப்பட்ட ஒரு தன்னாட்சி சட்ட இணக்க இயந்திரமாகும்; இது இயற்பியல் பேக்கேஜிங் மற்றும் டிஜிட்டல் வணிகத்தில் கட்டாய அறிவிப்புகள், எழுத்துரு அளவீடு மற்றும் அலகு விற்பனை விலை (யூஎஸ்பி) ஆகியவற்றைச் சரிபார்க்கிறது.",
+    },
+    contact: {
+      helplineLabel: "தேசிய நுகர்வோர் உதவி எண்:",
+      helplineTollFree: "(கட்டணமில்லா)",
+      helplineSms: "அல்லது எஸ்எம்எஸ் {number}",
+      nodalLabel: "முனைய உதவி:",
+      address: "கிருஷி பவன், டாக்டர் ராஜேந்திர பிரசாத் சாலை, புது தில்லி - 110001",
+    },
+    services: {
+      title: "சட்டப் பரிசோதனை சேவைகள்",
+      scanner: "உடனடி பேக்கேஜ் ஸ்கேனர்",
+      raidAudit: "எல்எம்ஓ கள சோதனை தணிக்கை",
+      studio: "எம்எஸ்எம்இ முன்-அச்சு ஸ்டுடியோ",
+      login: "அதிகாரி / பிராண்ட் உள்நுழைவு",
+      helpdesk: "பேக்கேஜிங் குறைபாட்டைப் பதிவு செய்க",
+    },
+    acts: {
+      title: "சட்டங்கள் மற்றும் மேற்கோள்கள்",
+      lmAct: "சட்ட மெட்ராலஜி சட்டம், 2009",
+      pcrRules: "பிசிஆர் விதிகள், 2011 (விதி 6 & 7)",
+      uspMandate: "விதி 6(11) அலகு விற்பனை விலை கட்டாயம்",
+      bsa: "பிரிவு 63 பிஎஸ்ஏ 2023 (டிஜிட்டல் சான்று)",
+      janVishwas: "ஜன் விஸ்வாஸ் சட்டம் 2023 (தீர்வு)",
+    },
+    policies: {
+      title: "கோவ்டெக் & கொள்கைகள்",
+      guidelines: "தொழில்நுட்ப வழிகாட்டுதல்கள்",
+      ticketSupport: "ஹெல்ப்டெஸ்க் டிக்கெட் அமைப்பு",
+      controllers: "மாநில கட்டுப்பாட்டாளர் அடைவு",
+      docaPortal: "டிஓசிஏ அதிகாரப்பூர்வ போர்டல்",
+      edaakhil: "இ-தாகில் நுகர்வோர் நீதிமன்றம்",
+    },
+    bottom: {
+      copyright: "© {year} சட்ட மெட்ராலஜி இயக்குநரகம், டிஓசிஏ, இந்திய அரசு. அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.",
+      privacy: "தனியுரிமைக் கொள்கை",
+      terms: "பயன்பாட்டு விதிமுறைகள்",
+      accessibility: "அணுகல்தன்மை அறிக்கை (ஜிஐஜிடபிள்யூ 3.0)",
+      hyperlink: "ஹைப்பர்லிங்க் கொள்கை",
+      compliance: "இந்திய அரசின் இணையதள வழிகாட்டுதல்களுக்கு (ஜிஐஜிடபிள்யூ) இணங்கச் சான்றளிக்கப்பட்டது.",
+    },
+  },
+  te: {
+    ministry: {
+      title: "వినియోగదారుల వ్యవహారాల శాఖ • లీగల్ మెట్రాలజీ విభాగం",
+      subtitle: "వినియోగదారుల వ్యవహారాల, ఆహార మరియు ప్రజా పంపిణీ మంత్రిత్వ శాఖ, భారత ప్రభుత్వం",
+    },
+    status: {
+      badge: "ప్రమాణం: PCR 2011 / GSR 418(E) యాక్టివ్",
+      sipId: "SIH ID: 26034",
+    },
+    brand: {
+      tagline: "స్వయంచాలక లీగల్ మెట్రాలజీ సమ్మతి ఇంజన్",
+      description:
+        "ప్యాక్-పరఖ్ అనేది Legal Metrology (Packaged Commodities) Rules, 2011 మరియు Section 63 BSA 2023 క్రింద అభివృద్ధి చేయబడిన స్వయంప్రతిపత్త చట్టపరమైన సమ్మతి ఇంజన్; ఇది భౌతిక ప్యాకేజింగ్ మరియు డిజిటల్ వాణిజ్యంలో తప్పనిసరి ప్రకటనలు, ఫాంట్ క్రమాంకనం మరియు యూనిట్ అమ్మకపు ధర (యూఎస్పీ) గణనను ధృవీకరిస్తుంది.",
+    },
+    contact: {
+      helplineLabel: "జాతీయ వినియోగదారుల హెల్ప్లైన్:",
+      helplineTollFree: "(టోల్-ఫ్రీ)",
+      helplineSms: "లేదా SMS {number}",
+      nodalLabel: "నోడల్ మద్దతు:",
+      address: "కృషి భవన్, డాక్టర్ రాజేంద్ర ప్రసాద్ రోడ్, న్యూఢిల్లీ - 110001",
+    },
+    services: {
+      title: "తనిఖీ సేవలు",
+      scanner: "తక్షణ ప్యాకేజీ స్కానర్",
+      raidAudit: "ఎల్ఎంవో ఫీల్డ్ రైడ్ ఆడిట్",
+      studio: "ఎంఎస్ఎంఈ ప్రీ-ప్రింట్ స్టూడియో",
+      login: "అధికారి / బ్రాండ్ లాగిన్",
+      helpdesk: "ప్యాకేజింగ్ ఫిర్యాదును దాఖలు చేయండి",
+    },
+    acts: {
+      title: "చట్టాలు & అధికారిక ప్రస్తావనలు",
+      lmAct: "లీగల్ మెట్రాలజీ చట్టం, 2009",
+      pcrRules: "పీసీఆర్ నియమాలు, 2011 (నియమం 6 & 7)",
+      uspMandate: "నియమం 6(11) యూనిట్ అమ్మకపు ధర తప్పనిసరి",
+      bsa: "సెక్షన్ 63 బీఎస్ఏ 2023 (డిజిటల్ సాక్ష్యం)",
+      janVishwas: "జన్ విశ్వాస్ చట్టం 2023 (కాంపౌండింగ్)",
+    },
+    policies: {
+      title: "గవ్-టెక్ & విధానాలు",
+      guidelines: "సాంకేతిక మార్గదర్శకాలు",
+      ticketSupport: "హెల్ప్డెస్క్ టికెట్ వ్యవస్థ",
+      controllers: "రాష్ట్ర నియంత్రకుల డైరెక్టరీ",
+      docaPortal: "డిఓసిఎ అధికారిక పోర్టల్",
+      edaakhil: "ఈ-దాఖిల్ వినియోగదారుల కోర్టు",
+    },
+    bottom: {
+      copyright: "© {year} లీగల్ మెట్రాలజీ డైరెక్టరేట్, డిఓసిఎ, భారత ప్రభుత్వం. సర్వ హక్కులు రిజర్వ్ చేయబడ్డాయి.",
+      privacy: "గోప్యతా విధానం",
+      terms: "వినియోగ నిబంధనలు",
+      accessibility: "యాక్సెసిబిలిటీ ప్రకటన (జిఐజీడబ్ల్యూ 3.0)",
+      hyperlink: "హైపర్లింక్ విధానం",
+      compliance: "భారత ప్రభుత్వ వెబ్సైట్ మార్గదర్శకాలకు (జిఐజీడబ్ల్యూ) అనుగుణంగా ధృవీకరించబడింది.",
+    },
+  },
+};

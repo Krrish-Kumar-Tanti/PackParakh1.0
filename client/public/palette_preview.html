@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PackParakh (पैक-परख) — Master Colour Palettes & Code Vault</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #F8FAFC;
+      color: #0F172A;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      padding: 40px 24px 80px;
+      line-height: 1.5;
+      position: relative;
+    }
+
+    /* Ambient Mesh Glow Backdrop */
+    .ambient-glow {
+      position: fixed;
+      top: -120px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1100px;
+      height: 520px;
+      background: radial-gradient(circle at 30% 25%, rgba(37, 99, 235, 0.08) 0%, transparent 60%),
+                  radial-gradient(circle at 75% 45%, rgba(6, 182, 214, 0.07) 0%, transparent 60%),
+                  radial-gradient(circle at 50% 85%, rgba(217, 119, 6, 0.04) 0%, transparent 65%);
+      filter: blur(80px);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .container {
+      max-width: 1180px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Eyebrow & Titles */
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      background: #FFFFFF;
+      border: 1px solid rgba(37, 99, 235, 0.2);
+      border-radius: 999px;
+      color: #1E40AF;
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      margin-bottom: 16px;
+      box-shadow: 0 2px 8px rgba(37, 99, 235, 0.05);
+    }
+    .eyebrow-dot { width: 8px; height: 8px; background: #2563EB; border-radius: 50%; }
+
+    .page-title {
+      font-size: clamp(32px, 4.5vw, 50px);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.12;
+      color: #0F172A;
+      margin-bottom: 12px;
+    }
+    .aurora-gradient {
+      background: linear-gradient(135deg, #2563EB 0%, #4F46E5 45%, #06B6D4 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .page-subtitle {
+      font-size: 16px;
+      color: #64748B;
+      max-width: 760px;
+      margin-bottom: 36px;
+      font-weight: 450;
+    }
+
+    /* Section Cards */
+    .card {
+      background: #FFFFFF;
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      border-radius: 28px;
+      padding: 32px;
+      margin-bottom: 36px;
+      box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.04);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .accent-bar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #2563EB, #4F46E5, #06B6D4, #D97706);
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #F1F5F9;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .card-title {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: #0F172A;
+    }
+    .card-desc {
+      font-size: 13px;
+      color: #64748B;
+      margin-top: 2px;
+    }
+    .badge-recommend {
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      padding: 5px 12px;
+      border-radius: 999px;
+      background: #EFF6FF;
+      color: #1D4ED8;
+      border: 1px solid #BFDBFE;
+    }
+
+    /* Swatches Grid */
+    .swatches-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(135px, 1fr));
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+    .swatch {
+      background: #F8FAFC;
+      border: 1px solid #E2E8F0;
+      border-radius: 18px;
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      position: relative;
+    }
+    .swatch:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08);
+      border-color: #CBD5E1;
+    }
+    .swatch-color {
+      height: 52px;
+      border-radius: 12px;
+      box-shadow: inset 0 0 0 1px rgba(0,0,0,0.06);
+    }
+    .swatch-name {
+      font-size: 11px;
+      font-weight: 700;
+      color: #475569;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .swatch-hex {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      font-weight: 600;
+      color: #0F172A;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .copy-hint {
+      font-size: 9px;
+      color: #94A3B8;
+      text-transform: uppercase;
+    }
+
+    /* Code Viewer Block */
+    .code-section {
+      margin-top: 24px;
+    }
+    .code-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .code-title {
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #64748B;
+    }
+    .btn-copy {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      background: #0F172A;
+      color: #F8FAFC;
+      border: none;
+      border-radius: 8px;
+      font-size: 11px;
+      font-weight: 700;
+      font-family: inherit;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .btn-copy:hover { background: #1E293B; }
+    .btn-copy.copied { background: #059669; }
+
+    pre {
+      background: #0B1220;
+      border: 1px solid #1E293B;
+      border-radius: 16px;
+      padding: 20px;
+      overflow-x: auto;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      color: #E2E8F0;
+      line-height: 1.6;
+    }
+
+    /* Live Component Preview */
+    .preview-box {
+      background: #F8FAFC;
+      border: 1px solid #E2E8F0;
+      border-radius: 20px;
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+    .preview-label {
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: #94A3B8;
+      margin-bottom: 16px;
+      display: block;
+    }
+    .preview-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #2563EB 0%, #4F46E5 50%, #06B6D4 100%);
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 14px;
+      font-weight: 700;
+      font-size: 14px;
+      box-shadow: 0 4px 14px rgba(37, 99, 235, 0.25);
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .badge-pass {
+      background: #ECFDF5;
+      border: 1px solid #A7F3D0;
+      color: #065F46;
+      padding: 5px 12px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 800;
+    }
+    .badge-fail {
+      background: #FFF1F2;
+      border: 1px solid #FECDD3;
+      color: #9F1239;
+      padding: 5px 12px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 800;
+    }
+    .badge-review {
+      background: #FFFBEB;
+      border: 1px solid #FDE68A;
+      color: #92400E;
+      padding: 5px 12px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    /* Toast */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #0F172A;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 700;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 0.3s ease;
+      z-index: 100;
+    }
+    .toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="ambient-glow"></div>
+
+  <div class="container">
+    <div class="eyebrow">
+      <span class="eyebrow-dot"></span>
+      SIH 2026 Problem Statement 26034 • Ministry of Consumer Affairs
+    </div>
+
+    <h1 class="page-title">
+      PackParakh (पैक-परख) <br />
+      Colour Palettes &amp; <span class="aurora-gradient">Code Vault</span>
+    </h1>
+    <p class="page-subtitle">
+      Click any swatch to copy its Hex code instantly, or click "Copy Code" on the snippets below to drop directly into your Next.js and Tailwind project.
+    </p>
+
+    <!-- SECTION 1: SOVEREIGN NYAYA AURORA -->
+    <div class="card">
+      <div class="accent-bar"></div>
+      <div class="card-header">
+        <div>
+          <div class="card-title">1. Sovereign Nyaya Aurora (Default Flagship)</div>
+          <div class="card-desc">Luminous Porcelain Slate (#F8FAFC) + Deep Authority Navy (#0F172A) + Aurora Accent + Ashoka Gold</div>
+        </div>
+        <span class="badge-recommend">Recommended</span>
+      </div>
+
+      <!-- SWATCHES -->
+      <div class="swatches-grid">
+        <div class="swatch" onclick="copyText('#F8FAFC', 'Canvas Background')">
+          <div class="swatch-color" style="background:#F8FAFC; border:1px solid #E2E8F0;"></div>
+          <span class="swatch-name">Canvas Base</span>
+          <span class="swatch-hex">#F8FAFC <span class="copy-hint">Copy</span></span>
+        </div>
+        <div class="swatch" onclick="copyText('#FFFFFF', 'Card Surface')">
+          <div class="swatch-color" style="background:#FFFFFF; border:1px solid #E2E8F0;"></div>
+          <span class="swatch-name">Card Surface</span>
+          <span class="swatch-hex">#FFFFFF <span class="copy-hint">Copy</span></span>
+        </div>
+        <div class="swatch" onclick="copyText('#0F172A', 'Nyaya Navy')">
+          <div class="swatch-color" style="background:#0F172A;"></div>
+          <span class="swatch-name">Navy Ink</span>
+          <span class="swatch-hex">#0F172A <span class="copy-hint">Copy</span></span>
+        </div>
+        <div class="swatch" onclick="copyText('#2563EB', 'Royal Blue')">
+          <div class="swatch-color" style="background:#2563EB;"></div>
+          <span class="swatch-name">Royal Blue</span>
+          <span class="swatch-hex">#2563EB <span class="copy-hint">Copy</span></span>
+        </div>
+        <div class="swatch" onclick="copyText('#4F46E5', 'Sovereign Indigo')">
+          <div class="swatch-color" style="background:#4F46E5;"></div>
+          <span class="swatch-name">Indigo</span>
+          <span class="swatch-hex">#4F46E5 <span class="copy-hint">Copy</span></span>
+        </div>
+        <div class="swatch" onclick="copyText('#06B6D4', 'Electric Cyan')">
+          <div class="swatch-color" style="background:#06B6D4;"></div>
+          <span class="swatch-name">Electric Cyan</span>
+          <span class="swatch-hex">#06B6D4 <span class="copy-hint">Copy</span></span>
+        </div>
+        <div class="swatch" onclick="copyText('#D97706', 'Ashoka Gold')">
+          <div class="swatch-color" style="background:#D97706;"></div>
+          <span class="swatch-name">Ashoka Gold</span>
+          <span class="swatch-hex">#D97706 <span class="copy-hint">Copy</span></span>
+        </div>
+        <div class="swatch" onclick="copyText('#10B981', 'Compliant Pass Green')">
+          <div class="swatch-color" style="background:#10B981;"></div>
+          <span class="swatch-name">Pass Green</span>
+          <span class="swatch-hex">#10B981 <span class="copy-hint">Copy</span></span>
+        </div>
+        <div class="swatch" onclick="copyText('#E11D48', 'Violation Crimson')">
+          <div class="swatch-color" style="background:#E11D48;"></div>
+          <span class="swatch-name">Violation Red</span>
+          <span class="swatch-hex">#E11D48 <span class="copy-hint">Copy</span></span>
+        </div>
+      </div>
+
+      <!-- LIVE PREVIEW -->
+      <div class="preview-box">
+        <span class="preview-label">Live Component Render</span>
+        <div class="preview-row">
+          <button class="btn-primary">Scan Packaging Label</button>
+          <span class="badge-pass">● RULE 6(1) PASS</span>
+          <span class="badge-fail">▲ RULE 6(1)(h) USP MISSING</span>
+          <span class="badge-review">★ REVIEW REQUIRED</span>
+        </div>
+      </div>
+
+      <!-- CODE BLOCK 1: TAILWIND CONFIG -->
+      <div class="code-section">
+        <div class="code-header">
+          <span class="code-title">📋 Code 1: Copy-Paste for client/tailwind.config.ts</span>
+          <button class="btn-copy" onclick="copyCode('code-tailwind')">Copy Code</button>
+        </div>
+        <pre id="code-tailwind">colors: {
+  nyaya: {
+    bg: "#F8FAFC",
+    surface: "#FFFFFF",
+    slate: "#F1F5F9",
+    navy: "#0F172A",
+    blue: "#2563EB",
+    blueLight: "#EFF6FF",
+    indigo: "#4F46E5",
+    cyan: "#06B6D4",
+    cyanLight: "#F0F9FF",
+    gold: "#D97706",
+    goldLight: "#FEF3C7",
+    pass: "#10B981",
+    passLight: "#ECFDF5",
+    fail: "#E11D48",
+    failLight: "#FFF1F2",
+    review: "#D97706",
+    reviewLight: "#FFFBEB",
+  },
+},</pre>
+      </div>
+
+      <!-- CODE BLOCK 2: GLOBALS CSS -->
+      <div class="code-section">
+        <div class="code-header">
+          <span class="code-title">📋 Code 2: Copy-Paste for client/app/globals.css (:root)</span>
+          <button class="btn-copy" onclick="copyCode('code-css')">Copy Code</button>
+        </div>
+        <pre id="code-css">:root {
+  --bg-canvas: #F8FAFC;
+  --surface-card: #FFFFFF;
+  --text-navy: #0F172A;
+  --brand-blue: #2563EB;
+  --brand-indigo: #4F46E5;
+  --brand-cyan: #06B6D4;
+  --seal-gold: #D97706;
+  --seal-gold-light: #FEF3C7;
+
+  /* Semantic Status Tokens */
+  --status-pass: #10B981;
+  --status-pass-bg: #ECFDF5;
+  --status-fail: #E11D48;
+  --status-fail-bg: #FFF1F2;
+  --status-review: #D97706;
+  --status-review-bg: #FFFBEB;
+}</pre>
+      </div>
+
+      <!-- CODE BLOCK 3: TAILWIND UTILITY CLASSES -->
+      <div class="code-section">
+        <div class="code-header">
+          <span class="code-title">📋 Code 3: Ready-to-Use Tailwind Classes</span>
+          <button class="btn-copy" onclick="copyCode('code-classes')">Copy Code</button>
+        </div>
+        <pre id="code-classes">{/* 1. Page Background */}
+className="min-h-screen bg-[#F8FAFC] text-[#0F172A]"
+
+{/* 2. Tapdaa-Style White Card */}
+className="bg-white rounded-3xl border border-slate-200/90 shadow-xl p-6 sm:p-8"
+
+{/* 3. Sovereign Aurora Hero Gradient Text */}
+className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500"
+
+{/* 4. Aurora Gradient Action Button */}
+className="px-6 py-3 rounded-2xl bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 text-white font-bold shadow-md hover:shadow-lg transition-all"
+
+{/* 5. Statutory Pass / Fail Badges */}
+<span className="px-3 py-1 rounded-full text-[11px] font-black uppercase bg-emerald-50 text-emerald-800 border border-emerald-200">● COMPLIANT</span>
+<span className="px-3 py-1 rounded-full text-[11px] font-black uppercase bg-rose-50 text-rose-800 border border-rose-200">▲ VIOLATION</span></pre>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast">Copied to clipboard!</div>
+
+  <script>
+    function copyText(text, label) {
+      navigator.clipboard.writeText(text).then(() => {
+        showToast(`Copied ${label}: ${text}`);
+      });
+    }
+
+    function copyCode(elementId) {
+      const code = document.getElementById(elementId).innerText;
+      navigator.clipboard.writeText(code).then(() => {
+        showToast('Code block copied to clipboard!');
+      });
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      toast.innerText = msg;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2000);
+    }
+  </script>
+</body>
+</html>

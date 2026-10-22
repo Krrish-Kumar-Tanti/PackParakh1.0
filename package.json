@@ -1,0 +1,30 @@
+{
+  "name": "packparakh-26034",
+  "version": "1.0.0",
+  "description": "PackParakh (पैक-परख) SIH 2026 - Legal Metrology Compliance Scanner",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"blue,green\" \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:clean": "rm -rf client/.next && concurrently -n \"SERVER,CLIENT\" -c \"blue,green\" \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "build": "npm --prefix client run build",
+    "build:client": "npm --prefix client run build",
+    "start": "npm --prefix client run start",
+    "test": "node --experimental-strip-types --test server/tests/rules.test.ts",
+    "test:all": "node --experimental-strip-types --test server/tests/rules.test.ts && node --experimental-strip-types server/tests/statutoryRules.test.ts",
+    "test:vitest": "vitest run --reporter=verbose"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^26.5.0",
+    "concurrently": "^10.0.5",
+    "tsx": "^4.16.0",
+    "typescript": "^5.5.0",
+    "vitest": "^1.6.0"
+  }
+}

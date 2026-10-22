@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PackParakh (पैक-परख) — Typography & Font Specimen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #FAFBFC;
+      --card-bg: #FFFFFF;
+      --text-main: #0F172A;
+      --text-muted: #64748B;
+      --border: #E2E8F0;
+      --blue: #2563EB;
+      --indigo: #4F46E5;
+      --cyan: #06B6D4;
+      --gold: #D97706;
+      --emerald: #059669;
+      --rose: #E11D48;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      padding: 40px 24px 80px;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      background: rgba(37, 99, 235, 0.08);
+      border: 1px solid rgba(37, 99, 235, 0.2);
+      border-radius: 999px;
+      color: var(--blue);
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      margin-bottom: 20px;
+    }
+    .pill-dot {
+      width: 8px;
+      height: 8px;
+      background: var(--blue);
+      border-radius: 50%;
+    }
+
+    .hero-title {
+      font-size: clamp(36px, 5vw, 56px);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.12;
+      margin-bottom: 16px;
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, var(--blue) 0%, var(--indigo) 50%, var(--cyan) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-sub {
+      font-size: 18px;
+      color: var(--text-muted);
+      max-width: 680px;
+      margin-bottom: 40px;
+      font-weight: 450;
+    }
+
+    .specimen-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 32px;
+      margin-bottom: 32px;
+      box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.05);
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+    }
+
+    .card-title {
+      font-size: 14px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+    }
+
+    .tag {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 6px;
+      background: #F1F5F9;
+      color: #334155;
+    }
+
+    /* Font 1: Plus Jakarta Sans */
+    .pjs-sample-black { font-size: 38px; font-weight: 800; letter-spacing: -0.025em; margin-bottom: 8px; }
+    .pjs-sample-bold { font-size: 26px; font-weight: 700; margin-bottom: 8px; }
+    .pjs-sample-semi { font-size: 18px; font-weight: 600; color: #334155; margin-bottom: 8px; }
+    .pjs-sample-body { font-size: 15px; font-weight: 400; color: var(--text-muted); line-height: 1.6; }
+
+    /* Font 2: Noto Sans Devanagari */
+    .indic-sample-hero {
+      font-family: 'Noto Sans Devanagari', sans-serif;
+      font-size: 36px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 12px;
+      letter-spacing: -0.01em;
+    }
+    .indic-sample-sub {
+      font-family: 'Noto Sans Devanagari', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: #334155;
+      margin-bottom: 8px;
+    }
+    .indic-sample-body {
+      font-family: 'Noto Sans Devanagari', sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    /* Font 3: JetBrains Mono */
+    .mono-box {
+      background: #0B1220;
+      color: #E2E8F0;
+      border-radius: 16px;
+      padding: 24px;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .mono-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 13px;
+    }
+    .mono-row:last-child { border-bottom: none; }
+    .mono-label { color: #94A3B8; font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; }
+    .mono-val { color: #38BDF8; font-weight: 600; }
+    .mono-hash { color: #A7F3D0; font-size: 12px; word-break: break-all; }
+
+    /* Interactive Live Type Tester */
+    .tester-area {
+      width: 100%;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+      font-size: 24px;
+      font-weight: 600;
+      color: var(--text-main);
+      background: #F8FAFC;
+      resize: vertical;
+      min-height: 100px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .tester-area:focus { border-color: var(--blue); background: #fff; }
+
+    .tester-controls {
+      display: flex;
+      gap: 16px;
+      margin-top: 16px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .tester-controls label {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+    }
+    .select-input, .range-input {
+      padding: 6px 12px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: #fff;
+      font-family: inherit;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="pill">
+      <span class="pill-dot"></span>
+      Smart India Hackathon 2026 • Problem Statement 26034
+    </div>
+
+    <h1 class="hero-title">
+      PackParakh (पैक-परख) <br />
+      Sovereign Legal Metrology <span class="gradient-text">Typography System</span>
+    </h1>
+    <p class="hero-sub">
+      Live visual specimen of the 3 fonts configured for the project: Plus Jakarta Sans, Noto Sans Devanagari, and JetBrains Mono.
+    </p>
+
+    <!-- SPECIMEN 1: PLUS JAKARTA SANS -->
+    <div class="specimen-card">
+      <div class="card-header">
+        <span class="card-title">1. Primary Display & UI — Plus Jakarta Sans</span>
+        <span class="tag">Variable Weight: 300 to 800</span>
+      </div>
+      <div class="pjs-sample-black">
+        Autonomous Optical Inspection Copilot
+      </div>
+      <div class="pjs-sample-bold">
+        Rule 6(1) Mandatory Packaging Declarations
+      </div>
+      <div class="pjs-sample-semi">
+        Principal Display Panel (PDP) Calibrated to 41.2% Area
+      </div>
+      <p class="pjs-sample-body">
+        PackParakh automates compliance auditing under the Legal Metrology (Packaged Commodities) Rules, 2011. Built with modern geometric curves, open apertures, and crisp letter-spacing to deliver seamless readability across high-density government dashboards and mobile field viewfinders.
+      </p>
+    </div>
+
+    <!-- SPECIMEN 2: NOTO SANS DEVANAGARI -->
+    <div class="specimen-card">
+      <div class="card-header">
+        <span class="card-title">2. Indic Packaging Script — Noto Sans Devanagari</span>
+        <span class="tag">Dual-Script Hindi Packaging OCR</span>
+      </div>
+      <div class="indic-sample-hero">
+        पैक-परख : कानूनी मापविज्ञान अनुपालन इंजन
+      </div>
+      <div class="indic-sample-sub">
+        "शुद्ध चक्की आटा — ५ किलो (अधिकतम खुदरा मूल्य ₹२१०.०० सभी करों सहित)"
+      </div>
+      <p class="indic-sample-body">
+        उपभोक्ता मामले विभाग (DoCA) के अंतर्गत कानूनी मापविज्ञान (पैक्ड कमोडिटीज) नियम, 2011 का स्वचालित अनुपालन सत्यापन। हिंदी और देवनागरी पैकेजिंग घोषणाओं का शत-प्रतिशत सटीक ऑप्टिकल विश्लेषण। जागो ग्राहक जागो!
+      </p>
+    </div>
+
+    <!-- SPECIMEN 3: JETBRAINS MONO -->
+    <div class="specimen-card">
+      <div class="card-header">
+        <span class="card-title">3. Metrology Numbers & Cryptographic Hashes — JetBrains Mono</span>
+        <span class="tag">Fixed Width • Section 63 BSA 2023</span>
+      </div>
+      <div class="mono-box">
+        <div class="mono-row">
+          <span class="mono-label">Statutory Reference</span>
+          <span class="mono-val">DOCA/DEL/2026/0743-A19F</span>
+        </div>
+        <div class="mono-row">
+          <span class="mono-label">Digital Caliper Readout</span>
+          <span class="mono-val">2.85 mm (Rule 9 Font Height ≥ 3.0mm: FAIL)</span>
+        </div>
+        <div class="mono-row">
+          <span class="mono-label">GPS Telemetry Coordinates</span>
+          <span class="mono-val">28.6139° N, 77.2090° E (Connaught Place, New Delhi)</span>
+        </div>
+        <div class="mono-row">
+          <span class="mono-label">Section 63 BSA 2023 Hash</span>
+          <span class="mono-hash">d5b07384d113edec480ea6938cd9f000b1a0d60c0df4b9d0e80e9bd67b4f7a</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- INTERACTIVE TESTER -->
+    <div class="specimen-card">
+      <div class="card-header">
+        <span class="card-title">⚡ Interactive Live Type Tester</span>
+        <span class="tag">Type below to test any text</span>
+      </div>
+      <textarea id="tester" class="tester-area">PackParakh: ₹140.00 incl. of all taxes | शुद्ध सरसों का तेल | 100% Verified</textarea>
+      <div class="tester-controls">
+        <label>Font Family:</label>
+        <select id="fontSelect" class="select-input" onchange="updateTester()">
+          <option value="'Plus Jakarta Sans', sans-serif">Plus Jakarta Sans (Display & Body)</option>
+          <option value="'Noto Sans Devanagari', sans-serif">Noto Sans Devanagari (Hindi)</option>
+          <option value="'JetBrains Mono', monospace">JetBrains Mono (Hashes & Data)</option>
+        </select>
+
+        <label>Weight:</label>
+        <select id="weightSelect" class="select-input" onchange="updateTester()">
+          <option value="400">400 (Regular)</option>
+          <option value="600">600 (SemiBold)</option>
+          <option value="700" selected>700 (Bold)</option>
+          <option value="800">800 (ExtraBold)</option>
+        </select>
+
+        <label>Size:</label>
+        <input id="sizeRange" type="range" min="14" max="64" value="28" class="range-input" oninput="updateTester()" />
+        <span id="sizeVal" style="font-weight:700; font-size:13px; color:var(--text-muted)">28px</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function updateTester() {
+      const tester = document.getElementById('tester');
+      const font = document.getElementById('fontSelect').value;
+      const weight = document.getElementById('weightSelect').value;
+      const size = document.getElementById('sizeRange').value;
+      
+      tester.style.fontFamily = font;
+      tester.style.fontWeight = weight;
+      tester.style.fontSize = size + 'px';
+      document.getElementById('sizeVal').innerText = size + 'px';
+    }
+  </script>
+</body>
+</html>

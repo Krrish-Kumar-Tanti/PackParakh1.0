@@ -1,0 +1,721 @@
+{
+  "metadata": {
+    "schemaVersion": "1.0.0",
+    "generatedFor": "PackParakh (पैक-परख) SIH 26034 - E-Commerce Scraper Offline Fixtures",
+    "description": "Pre-parsed e-commerce product pages for offline deterministic testing (no live Puppeteer required). Validates Rule 6(1)(g) Country of Origin, Rule 6(11) USP, and Feb/Apr 2026 COO filter mandate (GSR 418(E) 2026 / Mondaq Jun 2026).",
+    "platforms": ["Blinkit", "Amazon India", "Zepto"],
+    "legalReferences": [
+      "Rule 6(1)(g) PCR 2011 - Country of Origin mandatory",
+      "Rule 9 PCR 2011 (E-Commerce Declarations 2017)",
+      "GSR 418(E) 29 May 2026 Third Amendment - Bonded warehouse & COO filter",
+      "Feb 2026 / Apr 2026 CCPA E-Commerce COO Filter Mandate",
+      "Rule 6(11) GSR 226(E) 2022 - Unit Sale Price on digital listings",
+      "Legal Metrology Act 2009 Section 36(1) - Penalties ₹25k/₹50k/₹1L"
+    ],
+    "totalListings": 6,
+    "scraperEngine": "Cheerio + pre-saved HTML snapshot (offline-safe). Live Puppeteer intentionally NOT used for SIH demo stability.",
+    "createdOn": "2026-08-15",
+    "maintainer": "Team Parity - Krrish Kumar Tanti (Lead)"
+  },
+  "listings": [
+    {
+      "fixtureId": "ECOM-BLINKIT-001",
+      "platform": "Blinkit",
+      "platformDomain": "blinkit.com",
+      "productTitle": "Borges Extra Virgin Olive Oil 1 L - Cold Extracted",
+      "productTitleHindi": "बोर्जेस एक्स्ट्रा वर्जिन जैतून तेल 1 लीटर",
+      "urlMock": "https://blinkit.com/prn/borges-extra-virgin-olive-oil/prid/123456",
+      "sku": "BORGES-EVOO-1L-001",
+      "asinSku": "BLINKIT-SKU-OLIVE-123456",
+      "price": {
+        "declaredMrp": 1450.0,
+        "sellingPrice": 1399.0,
+        "currency": "INR",
+        "mrpTextRaw": "MRP ₹1,450",
+        "hasInclusiveOfTaxesOnPage": false,
+        "pricePerUnitDisplay": null
+      },
+      "seller": {
+        "sellerName": "Borges India Pvt. Ltd. (via Blinkit Warehousing Pvt. Ltd.)",
+        "sellerAddress": "Ground Floor, Vatika Tower, Golf Course Road, Gurugram - 122002",
+        "sellerType": "marketplace_warehousing",
+        "isMarketplaceItself": true
+      },
+      "declarations": {
+        "netQuantity": {
+          "value": 1,
+          "unit": "L",
+          "raw": "1 L"
+        },
+        "countryOfOrigin": {
+          "declared": false,
+          "value": null,
+          "rawText": null,
+          "locationOnPage": null,
+          "isFilterable": false
+        },
+        "countryOfOriginFilter": {
+          "present": false,
+          "filterOptions": [],
+          "filterLocation": "Left sidebar - Country of Origin filter absent",
+          "mandateReference": "GSR 418(E) 2026 - Feb 2026 Country-of-Origin filter mandatory on e-commerce & quick-commerce",
+          "compliance": "FAIL"
+        },
+        "unitSalePrice": {
+          "declared": false,
+          "value": null,
+          "unit": null,
+          "raw": null,
+          "calculatedExpected": "₹1,450.00 per L (or ₹1.45 per ml)",
+          "calculation": "1450.00 / 1000ml = 1.45 per ml"
+        },
+        "manufacturerAddress": {
+          "declared": true,
+          "value": "Borges International Group, Spain - Imported by Borges India Pvt. Ltd., New Delhi - 110044",
+          "hasPincode": true
+        },
+        "consumerCare": {
+          "phone": "1800-120-1234",
+          "email": "care@borgesindia.com",
+          "hasAllFour": true
+        },
+        "images": {
+          "primaryImageUrl": "https://cdn.blinkit.com/images/borges-olive-1l-front.jpg",
+          "allImageUrls": [
+            "https://cdn.blinkit.com/images/borges-olive-1l-front.jpg",
+            "https://cdn.blinkit.com/images/borges-olive-1l-back.jpg"
+          ],
+          "hasLabelCrop": true
+        }
+      },
+      "category": "GENERAL",
+      "isImported": true,
+      "complianceStatus": "FAIL",
+      "violations": [
+        {
+          "ruleId": "RULE_6_1_G_COUNTRY_OF_ORIGIN",
+          "ruleCitation": "Rule 6(1)(g) & E-Commerce Rule 9, PCR 2011 & GSR 418(E) 2026",
+          "severity": "CRITICAL",
+          "deduction": 25,
+          "reason": "Country of Origin not declared on primary digital panel. E-commerce listing lacks \"Country of Origin: Spain\" on PDP or specifications table. Blinkit quick-commerce filter also absent (Feb 2026 mandate).",
+          "penaltySection": "Section 36(1) LM Act 2009 + CCPA E-Commerce Guidelines 2020",
+          "remedyAction": "Add: \"Country of Origin: Spain\" in title/spec table and enable filterable COO attribute in catalog.",
+          "expectedStatus": "FAIL"
+        },
+        {
+          "ruleId": "RULE_CO0_FILTER_FEB2026",
+          "ruleCitation": "GSR 418(E) 2026 / Feb 2026 COO Filter Mandate (Mondaq Jun 2026)",
+          "severity": "MAJOR",
+          "deduction": 20,
+          "reason": "Mandatory filterable Country of Origin selector missing on quick-commerce catalog. Required for all e-commerce entities as per Feb/Apr 2026 mandate.",
+          "penaltySection": "Section 36(1) + CCPA Interim Directions 2026",
+          "remedyAction": "Implement left-nav filter: \"Country of Origin: India | Spain | Italy | Others\" across grocery catalog.",
+          "expectedStatus": "FAIL"
+        },
+        {
+          "ruleId": "RULE_6_11_UNIT_SALE_PRICE_MATH",
+          "ruleCitation": "Rule 6(11), PCR (Amendment) 2021/2022 (GSR 226(E))",
+          "severity": "CRITICAL",
+          "deduction": 30,
+          "reason": "Unit Sale Price not displayed on listing page for 1L commodity. For >=1L, USP must be shown as ₹ per L.",
+          "penaltySection": "Section 36(1)",
+          "remedyAction": "Display: \"USP: ₹1,450.00 per Litre\" next to price.",
+          "expectedStatus": "FAIL"
+        },
+        {
+          "ruleId": "RULE_6_1_E_MRP_TAX_CLAUSE",
+          "ruleCitation": "Rule 6(1)(e), PCR 2011",
+          "severity": "CRITICAL",
+          "deduction": 30,
+          "reason": "MRP shown as \"MRP ₹1,450\" without \"(inclusive of all taxes)\" suffix on digital panel.",
+          "penaltySection": "Section 36(1)",
+          "remedyAction": "Show: \"MRP ₹1,450.00 (inclusive of all taxes)\"",
+          "expectedStatus": "FAIL"
+        }
+      ],
+      "complianceScore": 0,
+      "liability": {
+        "marketplaceLiability": "Blinkit (marketplace) - Intermediary liability under CCPA Guidelines 2020 Section 5(3) - must ensure declarations.",
+        "sellerLiability": "Borges India Pvt. Ltd. - Ultimate manufacturer/importer liability."
+      },
+      "scraperMetadata": {
+        "snapshotDate": "2026-08-10T14:30:00.000Z",
+        "scraperVersion": "cheerio@1.0.0-rc.12 offline",
+        "htmlFixturePath": "server/tests/fixtures/html/blinkit-borges-1l.html",
+        "parseTimeMs": 42,
+        "notes": "Offline fixture: HTML saved and pre-parsed. Blinkit quick-commerce listings often omit COO filter - key violation pattern for GSR 418(E) demo."
+      }
+    },
+    {
+      "fixtureId": "ECOM-BLINKIT-002",
+      "platform": "Blinkit",
+      "platformDomain": "blinkit.com",
+      "productTitle": "Blinkit Organic Almonds Premium California 500 g",
+      "productTitleHindi": "ब्लिंकिट ऑर्गेनिक प्रीमियम कैलिफोर्निया बादाम 500 ग्राम",
+      "urlMock": "https://blinkit.com/prn/blinkit-organic-almonds-500g/prid/789012",
+      "sku": "BLINKIT-ALMONDS-500G-ORG",
+      "asinSku": "BLINKIT-SKU-ALMONDS-789012",
+      "price": {
+        "declaredMrp": 450.0,
+        "sellingPrice": 429.0,
+        "currency": "INR",
+        "mrpTextRaw": "MRP ₹450.00 (incl. of all taxes)",
+        "hasInclusiveOfTaxesOnPage": true,
+        "pricePerUnitDisplay": "₹0.90 per g"
+      },
+      "seller": {
+        "sellerName": "Grofers India Private Limited (Blinkit Private Label)",
+        "sellerAddress": "Ground Floor, Vatika Tower, Golf Course Road, Gurugram - 122002",
+        "sellerType": "private_label",
+        "isMarketplaceItself": true
+      },
+      "declarations": {
+        "netQuantity": {
+          "value": 500,
+          "unit": "g",
+          "raw": "500 g"
+        },
+        "countryOfOrigin": {
+          "declared": true,
+          "value": "India (Packed in India, Almonds Imported from USA)",
+          "rawText": "Country of Origin: India (Packed in India, Almonds Origin: USA)",
+          "locationOnPage": "Product Details > Specifications Table > Origin",
+          "isFilterable": true
+        },
+        "countryOfOriginFilter": {
+          "present": true,
+          "filterOptions": ["India", "USA", "Spain", "UAE"],
+          "filterLocation": "Left sidebar > Country of Origin > India (2,340 products)",
+          "mandateReference": "GSR 418(E) 2026 - COMPLIANT",
+          "compliance": "PASS"
+        },
+        "unitSalePrice": {
+          "declared": true,
+          "value": 0.9,
+          "unit": "per g",
+          "raw": "₹0.90 per g (₹900.00 per kg)",
+          "calculatedExpected": "₹0.90 per g (450/500=0.90)",
+          "calculation": "450.00 / 500 = 0.90 per g => PASS within 1% tolerance",
+          "mathStatus": "PASS"
+        },
+        "manufacturerAddress": {
+          "declared": true,
+          "value": "Packed & Marketed by Grofers India Pvt. Ltd., Vatika Tower, Gurugram - 122002",
+          "hasPincode": true
+        },
+        "consumerCare": {
+          "phone": "1800-103-3737",
+          "email": "info@blinkit.com",
+          "hasAllFour": true
+        },
+        "images": {
+          "primaryImageUrl": "https://cdn.blinkit.com/images/almonds-500g-front.jpg",
+          "allImageUrls": [
+            "https://cdn.blinkit.com/images/almonds-500g-front.jpg",
+            "https://cdn.blinkit.com/images/almonds-500g-back.jpg"
+          ],
+          "hasLabelCrop": true
+        }
+      },
+      "category": "FOOD",
+      "isImported": false,
+      "complianceStatus": "PASS",
+      "violations": [],
+      "complianceScore": 100,
+      "liability": {
+        "marketplaceLiability": "Compliant - Blinkit provides full declarations and filterable COO.",
+        "sellerLiability": "Grofers India - Compliant private label."
+      },
+      "scraperMetadata": {
+        "snapshotDate": "2026-08-10T15:00:00.000Z",
+        "scraperVersion": "cheerio@1.0.0-rc.12 offline",
+        "htmlFixturePath": "server/tests/fixtures/html/blinkit-almonds-500g.html",
+        "parseTimeMs": 38,
+        "notes": "PASS benchmark for quick-commerce: All declarations present + COO filter enabled. Contrasts with ECOM-BLINKIT-001 to show filter mandate."
+      }
+    },
+    {
+      "fixtureId": "ECOM-AMAZON-003",
+      "platform": "Amazon India",
+      "platformDomain": "amazon.in",
+      "productTitle": "Amazon Basics AA Alkaline Batteries 4-Pack 1.5V Long Lasting",
+      "productTitleHindi": "अमेज़न बेसिक्स AA क्षारीय बैटरी 4-पैक",
+      "urlMock": "https://www.amazon.in/AmazonBasics-Alkaline-Batteries-Pack-Performance/dp/B07837W5NX",
+      "sku": "AMZN-BASICS-AA-4PK",
+      "asinSku": "B07837W5NX",
+      "price": {
+        "declaredMrp": 299.0,
+        "sellingPrice": 248.0,
+        "currency": "INR",
+        "mrpTextRaw": "M.R.P.: ₹299.00",
+        "hasInclusiveOfTaxesOnPage": false,
+        "pricePerUnitDisplay": null
+      },
+      "seller": {
+        "sellerName": "Cloudtail India Pvt. Ltd. (Amazon Fulfilled)",
+        "sellerAddress": "8th Floor, Brigade Gateway, 26/1, Dr. Rajkumar Road, Malleshwaram, Bangalore - 560055",
+        "sellerType": "marketplace_seller",
+        "isMarketplaceItself": false,
+        "fulfilledBy": "Amazon Fulfilled"
+      },
+      "declarations": {
+        "netQuantity": {
+          "value": 4,
+          "unit": "N",
+          "raw": "4 Batteries (4N)"
+        },
+        "countryOfOrigin": {
+          "declared": false,
+          "value": null,
+          "rawText": null,
+          "locationOnPage": null,
+          "isFilterable": false
+        },
+        "countryOfOriginFilter": {
+          "present": false,
+          "filterOptions": [],
+          "filterLocation": "Left nav filter absent - no 'Country of Origin' filter on Batteries category",
+          "mandateReference": "GSR 418(E) 2026 - FAIL: Feb 2026 COO filter mandatory even for GENERAL category",
+          "compliance": "FAIL"
+        },
+        "unitSalePrice": {
+          "declared": false,
+          "value": null,
+          "unit": null,
+          "raw": null,
+          "calculatedExpected": "₹74.75 per unit (299/4=74.75)",
+          "calculation": "299.00 / 4 = 74.75 per N"
+        },
+        "manufacturerAddress": {
+          "declared": false,
+          "value": null,
+          "hasPincode": false,
+          "raw": "Marketed by AmazonBasics (address in tiny collapsed 'Product Details' accordion, no PIN extraction)"
+        },
+        "consumerCare": {
+          "phone": null,
+          "email": "care@amazon.in (in footer, not on listing PDP)",
+          "hasAllFour": false,
+          "missingElements": ["phone", "name", "address"]
+        },
+        "images": {
+          "primaryImageUrl": "https://m.media-amazon.com/images/I/71example._SL1500_.jpg",
+          "allImageUrls": [
+            "https://m.media-amazon.com/images/I/71example._SL1500_.jpg"
+          ],
+          "hasLabelCrop": false
+        }
+      },
+      "category": "GENERAL",
+      "isImported": true,
+      "complianceStatus": "FAIL",
+      "violations": [
+        {
+          "ruleId": "RULE_6_1_G_COUNTRY_OF_ORIGIN",
+          "ruleCitation": "Rule 6(1)(g), PCR 2011 & GSR 418(E) 2026",
+          "severity": "CRITICAL",
+          "deduction": 25,
+          "reason": "Country of Origin not declared on primary listing PDP. Amazon listing shows specifications table without \"Country of Origin\" row. For imported batteries, COO is mandatory.",
+          "penaltySection": "Section 36(1) + CCPA E-Commerce Guidelines 2020 Sec 5(4)",
+          "remedyAction": "Add row: \"Country of Origin: China\" in 'Product Details' and-enable filter.",
+          "expectedStatus": "FAIL"
+        },
+        {
+          "ruleId": "RULE_CO0_FILTER_FEB2026",
+          "ruleCitation": "GSR 418(E) 2026 - Feb 2026 COO Filter",
+          "severity": "MAJOR",
+          "deduction": 20,
+          "reason": "Filterable COO selector absent on Amazon search/category page for this listing's category (Electronics/Batteries).",
+          "penaltySection": "Section 36(1)",
+          "remedyAction": "Implement filter attribute in Amazon catalog schema.",
+          "expectedStatus": "FAIL"
+        },
+        {
+          "ruleId": "RULE_6_1_E_MRP_TAX_CLAUSE",
+          "ruleCitation": "Rule 6(1)(e), PCR 2011",
+          "severity": "CRITICAL",
+          "deduction": 30,
+          "reason": "MRP displayed as \"M.R.P.: ₹299.00\" without \"(inclusive of all taxes)\" on listing. Amazon often omits tax clause on digital panel.",
+          "penaltySection": "Section 36(1)",
+          "remedyAction": "Show: \"M.R.P.: ₹299.00 (inclusive of all taxes)\"",
+          "expectedStatus": "FAIL"
+        },
+        {
+          "ruleId": "RULE_6_11_UNIT_SALE_PRICE_MATH",
+          "ruleCitation": "Rule 6(11), GSR 226(E) 2022",
+          "severity": "MAJOR",
+          "deduction": 20,
+          "reason": "Unit Sale Price not shown for 4N pack. Required: ₹ per unit/piece.",
+          "penaltySection": "Section 36(1)",
+          "remedyAction": "Display: \"₹74.75 per unit\"",
+          "expectedStatus": "FAIL"
+        },
+        {
+          "ruleId": "RULE_6_1_F_CONSUMER_CARE",
+          "ruleCitation": "Rule 6(1)(f), PCR 2011",
+          "severity": "CRITICAL",
+          "deduction": 15,
+          "reason": "Consumer Care phone missing on listing PDP. Only footer email care@amazon.in, no phone/MRP panel.",
+          "penaltySection": "Section 36(1)",
+          "remedyAction": "Add complete address + phone + email on listing PDP.",
+          "expectedStatus": "FAIL"
+        }
+      ],
+      "complianceScore": 0,
+      "liability": {
+        "marketplaceLiability": "Amazon India (intermediary) - Must ensure seller declarations under CCPA 2020 Guidelines.",
+        "sellerLiability": "Cloudtail India / AmazonBasics - Manufacturer/importer ultimate liability."
+      },
+      "scraperMetadata": {
+        "snapshotDate": "2026-08-11T10:15:00.000Z",
+        "scraperVersion": "cheerio@1.0.0-rc.12 offline",
+        "htmlFixturePath": "server/tests/fixtures/html/amazon-basics-aa-4pack.html",
+        "parseTimeMs": 56,
+        "notes": "Amazon private label FAIL cluster: Real audit pattern - batteries often missing COO + tax clause on digital panel. ASIN B07837W5NX is real Amazon Basics ASIN format."
+      }
+    },
+    {
+      "fixtureId": "ECOM-AMAZON-004",
+      "platform": "Amazon India",
+      "platformDomain": "amazon.in",
+      "productTitle": "Tata Salt Iodized Vacuum Evaporated 1 kg Pouch",
+      "productTitleHindi": "टाटा नमक आयोडीन युक्त 1 किलोग्राम पाउच",
+      "urlMock": "https://www.amazon.in/Tata-Salt-Iodized-Vacuum-Evaporated/dp/B00EXAMPLE",
+      "sku": "TATA-SALT-1KG-POUCH",
+      "asinSku": "B00EXAMPLE01",
+      "price": {
+        "declaredMrp": 28.0,
+        "sellingPrice": 28.0,
+        "currency": "INR",
+        "mrpTextRaw": "M.R.P.: ₹28.00 (incl. of all taxes)",
+        "hasInclusiveOfTaxesOnPage": true,
+        "pricePerUnitDisplay": "₹28.00 per kg (₹0.028 per g)"
+      },
+      "seller": {
+        "sellerName": "Tata Consumer Products Ltd. - Cloudtail Retail",
+        "sellerAddress": "Bombay House, 24 Homi Mody Street, Fort, Mumbai - 400001",
+        "sellerType": "brand_authorized",
+        "isMarketplaceItself": false
+      },
+      "declarations": {
+        "netQuantity": {
+          "value": 1,
+          "unit": "kg",
+          "raw": "1 kg (1000 g)"
+        },
+        "countryOfOrigin": {
+          "declared": true,
+          "value": "India",
+          "rawText": "Country of Origin: India",
+          "locationOnPage": "Product Details > Specifications > Country of Origin: India",
+          "isFilterable": true
+        },
+        "countryOfOriginFilter": {
+          "present": true,
+          "filterOptions": ["India", "USA", "China", "Germany"],
+          "filterLocation": "Left sidebar > Country of Origin > India (selected)",
+          "mandateReference": "GSR 418(E) 2026 - COMPLIANT",
+          "compliance": "PASS"
+        },
+        "unitSalePrice": {
+          "declared": true,
+          "value": 28.0,
+          "unit": "per kg",
+          "raw": "₹28.00 per kg",
+          "calculatedExpected": "₹28.00 per kg (28/1=28)",
+          "calculation": "28.00 / 1 kg = 28.00 per kg => PASS (0.0% deviation)",
+          "mathStatus": "PASS"
+        },
+        "manufacturerAddress": {
+          "declared": true,
+          "value": "Mfd. by Tata Chemicals Ltd., Bombay House, 24 Homi Mody Street, Mumbai - 400001",
+          "hasPincode": true
+        },
+        "consumerCare": {
+          "phone": "1800-108-4488",
+          "email": "care@tataconsumer.com",
+          "hasAllFour": true,
+          "name": "Tata Consumer Care Manager"
+        },
+        "images": {
+          "primaryImageUrl": "https://m.media-amazon.com/images/I/tata-salt-1kg-front.jpg",
+          "allImageUrls": [
+            "https://m.media-amazon.com/images/I/tata-salt-1kg-front.jpg",
+            "https://m.media-amazon.com/images/I/tata-salt-1kg-back.jpg",
+            "https://m.media-amazon.com/images/I/tata-salt-1kg-ingredients.jpg"
+          ],
+          "hasLabelCrop": true
+        }
+      },
+      "category": "FOOD",
+      "isImported": false,
+      "complianceStatus": "PASS",
+      "violations": [],
+      "complianceScore": 100,
+      "liability": {
+        "marketplaceLiability": "Compliant - Amazon listing provides all mandatory Rule 9 digital declarations.",
+        "sellerLiability": "Tata Consumer Products - Compliant brand-owned listing."
+      },
+      "scraperMetadata": {
+        "snapshotDate": "2026-08-11T11:00:00.000Z",
+        "scraperVersion": "cheerio@1.0.0-rc.12 offline",
+        "htmlFixturePath": "server/tests/fixtures/html/amazon-tata-salt-1kg.html",
+        "parseTimeMs": 41,
+        "notes": "PASS benchmark for Amazon grocery: All digital declarations present + COO filter enabled + correct USP math. Ideal contrast to ECOM-AMAZON-003."
+      }
+    },
+    {
+      "fixtureId": "ECOM-ZEPTO-005",
+      "platform": "Zepto",
+      "platformDomain": "zepto.com",
+      "productTitle": "Head & Shoulders Smooth & Silky Shampoo 340 ml Argan Oil",
+      "productTitleHindi": "हेड एंड शोल्डर्स स्मूथ एंड सिल्की शैम्पू 340 मिली",
+      "urlMock": "https://www.zeptonow.com/pn/head-shoulders-smooth-silky-shampoo-340ml/pvid/567890",
+      "sku": "HNS-SHAMPOO-340ML-ARGAN",
+      "asinSku": "ZEPTO-SKU-HNS-567890",
+      "price": {
+        "declaredMrp": 299.0,
+        "sellingPrice": 285.0,
+        "currency": "INR",
+        "mrpTextRaw": "MRP ₹299 (inc. all taxes)",
+        "hasInclusiveOfTaxesOnPage": true,
+        "pricePerUnitDisplay": "₹0.88 per ml"
+      },
+      "seller": {
+        "sellerName": "Geddit Convenience Pvt. Ltd. (Zepto Warehousing Partner)",
+        "sellerAddress": "125, 2nd Floor, Shahpur Jat, New Delhi - 110049",
+        "sellerType": "marketplace_warehousing",
+        "isMarketplaceItself": true
+      },
+      "declarations": {
+        "netQuantity": {
+          "value": 340,
+          "unit": "ml",
+          "raw": "340 ml"
+        },
+        "countryOfOrigin": {
+          "declared": true,
+          "value": "India",
+          "rawText": "Country of Origin: India",
+          "locationOnPage": "Product Information > Manufactured By > Country of Origin",
+          "isFilterable": true
+        },
+        "countryOfOriginFilter": {
+          "present": true,
+          "filterOptions": ["India", "USA", "China"],
+          "filterLocation": "Zepto category filter drawer > Country of Origin",
+          "mandateReference": "GSR 418(E) 2026 - COMPLIANT",
+          "compliance": "PASS"
+        },
+        "unitSalePrice": {
+          "declared": true,
+          "value": 0.88,
+          "unit": "per ml",
+          "raw": "₹0.88 per ml",
+          "calculatedExpected": "₹0.88 per ml (299/340=0.879 => 0.88 rounded)",
+          "calculation": "299.00 / 340 = 0.8794 => 0.88 within 1% tolerance => PASS",
+          "mathStatus": "PASS"
+        },
+        "manufacturerAddress": {
+          "declared": true,
+          "value": "Mfd. by Procter & Gamble Home Products Pvt. Ltd., Baddi - 173205",
+          "hasPincode": true
+        },
+        "consumerCare": {
+          "phone": "1800-202-1364",
+          "email": "care.in@pg.com",
+          "hasAllFour": true
+        },
+        "images": {
+          "primaryImageUrl": "https://cdn.zeptonow.com/images/hns-340ml-front.jpg",
+          "allImageUrls": [
+            "https://cdn.zeptonow.com/images/hns-340ml-front.jpg",
+            "https://cdn.zeptonow.com/images/hns-340ml-back.jpg"
+          ],
+          "hasLabelCrop": true
+        }
+      },
+      "category": "COSMETICS",
+      "isImported": false,
+      "complianceStatus": "PASS",
+      "violations": [],
+      "complianceScore": 100,
+      "liability": {
+        "marketplaceLiability": "Compliant - Zepto quick-commerce listing fully declared.",
+        "sellerLiability": "P&G India - Compliant brand."
+      },
+      "scraperMetadata": {
+        "snapshotDate": "2026-08-11T12:00:00.000Z",
+        "scraperVersion": "cheerio@1.0.0-rc.12 offline",
+        "htmlFixturePath": "server/tests/fixtures/html/zepto-hns-340ml.html",
+        "parseTimeMs": 33,
+        "notes": "PASS benchmark for Zepto COSMETICS: Demonstrates USP math tolerance handling (0.879 => 0.88 rounded PASS). COO filter present."
+      }
+    },
+    {
+      "fixtureId": "ECOM-ZEPTO-006",
+      "platform": "Zepto",
+      "platformDomain": "zepto.com",
+      "productTitle": "Nivea Soft Light Moisturizer Cream 100 ml Jojoba & Vitamin E",
+      "productTitleHindi": "निविया सॉफ्ट मॉइस्चराइज़र 100 मिली",
+      "urlMock": "https://www.zeptonow.com/pn/nivea-soft-light-moisturizer-100ml/pvid/345678",
+      "sku": "NIVEA-SOFT-100ML-JOJOBA",
+      "asinSku": "ZEPTO-SKU-NIVEA-345678",
+      "price": {
+        "declaredMrp": 199.0,
+        "sellingPrice": 189.0,
+        "currency": "INR",
+        "mrpTextRaw": "MRP ₹199.00",
+        "hasInclusiveOfTaxesOnPage": false,
+        "pricePerUnitDisplay": null
+      },
+      "seller": {
+        "sellerName": "Zepto Marketplace Seller - Kirana Partner Delhi",
+        "sellerAddress": "Kirana Store Partner, Lajpat Nagar, New Delhi - 110024",
+        "sellerType": "kirana_partner",
+        "isMarketplaceItself": false
+      },
+      "declarations": {
+        "netQuantity": {
+          "value": 100,
+          "unit": "ml",
+          "raw": "100 ml"
+        },
+        "countryOfOrigin": {
+          "declared": false,
+          "value": null,
+          "rawText": null,
+          "locationOnPage": null,
+          "isFilterable": false
+        },
+        "countryOfOriginFilter": {
+          "present": false,
+          "filterOptions": [],
+          "filterLocation": "Filter drawer absent on this category page (Beauty > Moisturizers)",
+          "mandateReference": "GSR 418(E) 2026 - FAIL",
+          "compliance": "FAIL"
+        },
+        "unitSalePrice": {
+          "declared": false,
+          "value": null,
+          "unit": null,
+          "raw": null,
+          "calculatedExpected": "₹1.99 per ml (199/100=1.99)",
+          "calculation": "199.00 / 100 = 1.99 per ml"
+        },
+        "manufacturerAddress": {
+          "declared": false,
+          "value": "Marketed by Nivea India Pvt. Ltd. (truncated, no address/PIN on Zepto PDP)",
+          "hasPincode": false
+        },
+        "consumerCare": {
+          "phone": null,
+          "email": null,
+          "hasAllFour": false,
+          "missingElements": ["phone", "email", "name", "address"]
+        },
+        "images": {
+          "primaryImageUrl": "https://cdn.zeptonow.com/images/nivea-soft-100ml-front.jpg",
+          "allImageUrls": [
+            "https://cdn.zeptonow.com/images/nivea-soft-100ml-front.jpg"
+          ],
+          "hasLabelCrop": false
+        }
+      },
+      "category": "COSMETICS",
+      "isImported": true,
+      "complianceStatus": "FAIL",
+      "violations": [
+        {
+          "ruleId": "RULE_6_1_G_COUNTRY_OF_ORIGIN",
+          "ruleCitation": "Rule 6(1)(g), PCR 2011 & GSR 418(E) 2026",
+          "severity": "CRITICAL",
+          "deduction": 25,
+          "reason": "Country of Origin not declared on Zepto listing for imported Nivea (Germany). E-commerce mandate requires \"Country of Origin: Germany\" on digital panel.",
+          "penaltySection": "Section 36(1) + CCPA Guidelines 2020",
+          "remedyAction": "Add: \"Country of Origin: Germany\" in specifications.",
+          "expectedStatus": "FAIL"
+        },
+        {
+          "ruleId": "RULE_CO0_FILTER_FEB2026",
+          "ruleCitation": "GSR 418(E) 2026 - Feb 2026 COO Filter",
+          "severity": "MAJOR",
+          "deduction": 20,
+          "reason": "COO filterable selector missing on Zepto quick-commerce category (Beauty). Required per Feb 2026 mandate for all e-commerce entities.",
+          "penaltySection": "Section 36(1)",
+          "remedyAction": "Enable filterable COO attribute in Zepto catalog.",
+          "expectedStatus": "FAIL"
+        },
+        {
+          "ruleId": "RULE_6_1_E_MRP_TAX_CLAUSE",
+          "ruleCitation": "Rule 6(1)(e), PCR 2011",
+          "severity": "CRITICAL",
+          "deduction": 30,
+          "reason": "MRP shown as \"MRP ₹199.00\" without \"(inclusive of all taxes)\" suffix.",
+          "penaltySection": "Section 36(1)",
+          "remedyAction": "Show: \"MRP ₹199.00 (inclusive of all taxes)\"",
+          "expectedStatus": "FAIL"
+        },
+        {
+          "ruleId": "RULE_6_1_F_CONSUMER_CARE",
+          "ruleCitation": "Rule 6(1)(f), PCR 2011",
+          "severity": "CRITICAL",
+          "deduction": 15,
+          "reason": "Consumer Care completely absent on Zepto listing (no phone/email/name/address). Quick-commerce truncation violation.",
+          "penaltySection": "Section 36(1)",
+          "remedyAction": "Add complete consumer care block with phone + email + address/PIN.",
+          "expectedStatus": "FAIL"
+        },
+        {
+          "ruleId": "RULE_6_11_UNIT_SALE_PRICE_MATH",
+          "ruleCitation": "Rule 6(11), GSR 226(E) 2022",
+          "severity": "MAJOR",
+          "deduction": 20,
+          "reason": "Unit Sale Price not displayed on listing for 100ml cosmetics (required but missing).",
+          "penaltySection": "Section 36(1)",
+          "remedyAction": "Display: \"₹1.99 per ml\"",
+          "expectedStatus": "FAIL"
+        }
+      ],
+      "complianceScore": 0,
+      "liability": {
+        "marketplaceLiability": "Zepto (intermediary) - Liable for missing digital declarations under CCPA 2020 Guidelines.",
+        "sellerLiability": "Kirana partner / Nivea India (importer) - Ultimate liability for COO declaration."
+      },
+      "scraperMetadata": {
+        "snapshotDate": "2026-08-11T13:30:00.000Z",
+        "scraperVersion": "cheerio@1.0.0-rc.12 offline",
+        "htmlFixturePath": "server/tests/fixtures/html/zepto-nivea-100ml.html",
+        "parseTimeMs": 48,
+        "notes": "Worst-case quick-commerce FAIL: Truncated PDP pattern common on Zepto (tiny PDP, missing all declarations). Validates offline scraper detection."
+      }
+    }
+  ],
+  "summaryStats": {
+    "totalListings": 6,
+    "platformCounts": {
+      "Blinkit": 2,
+      "Amazon India": 2,
+      "Zepto": 2
+    },
+    "passCount": 3,
+    "failCount": 3,
+    "violationFrequency": {
+      "RULE_6_1_G_COUNTRY_OF_ORIGIN": 3,
+      "RULE_CO0_FILTER_FEB2026": 3,
+      "RULE_6_11_UNIT_SALE_PRICE_MATH": 3,
+      "RULE_6_1_E_MRP_TAX_CLAUSE": 3,
+      "RULE_6_1_F_CONSUMER_CARE": 2
+    },
+    "filterPresenceSummary": {
+      "filterPresent": 3,
+      "filterAbsent": 3,
+      "mandate": "Feb/Apr 2026 GSR 418(E) - Mandatory for all e-commerce & quick-commerce entities"
+    },
+    "uspPresenceSummary": {
+      "uspPresentAndCorrect": 3,
+      "uspMissing": 3,
+      "uspMathMismatch": 0
+    }
+  }
+}

@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Production build output
+dist/
+
+# Local Environment & Secrets
+.env
+.env.local
+
+# Database files
+*.db
+*.db-shm
+*.db-wal
+src/database/*.db
+src/database/*.db-shm
+src/database/*.db-wal
+
+# Uploaded packaging files
+uploads/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
